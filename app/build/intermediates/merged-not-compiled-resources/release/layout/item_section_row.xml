@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="28dp"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <!-- Row Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="6dp">
+
+        <TextView
+            android:id="@+id/sectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_lg"
+            android:fontFamily="@font/robotomedium" />
+
+        <TextView
+            android:id="@+id/sectionCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_pill"
+            android:textColor="@color/text_dim"
+            android:textSize="@dimen/text_xs"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Horizontal Items List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectionRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false" />
+</LinearLayout>

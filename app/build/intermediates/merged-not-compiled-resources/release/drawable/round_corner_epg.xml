@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ live result card: 9dp corners over a near-opaque slate -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="9dp" />
+    <gradient
+        android:type="linear"
+        android:angle="45"
+        android:startColor="#ED0C1118"
+        android:centerColor="#F20D1821"
+        android:endColor="#ED0C1118" />
+</shape>

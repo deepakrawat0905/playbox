@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pro Play Box</string><string name="home">Home</string><string name="live_tv">Live TV</string>
+    <string name="movies">Movies</string><string name="series">Series</string><string name="search">Search</string>
+    <string name="favorites">Favorites</string><string name="continue_watching">Continue Watching</string>
+    <string name="recent">Recently Watched</string><string name="playlists">Playlists</string><string name="settings">Settings</string>
+    <string name="device_info">Device Info</string><string name="about">About</string><string name="activation">Activation</string>
+    <string name="all">All</string><string name="connect">Connect</string><string name="check_again">Check again</string>
+</resources>

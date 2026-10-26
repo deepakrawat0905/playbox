@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Search result card. Focus is a white outline over a faint wash rather
+    than a solid white fill: filling the card white hid its contents, since
+    the text sits inside nested layouts that never receive the focus state.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="9dp" />
+            <solid android:color="@color/focus_fill" />
+            <stroke android:width="@dimen/focus_stroke" android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/round_corner_epg" />
+</selector>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heroRoot"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_marginBottom="24dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/bg_card_selector"
+    android:clipChildren="false">
+
+    <!-- Inner Rounded Wrap -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_card">
+
+        <!-- Cinematic Backdrop Image -->
+        <ImageView
+            android:id="@+id/heroBackdrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Dual Scrim (Left-to-Right + Bottom-to-Top) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_hero_gradient" />
+
+        <!-- Content Overlay (Bottom Left) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom|start"
+            android:padding="32dp">
+
+            <!-- Kicker Badge (e.g. 🗂 MOVIES or 📺 LIVE) -->
+            <LinearLayout
+                android:id="@+id/heroKicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill"
+                android:backgroundTint="@color/accent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/heroKickerIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🗂 "
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/heroKickerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MOVIES"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:letterSpacing="0.08" />
+            </LinearLayout>
+
+            <!-- Main Title -->
+            <TextView
+                android:id="@+id/heroTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="25sp"
+                android:fontFamily="@font/robotomedium"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Navigation Hint -->
+            <TextView
+                android:id="@+id/heroBrowseHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;  &gt; Browse"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Pagination Dots (Bottom Right) -->
+        <LinearLayout
+            android:id="@+id/heroDotsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" />
+    </FrameLayout>
+</FrameLayout>

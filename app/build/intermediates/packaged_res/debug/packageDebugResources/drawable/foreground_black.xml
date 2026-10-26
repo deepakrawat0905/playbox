@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ foreground_black: left-to-right wash off the side colour -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:centerColor="#DA10171F"
+        android:centerY="0.38"
+        android:endColor="@android:color/transparent"
+        android:startColor="@color/side"
+        android:type="linear" />
+</shape>

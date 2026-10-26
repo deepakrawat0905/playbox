@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wideCardRoot"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@android:color/transparent"
+    android:padding="4dp"
+    android:layout_margin="6dp"
+    android:clipChildren="false">
+
+    <!-- 16:9 Thumbnail Container with Focus Ring -->
+    <FrameLayout
+        android:id="@+id/wideThumbnailWrap"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:background="@drawable/bg_art_selector"
+        android:duplicateParentState="true"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/wideThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Gradient Scrim -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_hero_gradient" />
+
+        <!-- Play Circle Overlay -->
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_accent"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="▶"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/robotomedium" />
+        </FrameLayout>
+
+        <!-- Progress Bar at bottom -->
+        <ProgressBar
+            android:id="@+id/wideProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:progressDrawable="@drawable/bg_progress_bar" />
+    </FrameLayout>
+
+    <!-- Title & Time Remaining -->
+    <TextView
+        android:id="@+id/wideTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/text"
+        android:textSize="15sp"
+        android:fontFamily="@font/robotomedium"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:id="@+id/wideSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/accent"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:ellipsize="end" />
+</LinearLayout>

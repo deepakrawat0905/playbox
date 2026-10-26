@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.playboxpro.tv.app-mergeDebugResources-45:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vidha\\.gradle\\caches\\9.0-milestone-1\\transforms\\7b523e257d0bd7efb931804cc6fa1ee9\\transformed\\appcompat-1.7.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

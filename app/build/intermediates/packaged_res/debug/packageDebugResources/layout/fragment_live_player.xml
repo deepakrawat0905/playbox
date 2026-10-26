@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Full-screen live player. The video fills the window; the OSD is one
+    frosted-glass panel along the bottom:
+      channel logo + name, programme times and the clock
+      programme title, elapsed / length, format badges
+      programme progress
+      section buttons (Home, Movies, Shows, Live, Guide) on the left,
+      player buttons and the profile on the right.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/livePlayerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/livePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:focusable="false"
+        app:surface_type="surface_view"
+        app:use_controller="false" />
+
+    <!-- Black between channels; the surface keeps the last frame otherwise -->
+    <View
+        android:id="@+id/liveShutter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/livePlayError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:text="Broadcast Source Offline"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ============================================================
+         OSD
+         ============================================================ -->
+    <FrameLayout
+        android:id="@+id/liveOsd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_glass_scrim" />
+
+        <LinearLayout
+            android:id="@+id/osdPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_glass_panel"
+            android:orientation="vertical"
+            android:paddingStart="30dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="12dp">
+
+            <!-- Channel | programme times, clock -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/osdLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:maxWidth="90dp"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/osdChannelName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/robotomedium"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/osdEpgTimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/osdArchived"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="CATCH-UP"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/osdClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Programme title | elapsed / length, badges -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/osdEpgTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/robotomedium"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/osdEpgElapsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/osdResolution"
+                    style="@style/GlassBadge"
+                    android:layout_marginBottom="0dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/osdCcBadge"
+                    style="@style/GlassBadge"
+                    android:layout_marginBottom="0dp"
+                    android:text="CC"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/osdAudioInfo"
+                    style="@style/GlassBadge"
+                    android:layout_marginBottom="0dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/osdProgress"
+                style="?android:progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="14dp"
+                android:max="1000"
+                android:progressDrawable="@drawable/progress_glass" />
+
+            <!-- Sections | player buttons, profile -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout android:id="@+id/navHome" style="@style/GlassNavItem">
+                    <ImageView style="@style/GlassNavIcon" android:src="@drawable/ic_glass_home" />
+                    <TextView style="@style/GlassNavLabel" android:text="Home" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/navMovies" style="@style/GlassNavItem">
+                    <ImageView style="@style/GlassNavIcon" android:src="@drawable/ic_glass_movies" />
+                    <TextView style="@style/GlassNavLabel" android:text="Movies" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/navShows" style="@style/GlassNavItem">
+                    <ImageView style="@style/GlassNavIcon" android:src="@drawable/ic_glass_tv" />
+                    <TextView style="@style/GlassNavLabel" android:text="Shows" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/navLive" style="@style/GlassNavItem">
+                    <ImageView style="@style/GlassNavIcon" android:src="@drawable/ic_glass_live" />
+                    <TextView style="@style/GlassNavLabel" android:text="Live" />
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/navGuide" style="@style/GlassNavItem">
+                    <ImageView style="@style/GlassNavIcon" android:src="@drawable/ic_glass_guide" />
+                    <TextView style="@style/GlassNavLabel" android:text="Guide" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/btnLiveSettings"
+                    style="@style/GlassRoundButton"
+                    android:contentDescription="Aspect ratio"
+                    android:src="@drawable/ic_glass_settings" />
+
+                <ImageView
+                    android:id="@+id/btnLiveAudio"
+                    style="@style/GlassRoundButton"
+                    android:contentDescription="Audio track"
+                    android:src="@drawable/ic_glass_volume" />
+
+                <ImageView
+                    android:id="@+id/btnLiveCc"
+                    style="@style/GlassRoundButton"
+                    android:contentDescription="Subtitles"
+                    android:src="@drawable/ic_glass_cc" />
+
+                <ImageView
+                    android:id="@+id/btnLiveMore"
+                    style="@style/GlassRoundButton"
+                    android:contentDescription="More"
+                    android:src="@drawable/ic_glass_more" />
+
+                <ImageView
+                    android:id="@+id/btnLiveSearch"
+                    style="@style/GlassRoundButton"
+                    android:contentDescription="Search"
+                    android:src="@drawable/ic_glass_search" />
+
+                <LinearLayout
+                    android:id="@+id/osdProfilePill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="14dp"
+                    android:background="@drawable/bg_glass_pill"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:contentDescription="@null"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/ic_glass_person"
+                        app:tint="@color/glass_icon_tint" />
+
+                    <TextView
+                        android:id="@+id/osdProfileName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/robotoregular"
+                        android:maxWidth="150dp"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

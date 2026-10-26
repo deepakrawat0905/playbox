@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ search field / tab base: near-opaque deep slate, 5dp corners -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="5dp" />
+    <gradient
+        android:type="linear"
+        android:angle="270"
+        android:startColor="#D80B1016"
+        android:centerColor="#BF0B1016"
+        android:endColor="#D80B1016" />
+</shape>

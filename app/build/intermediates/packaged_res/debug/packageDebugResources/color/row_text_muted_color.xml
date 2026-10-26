@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Secondary row text, darkened on the white focused fill -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="#8A000000" />
+    <item android:state_pressed="true" android:color="#8A000000" />
+    <item android:color="@color/text_dim" />
+</selector>

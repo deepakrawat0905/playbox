@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ tv_number: android darker_gray at rest, black on the white row -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="@color/black" />
+    <item android:color="@android:color/darker_gray" />
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="oval"><size android:width="18dp" android:height="18dp" /><solid android:color="#FFFFFFFF" /><stroke android:width="3dp" android:color="#993D8BFF" /></shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle"><size android:width="4dp" android:height="16dp" /><corners android:radius="2dp" /><solid android:color="#FFFFFFFF" /></shape>
+    </item>
+</selector>

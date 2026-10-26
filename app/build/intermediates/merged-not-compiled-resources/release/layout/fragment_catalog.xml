@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Movies / TV Series matched to STB+ fragment_series.
+
+    Menu affordance and profile name top-left, a centred 300x35dp search box
+    with the Select Sort Type pill beside it,
+    and the category name with its total stacked at the top-right. Below,
+    the category rail takes 29% and the poster grid 71% at five columns.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/catalogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:fitsSystemWindows="true">
+
+    <!-- ============================================================
+         Menu affordance (label only, opened with LEFT on the remote)
+         ============================================================ -->
+    <LinearLayout
+        android:id="@+id/menuPill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:focusable="false"
+            android:src="@drawable/ic_menu_lines"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/robotolight"
+            android:text="Menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+
+    <!-- Profile name -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@id/playlistBadge"
+        app:layout_constraintEnd_toStartOf="@id/playlistBadge"
+        app:layout_constraintTop_toTopOf="@id/playlistBadge"
+        app:tint="@color/light_gray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/playlistBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/robotolight"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@id/menuPill"
+        app:layout_constraintStart_toEndOf="@id/menuPill"
+        app:layout_constraintTop_toTopOf="@id/menuPill" />
+
+    <!-- ============================================================
+         Search + sort, above the grid (STB+): a round search button
+         that opens the search box when pressed, and the sort pill.
+         ============================================================ -->
+    <LinearLayout
+        android:id="@+id/catalogToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/catalogRailRecycler"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/btnSearchIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_search_circle"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:contentDescription="Search"
+                android:src="@drawable/ic_nav_search"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnCatalogSearch"
+            android:layout_width="280dp"
+            android:layout_height="36dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/bg_search_field"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_nav_search"
+                app:tint="@color/light_gray" />
+
+            <EditText
+                android:id="@+id/catalogSearchInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:fontFamily="@font/robotoregular"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingStart="35dp"
+                android:paddingEnd="12dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/sp_14" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/btnCatalogSort"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_sort_pill"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/catalogSortText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:fontFamily="@font/robotomedium"
+                android:text="Select Sort Type"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/sp_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ============================================================
+         Category name + total, top-right
+         ============================================================ -->
+    <LinearLayout
+        android:id="@+id/categoryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:elevation="8dp"
+        android:gravity="end"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/catalogPageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/categoryIcon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_nav_movies"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/catalogSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotolight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- ============================================================
+         Category rail - 29%, full height
+         ============================================================ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catalogRailRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:nextFocusRight="@id/catalogGridRecycler"
+        android:paddingStart="7dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="7dp"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.29" />
+
+    <!-- ============================================================
+         Poster grid - 71%, five columns
+         ============================================================ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catalogGridRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:nextFocusLeft="@id/catalogRailRecycler"
+        android:paddingStart="20dp"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintStart_toEndOf="@id/catalogRailRecycler"
+        app:layout_constraintWidth_percent="0.71"
+        app:spanCount="5" />
+
+    <!-- Empty state -->
+    <LinearLayout
+        android:id="@+id/catalogEmptyLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.865"
+        app:layout_constraintStart_toEndOf="@id/catalogRailRecycler"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.71">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_info"
+            app:tint="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/catalogEmptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="No Contents"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <!-- Bound by the fragment; not part of the STB+ header -->
+    <TextView
+        android:id="@+id/licenseBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clockTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clockDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

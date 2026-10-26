@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ badge_rating: holo red, 3dp corners -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/holo_red_dark" />
+    <corners android:radius="3dp" />
+</shape>

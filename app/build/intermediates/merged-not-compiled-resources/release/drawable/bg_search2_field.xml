@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Search bar: dark glass, a white ring while the remote is on it -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape><corners android:radius="10dp" /><solid android:color="#B3263044" /><stroke android:width="2dp" android:color="#E6FFFFFF" /></shape>
+    </item>
+    <item>
+        <shape><corners android:radius="10dp" /><solid android:color="#8C1C2536" /><stroke android:width="1dp" android:color="#33FFFFFF" /></shape>
+    </item>
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Player controls: bare white glyph at rest, white 5dp pill with a black
+     glyph under the remote (the pill colour STB+ uses for its focused row). -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true"><shape><corners android:radius="5dp" /><solid android:color="#FFFFFFFF" /></shape></item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

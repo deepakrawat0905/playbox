@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Design system matched to the STB+ reference build.
+    Slate-navy surfaces, white focus strokes, orange value accent.
+    Existing token names are preserved so every current layout keeps working.
+-->
+<resources>
+
+    <!-- ============================================================
+         STB+ base palette (source tokens)
+         ============================================================ -->
+    <color name="side">#FF0B1016</color>          <!-- gradient end / deep panel -->
+    <color name="sidelight">#FF17202F</color>     <!-- gradient start / raised panel -->
+    <color name="main">#FF13212A</color>          <!-- base slate -->
+    <color name="yellow">#FFFFA500</color>        <!-- value / highlight accent -->
+    <color name="red">#FFFD1C03</color>           <!-- live / active -->
+    <color name="light_gray">#FFACACAC</color>    <!-- secondary text -->
+    <color name="blue">#FF102448</color>
+    <color name="gray">#FF272727</color>
+
+    <!-- Focus system: 1dp white stroke over a faint white wash -->
+    <color name="focus_stroke_color">#FFFFFFFF</color>
+    <color name="focus_fill">#1AFFFFFF</color>
+
+    <!-- Faint surface wash used by info chips / rows -->
+    <color name="info_surface">#07FFFFFF</color>
+    <color name="dialog_panel">#FF1B2230</color>
+
+    <!-- ============================================================
+         Backgrounds
+         ============================================================ -->
+    <color name="bg">#FF0B1016</color>
+    <color name="bg_elevated">#FF0E141C</color>
+    <color name="bg_panel">#FF17202F</color>
+    <color name="bg_sunken">#FF080C11</color>
+    <color name="bg_card">#FF13212A</color>
+    <color name="bg_card_hover">#FF1B2230</color>
+    <color name="bg_glass">#B8131E2A</color>
+    <color name="bg_scrim">#DD0B1016</color>
+    <color name="bg_dialog">#FF1B2230</color>
+
+    <!-- ============================================================
+         Surfaces
+         ============================================================ -->
+    <color name="surface_1">#07FFFFFF</color>
+    <color name="surface_2">#12FFFFFF</color>
+    <color name="surface_3">#1AFFFFFF</color>
+    <color name="surface_border">#14FFFFFF</color>
+    <color name="surface_border_focused">#FFFFFFFF</color>
+
+    <!-- ============================================================
+         Accents  (STB+ uses white for focus, orange for values)
+         ============================================================ -->
+    <color name="accent">#FFFFA500</color>
+    <color name="accent_strong">#FFFF8C00</color>
+    <color name="accent_soft">#29FFA500</color>
+    <color name="accent_glow">#73FFA500</color>
+    <color name="accent_contrast">#FFFFFFFF</color>
+
+    <!-- ============================================================
+         Semantics
+         ============================================================ -->
+    <color name="success">#FF72E411</color>
+    <color name="warning">#FFFFC107</color>
+    <color name="danger">#FFF44336</color>
+    <color name="live">#FFFD1C03</color>
+
+    <!-- ============================================================
+         Typography
+         ============================================================ -->
+    <color name="text">#FFFFFFFF</color>
+    <color name="text_muted">#FFACACAC</color>
+    <color name="text_dim">#FF7A8290</color>
+    <color name="muted">#FFACACAC</color>
+    <color name="dim">#FF7A8290</color>
+    <color name="text_on_accent">#FF000000</color>
+
+    <!-- ============================================================
+         Utility
+         ============================================================ -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="star_gold">#FFFFC107</color>
+
+</resources>

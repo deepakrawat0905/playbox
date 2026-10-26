@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ divider: fades out at both ends -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:angle="0"
+        android:startColor="#00D6D6D6"
+        android:centerColor="#3BCCC5C5"
+        android:endColor="#00D6D6D6" />
+</shape>

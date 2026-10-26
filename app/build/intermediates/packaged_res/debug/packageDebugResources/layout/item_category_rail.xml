@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Category row matched to STB+ item_live_category:
+    42dp tall, 15sp Roboto Light, 20dp text inset, hairline divider along
+    the bottom, no count badge. Children duplicate the parent state so the
+    text flips to black on the white focused fill.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/catRailRoot"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_marginStart="4dp"
+    android:background="@drawable/bg_category_row"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/catIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotolight"
+        android:textColor="@color/rail_text_color"
+        android:textSize="@dimen/sp_15"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/catLock"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:duplicateParentState="true"
+        android:src="@drawable/ic_lock"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/catIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/row_icon_tint" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/catName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/robotolight"
+        android:singleLine="true"
+        android:textColor="@color/rail_text_color"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/catCount"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/catLock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Kept for adapter binding; STB+ category rows carry no count. -->
+    <TextView
+        android:id="@+id/catCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotolight"
+        android:textColor="@color/row_text_muted_color"
+        android:textSize="@dimen/sp_11"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

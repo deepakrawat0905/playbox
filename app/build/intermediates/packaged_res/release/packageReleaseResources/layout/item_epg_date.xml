@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ item_epg_date: 50dp slate row, day name over the date -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/epgDateRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="7dp"
+    android:background="@drawable/bg_btn_dark_pill"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <TextView
+        android:id="@+id/epgDayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/btn_text_color"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/epgDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotolight"
+        android:textColor="@color/btn_text_color"
+        android:textSize="@dimen/sp_11" />
+</LinearLayout>

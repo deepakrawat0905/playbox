@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ window background: radial slate gradient, sidelight -> side -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient
+        android:type="radial"
+        android:startColor="@color/sidelight"
+        android:endColor="@color/side"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:gradientRadius="80%p"
+        android:angle="0" />
+</shape>

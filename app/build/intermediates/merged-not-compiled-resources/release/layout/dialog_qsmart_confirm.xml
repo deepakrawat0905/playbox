@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Confirm, matched to STB+ dialog_qsmart_confirm: 90x70dp icon, 28sp title,
+    18sp message and two stacked 300x42dp pills.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="start|top"
+        android:layout_margin="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/confirmIcon"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/confirmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/confirmMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/sp_18" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOk"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_btn_light_pill"
+            android:focusable="true"
+            android:stateListAnimator="@null"
+            android:text="OK"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/sp_17" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="6dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_btn_light_pill"
+            android:focusable="true"
+            android:stateListAnimator="@null"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/sp_17" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,435 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
+MERGED from [androidx.databinding:viewbinding:8.13.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e671197c6f459ffca7208fc892b712f5\transformed\viewbinding-8.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\39d64d3636d77f3801e0b17687e58b55\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\26f4839be97b3c83a5f6d42629896f78\transformed\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7b523e257d0bd7efb931804cc6fa1ee9\transformed\appcompat-1.7.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:2:1-15:12
+MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\2dae2ef7adac477c4ca85689f658d821\transformed\glide-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.media3:media3-exoplayer-hls:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\540340b7304673887d599e3ea677b9aa\transformed\media3-exoplayer-hls-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [org.jellyfin.media3:media3-ffmpeg-decoder:1.9.0+1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ea5484112246755a43149f58d261bf04\transformed\media3-ffmpeg-decoder-1.9.0+1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.media3:media3-session:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\1652f3654e712487fd7ae936fc8c1309\transformed\media3-session-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-extractor:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5b16b7c99ea5c8f6fdadceee071d43f4\transformed\media3-extractor-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-container:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\f21b3bd811c93fa275aa95ef524ff391\transformed\media3-container-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-datasource:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\898c43d2c0934d49d91b3d13c1ed4a91\transformed\media3-datasource-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-decoder:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b9e970f7262f467639235cb019f10ee1\transformed\media3-decoder-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-database:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\78cfc87ff854202819a674fb218328e6\transformed\media3-database-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media3:media3-common:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9b287b714c27e2e92d3ae7beff73257d\transformed\media3-common-1.10.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media3:media3-ui:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\a971e9b2d9bb5cf6f3e476a376a10ad9\transformed\media3-ui-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\a6c3fcf903a70ccd6fc8dadc12969c4e\transformed\recyclerview-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9400cb06762add4ebdabe9278853455d\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.8.9] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\225ae52027258515e94cb2bcd55f2b75\transformed\fragment-1.8.9\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-ktx:1.8.9] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ed79a60b4ee37827b51c644c737f36c2\transformed\fragment-ktx-1.8.9\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3c051014908191c6631efcc7f1872a19\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7dcd927ab96b2094b55133605c1c3b1d\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9a39392fd3b936da7b9671882a20456d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\2e5fdfb5b386b9356937955958ea2cfd\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\95f769f8491b7ffbf44594ce328840ef\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b9a5f378ba25b1c5b47c46ef80a40f10\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\22aa69ee4c13f5a705cbfee648e9de25\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.7.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\d6b02b7dd424dfbfb6a2919eff83b246\transformed\media-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e97695c58e4be93749625360f35e30ea\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\1952e14dc56c5f9021f7675db95c8872\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\62e855361208e3cadf0e88c6adf7e61e\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\8abed9b4c3a3b2810f6dd98f7f0c1cdb\transformed\activity-ktx-1.10.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b2bae31809014b112937794012120667\transformed\activity-1.10.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3b4bdb99e19366742d43cd2c6000492c\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\8041fb82034ca1180820b7301943bdc0\transformed\graphics-shapes-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cacc1a59ea02a578336e875011f21314\transformed\lifecycle-livedata-2.9.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\73537e39edab060cd0e52eee7d184a84\transformed\savedstate-ktx-1.3.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-android:1.3.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\46379142e7e89adbeb727f8725312105\transformed\savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f909cd66ae08bc905b9fa785e7ac67c\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\aa3ba61d56bc790860f99fe219cd4672\transformed\lifecycle-viewmodel-2.9.2\AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\215c51551ae373fb8f08dfdea1bfec7a\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7551d5633602e0f9a7385d2f2ef20cb7\transformed\lifecycle-livedata-core-2.9.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\f03e89a5a89cd662849d260b330aa0dc\transformed\lifecycle-service-2.9.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\51d021f9ac406d87d69459b04a79dbd5\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\da44b3302e286eb998f6d287602ad78f\transformed\lifecycle-livedata-core-ktx-2.9.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\d4baeaea245374230400443d4462ba0c\transformed\lifecycle-viewmodel-ktx-2.9.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9052f1b166b7c6e74b9c5bfd25650898\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\90c3821438981168c9664abfa646219f\transformed\core-ktx-1.17.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ab55ce9a34378a7be8d5d6bf56e83916\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e9916e9865f0d04c8888d8821914b7c0\transformed\gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\37e45c8fb702b5ae11683de4cd9059e8\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\efa097048853598846dba62d3303c17f\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c83e506423223fcc7f86672cdc545fd4\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\547c803cb14eb66ddfce1d5384a4ba52\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:11-69
+uses-feature#android.software.leanback
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:3:5-86
+	android:required
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:3:60-84
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:3:19-59
+uses-feature#android.hardware.touchscreen
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:4:5-89
+	android:required
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:4:63-87
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:4:19-62
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:5:5-66
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:8:5-67
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:6:5-78
+MERGED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-common:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9b287b714c27e2e92d3ae7beff73257d\transformed\media3-common-1.10.1\AndroidManifest.xml:22:5-79
+MERGED from [androidx.media3:media3-common:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9b287b714c27e2e92d3ae7beff73257d\transformed\media3-common-1.10.1\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:5-18:19
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:5-18:19
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\26f4839be97b3c83a5f6d42629896f78\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\26f4839be97b3c83a5f6d42629896f78\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:9:5-13:19
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:9:5-13:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:23:5-33:19
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:10:5-20:19
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:10:5-20:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:23:5-29:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:177-209
+	android:resizeableActivity
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:307-340
+	android:roundIcon
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:137-176
+	android:largeHeap
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:45-69
+	android:icon
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:102-136
+	android:banner
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:341-377
+	android:theme
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:70-101
+	android:networkSecurityConfig
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:246-306
+	android:usesCleartextTraffic
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:210-245
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:18-44
+activity#com.playboxpro.tv.SplashActivity
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:8:9-16:20
+	android:screenOrientation
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:8:97-134
+	android:exported
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:8:135-158
+	android:theme
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:8:50-96
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:8:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:9:13-15:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:10:17-68
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:10:25-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:12:17-85
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:12:27-83
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:14:17-76
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:14:27-74
+activity#com.playboxpro.tv.MainActivity
+ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:9-144
+	android:screenOrientation
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:80-117
+	android:exported
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:118-142
+	android:theme
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:48-79
+	android:name
+		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:19-47
+uses-sdk
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.13.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e671197c6f459ffca7208fc892b712f5\transformed\viewbinding-8.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.13.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e671197c6f459ffca7208fc892b712f5\transformed\viewbinding-8.13.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\39d64d3636d77f3801e0b17687e58b55\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\39d64d3636d77f3801e0b17687e58b55\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\26f4839be97b3c83a5f6d42629896f78\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\26f4839be97b3c83a5f6d42629896f78\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7b523e257d0bd7efb931804cc6fa1ee9\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7b523e257d0bd7efb931804cc6fa1ee9\transformed\appcompat-1.7.1\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\2dae2ef7adac477c4ca85689f658d821\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\2dae2ef7adac477c4ca85689f658d821\transformed\glide-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.media3:media3-exoplayer-hls:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\540340b7304673887d599e3ea677b9aa\transformed\media3-exoplayer-hls-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer-hls:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\540340b7304673887d599e3ea677b9aa\transformed\media3-exoplayer-hls-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [org.jellyfin.media3:media3-ffmpeg-decoder:1.9.0+1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ea5484112246755a43149f58d261bf04\transformed\media3-ffmpeg-decoder-1.9.0+1\AndroidManifest.xml:20:5-44
+MERGED from [org.jellyfin.media3:media3-ffmpeg-decoder:1.9.0+1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ea5484112246755a43149f58d261bf04\transformed\media3-ffmpeg-decoder-1.9.0+1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-session:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\1652f3654e712487fd7ae936fc8c1309\transformed\media3-session-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-session:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\1652f3654e712487fd7ae936fc8c1309\transformed\media3-session-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5b16b7c99ea5c8f6fdadceee071d43f4\transformed\media3-extractor-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-extractor:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5b16b7c99ea5c8f6fdadceee071d43f4\transformed\media3-extractor-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\f21b3bd811c93fa275aa95ef524ff391\transformed\media3-container-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-container:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\f21b3bd811c93fa275aa95ef524ff391\transformed\media3-container-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\898c43d2c0934d49d91b3d13c1ed4a91\transformed\media3-datasource-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-datasource:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\898c43d2c0934d49d91b3d13c1ed4a91\transformed\media3-datasource-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b9e970f7262f467639235cb019f10ee1\transformed\media3-decoder-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-decoder:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b9e970f7262f467639235cb019f10ee1\transformed\media3-decoder-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\78cfc87ff854202819a674fb218328e6\transformed\media3-database-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-database:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\78cfc87ff854202819a674fb218328e6\transformed\media3-database-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9b287b714c27e2e92d3ae7beff73257d\transformed\media3-common-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-common:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9b287b714c27e2e92d3ae7beff73257d\transformed\media3-common-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\a971e9b2d9bb5cf6f3e476a376a10ad9\transformed\media3-ui-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media3:media3-ui:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\a971e9b2d9bb5cf6f3e476a376a10ad9\transformed\media3-ui-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\a6c3fcf903a70ccd6fc8dadc12969c4e\transformed\recyclerview-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\a6c3fcf903a70ccd6fc8dadc12969c4e\transformed\recyclerview-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9400cb06762add4ebdabe9278853455d\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9400cb06762add4ebdabe9278853455d\transformed\viewpager2-1.1.0-beta02\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.9] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\225ae52027258515e94cb2bcd55f2b75\transformed\fragment-1.8.9\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.9] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\225ae52027258515e94cb2bcd55f2b75\transformed\fragment-1.8.9\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.8.9] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ed79a60b4ee37827b51c644c737f36c2\transformed\fragment-ktx-1.8.9\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.8.9] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ed79a60b4ee37827b51c644c737f36c2\transformed\fragment-ktx-1.8.9\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3c051014908191c6631efcc7f1872a19\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3c051014908191c6631efcc7f1872a19\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7dcd927ab96b2094b55133605c1c3b1d\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7dcd927ab96b2094b55133605c1c3b1d\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9a39392fd3b936da7b9671882a20456d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9a39392fd3b936da7b9671882a20456d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\2e5fdfb5b386b9356937955958ea2cfd\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\2e5fdfb5b386b9356937955958ea2cfd\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\95f769f8491b7ffbf44594ce328840ef\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\95f769f8491b7ffbf44594ce328840ef\transformed\dynamicanimation-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b9a5f378ba25b1c5b47c46ef80a40f10\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b9a5f378ba25b1c5b47c46ef80a40f10\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\22aa69ee4c13f5a705cbfee648e9de25\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\22aa69ee4c13f5a705cbfee648e9de25\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.7.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\d6b02b7dd424dfbfb6a2919eff83b246\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.media:media:1.7.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\d6b02b7dd424dfbfb6a2919eff83b246\transformed\media-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e97695c58e4be93749625360f35e30ea\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e97695c58e4be93749625360f35e30ea\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\1952e14dc56c5f9021f7675db95c8872\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\1952e14dc56c5f9021f7675db95c8872\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\62e855361208e3cadf0e88c6adf7e61e\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\62e855361208e3cadf0e88c6adf7e61e\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\8abed9b4c3a3b2810f6dd98f7f0c1cdb\transformed\activity-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\8abed9b4c3a3b2810f6dd98f7f0c1cdb\transformed\activity-ktx-1.10.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b2bae31809014b112937794012120667\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\b2bae31809014b112937794012120667\transformed\activity-1.10.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3b4bdb99e19366742d43cd2c6000492c\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3b4bdb99e19366742d43cd2c6000492c\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\8041fb82034ca1180820b7301943bdc0\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\8041fb82034ca1180820b7301943bdc0\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cacc1a59ea02a578336e875011f21314\transformed\lifecycle-livedata-2.9.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cacc1a59ea02a578336e875011f21314\transformed\lifecycle-livedata-2.9.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\73537e39edab060cd0e52eee7d184a84\transformed\savedstate-ktx-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\73537e39edab060cd0e52eee7d184a84\transformed\savedstate-ktx-1.3.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\46379142e7e89adbeb727f8725312105\transformed\savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\46379142e7e89adbeb727f8725312105\transformed\savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f909cd66ae08bc905b9fa785e7ac67c\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f909cd66ae08bc905b9fa785e7ac67c\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\aa3ba61d56bc790860f99fe219cd4672\transformed\lifecycle-viewmodel-2.9.2\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\aa3ba61d56bc790860f99fe219cd4672\transformed\lifecycle-viewmodel-2.9.2\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\215c51551ae373fb8f08dfdea1bfec7a\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\215c51551ae373fb8f08dfdea1bfec7a\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7551d5633602e0f9a7385d2f2ef20cb7\transformed\lifecycle-livedata-core-2.9.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\7551d5633602e0f9a7385d2f2ef20cb7\transformed\lifecycle-livedata-core-2.9.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\f03e89a5a89cd662849d260b330aa0dc\transformed\lifecycle-service-2.9.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\f03e89a5a89cd662849d260b330aa0dc\transformed\lifecycle-service-2.9.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\51d021f9ac406d87d69459b04a79dbd5\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\51d021f9ac406d87d69459b04a79dbd5\transformed\lifecycle-runtime-ktx\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\da44b3302e286eb998f6d287602ad78f\transformed\lifecycle-livedata-core-ktx-2.9.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\da44b3302e286eb998f6d287602ad78f\transformed\lifecycle-livedata-core-ktx-2.9.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\d4baeaea245374230400443d4462ba0c\transformed\lifecycle-viewmodel-ktx-2.9.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\d4baeaea245374230400443d4462ba0c\transformed\lifecycle-viewmodel-ktx-2.9.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9052f1b166b7c6e74b9c5bfd25650898\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\9052f1b166b7c6e74b9c5bfd25650898\transformed\lifecycle-viewmodel-savedstate-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\90c3821438981168c9664abfa646219f\transformed\core-ktx-1.17.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\90c3821438981168c9664abfa646219f\transformed\core-ktx-1.17.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:6:5-44
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:6:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ab55ce9a34378a7be8d5d6bf56e83916\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ab55ce9a34378a7be8d5d6bf56e83916\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e9916e9865f0d04c8888d8821914b7c0\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e9916e9865f0d04c8888d8821914b7c0\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\37e45c8fb702b5ae11683de4cd9059e8\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.6] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\37e45c8fb702b5ae11683de4cd9059e8\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\efa097048853598846dba62d3303c17f\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\efa097048853598846dba62d3303c17f\transformed\tracing-1.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c83e506423223fcc7f86672cdc545fd4\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c83e506423223fcc7f86672cdc545fd4\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\547c803cb14eb66ddfce1d5384a4ba52\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\547c803cb14eb66ddfce1d5384a4ba52\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
+ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:10:9-12:43
+	android:value
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:12:13-40
+	android:name
+		ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:11:13-84
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [androidx.media3:media3-exoplayer:1.10.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\4b35561fd20795b254433edb2c42e499\transformed\media3-exoplayer-1.10.1\AndroidManifest.xml:23:22-65
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:24:9-32:20
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:11:9-19:20
+MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:11:9-19:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:24:9-28:34
+MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:24:9-28:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
+permission#com.playboxpro.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
+uses-permission#com.playboxpro.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:30:17-78
+meta-data#okhttp3.internal.platform.PlatformInitializer
+ADDED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:16:13-18:52
+	android:value
+		ADDED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:18:17-49
+	android:name
+		ADDED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:17:17-77
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92

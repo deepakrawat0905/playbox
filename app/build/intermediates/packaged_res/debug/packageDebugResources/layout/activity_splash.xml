@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Splash matched to STB+ activity_splash:
+    radial gradient filling the window, the brand mark centred in the screen,
+    and a SpinKit ThreeBounce dot loader directly beneath it in light gray.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <!--
+        STB+ centres a 200x160dp box whose square mark fills it, so its dots
+        sit directly under the artwork. Ours is a wide wordmark, so the box
+        hugs the image instead of leaving 90dp of dead space beneath it.
+    -->
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/brand_wordmark" />
+
+    <com.playboxpro.tv.ui.ThreeBounceView
+        android:id="@+id/splashProgress"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/splashLogo"
+        android:layout_centerHorizontal="true"
+        android:elevation="11dp" />
+
+</RelativeLayout>

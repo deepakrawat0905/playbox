@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ remote-key legend chip (round_series) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="13dp" android:height="7dp" />
+    <solid android:color="#FF4CC808" />
+    <corners android:radius="2dp" />
+</shape>

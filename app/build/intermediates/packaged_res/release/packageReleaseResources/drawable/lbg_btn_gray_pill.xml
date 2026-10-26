@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ lbg_btn_gray_pill: the return button's translucent pill -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"><shape><corners android:radius="5dp" /><solid android:color="#6AFDFDFD" /></shape></item>
+    <item android:state_focused="true"><shape><corners android:radius="5dp" /><solid android:color="#FFFFFFFF" /></shape></item>
+    <item><shape><corners android:radius="5dp" /><solid android:color="#27FDFDFD" /></shape></item>
+</selector>

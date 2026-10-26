@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ profile avatar: indigo disc with a pale user silhouette -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="256dp"
+    android:height="256dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path android:pathData="M256,0 A256,256 0 1,1 255.9,0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="200"
+                android:centerY="160"
+                android:gradientRadius="420"
+                android:startColor="#FF5C63C7"
+                android:endColor="#FF3F46B8" />
+        </aapt:attr>
+    </path>
+    <path android:pathData="M256,128 C214,128 180,162 180,204 C180,246 214,280 256,280 C298,280 332,246 332,204 C332,162 298,128 256,128 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="200"
+                android:startY="160"
+                android:endX="320"
+                android:endY="280"
+                android:startColor="#FFC7CCFF"
+                android:endColor="#FF9FA6FF" />
+        </aapt:attr>
+    </path>
+    <path android:pathData="M96,448 C96,360 170,320 256,320 C342,320 416,360 416,448 L384,448 C384,382 328,352 256,352 C184,352 128,382 128,448 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="160"
+                android:startY="320"
+                android:endX="360"
+                android:endY="480"
+                android:startColor="#FFB9BFFF"
+                android:endColor="#FF8F97FF" />
+        </aapt:attr>
+    </path>
+</vector>

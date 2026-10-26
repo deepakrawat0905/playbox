@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ white_thumb: 10dp white dot, with a 20dp halo while the seekbar is focused -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item android:gravity="center"><shape android:shape="oval"><size android:width="20dp" android:height="20dp" /><solid android:color="#40FFFFFF" /></shape></item>
+            <item android:gravity="center"><shape android:shape="oval"><size android:width="10dp" android:height="10dp" /><solid android:color="#FFFFFFFF" /></shape></item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:gravity="center"><shape android:shape="oval"><size android:width="10dp" android:height="10dp" /><solid android:color="#FFFFFFFF" /></shape></item>
+        </layer-list>
+    </item>
+</selector>

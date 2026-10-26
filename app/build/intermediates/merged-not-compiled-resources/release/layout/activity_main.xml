@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Navigation shell matched to the STB+ reference.
+
+    The drawer is hidden entirely until it is opened, so every screen runs
+    full width - there is no permanent icon rail. When opened it slides in
+    over the content at 260dp and closes again as soon as a destination is
+    chosen.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <!-- Content host: always full width -->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Scrim behind the open drawer -->
+    <View
+        android:id="@+id/drawerScrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:elevation="12dp"
+        android:visibility="gone" />
+
+    <!-- ============================================================
+         Navigation drawer
+         ============================================================ -->
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="@dimen/sidebar_width_open"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_side"
+        android:elevation="16dp"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        android:visibility="gone">
+
+        <!-- Brand header -->
+        <LinearLayout
+            android:id="@+id/brandHeader"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp">
+
+            <ImageView
+                android:id="@+id/brandText"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/brand_wordmark" />
+        </LinearLayout>
+
+        <!-- Navigation items -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/navItemsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

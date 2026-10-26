@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ series_selector: the focused poster gets a 2dp yellow outline with
+     7dp corners and nothing else - no fill, no zoom. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="7dp" />
+    <stroke android:width="2dp" android:color="@color/yellow" />
+    <solid android:color="@android:color/transparent" />
+</shape>

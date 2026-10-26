@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingStart="@dimen/safe_x"
+    android:paddingEnd="@dimen/safe_x"
+    android:paddingTop="20dp"
+    android:paddingBottom="36dp"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- Top Header Bar (1:1 React Header) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <!-- Title & Subtitle Block -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greetingTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good afternoon"
+                    android:textColor="@color/text"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/robotomedium" />
+
+                <TextView
+                    android:id="@+id/greetingSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Browse"
+                    android:textColor="@color/text_muted"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- Meta Badges & Clock -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Active Playlist Badge -->
+                <TextView
+                    android:id="@+id/playlistBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="@color/surface_2"
+                    android:textColor="@color/text"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginEnd="12dp" />
+
+                <!-- Subscription Badge -->
+                <TextView
+                    android:id="@+id/licenseBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="#26FBBF24"
+                    android:textColor="@color/warning"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/robotomedium"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Live Clock -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/clockTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/robotomedium" />
+
+                    <TextView
+                        android:id="@+id/clockDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_muted"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Featured Hero Banner Container -->
+        <FrameLayout
+            android:id="@+id/heroBannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Vertical Container for Content Rows -->
+        <LinearLayout
+            android:id="@+id/homeRowsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+    </LinearLayout>
+</ScrollView>

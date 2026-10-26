@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Channel row, matched to STB+ item_live_stream attribute for attribute:
+    42dp tall; number (15sp) at 10dp; favourite star 12dp at 10dp; logo
+    20x12dp at 11dp; catch-up marker 12dp at 10dp; title 15sp Roboto Light
+    at 11dp, marquee, max 250dp; play marker 12dp at 10dp after the title;
+    hairline divider along the bottom. The row under the remote fills solid
+    white and its text turns black; nothing else is ever lit.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/channelRowRoot"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:layout_marginEnd="4dp"
+    android:background="@drawable/bg_category_row"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/channel_number_color"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chFavoriteStar"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_star_filled"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/yellow" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/chLogo"
+        android:layout_width="20dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="11dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chFavoriteStar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/chArchive"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_autoplay"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:duplicateParentState="true"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/robotolight"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxWidth="250dp"
+        android:paddingBottom="1dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textColor="@color/rail_text_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chArchive"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/chPlaying"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_play_marker"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/divider_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

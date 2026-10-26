@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Live TV matched to STB+ fragment_live.
+
+    Header band above a 12% guideline carries the Menu pill, the profile name
+    over the channel column and the total-channel count. Below it three
+    columns at STB+'s widths: categories 26%, channels 38%, info panel 33%.
+    The info panel holds the clock, the preview surface, then the programme
+    title, times, progress bar and description.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/liveRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <!-- ============================================================
+         Header band
+         ============================================================ -->
+    <LinearLayout
+        android:id="@+id/menuPill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:src="@drawable/ic_menu_lines"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:duplicateParentState="true"
+            android:fontFamily="@font/robotolight"
+            android:text="Menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+
+    <!-- Profile name, sitting over the channel column -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="13dp"
+        android:src="@drawable/ic_user"
+        app:layout_constraintBottom_toBottomOf="@id/playlistBadge"
+        app:layout_constraintEnd_toStartOf="@id/playlistBadge"
+        app:layout_constraintTop_toTopOf="@id/playlistBadge"
+        app:tint="@color/light_gray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/playlistBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:fontFamily="@font/robotolight"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@id/menuPill"
+        app:layout_constraintStart_toEndOf="@id/liveCategoriesRecycler"
+        app:layout_constraintTop_toTopOf="@id/menuPill" />
+
+    <!-- Total channel count, right-aligned over the channel column -->
+    <ImageView
+        android:id="@+id/categoryIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_nav_livetv"
+        app:layout_constraintBottom_toBottomOf="@id/liveSubtitle"
+        app:layout_constraintEnd_toStartOf="@id/liveSubtitle"
+        app:layout_constraintTop_toTopOf="@id/liveSubtitle"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/liveSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/robotolight"
+        android:text="Total Channels: 0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBottom_toBottomOf="@id/playlistBadge"
+        app:layout_constraintEnd_toEndOf="@id/liveChannelsRecycler"
+        app:layout_constraintTop_toTopOf="@id/playlistBadge" />
+
+    <!-- Bound by the fragment but not part of the STB+ header -->
+    <TextView
+        android:id="@+id/liveTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/licenseBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ============================================================
+         Categories - 26%
+         ============================================================ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/liveCategoriesRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:nextFocusRight="@id/liveChannelsRecycler"
+        android:paddingStart="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        app:layout_constraintWidth_percent="0.26" />
+
+    <!-- ============================================================
+         Channels - 38%
+         ============================================================ -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/liveChannelsRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:nextFocusLeft="@id/liveCategoriesRecycler"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/liveCategoriesRecycler"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:layout_constraintWidth_percent="0.38" />
+
+    <!-- Empty favourites state -->
+    <LinearLayout
+        android:id="@+id/layoutEmptyFavorites"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/liveCategoriesRecycler"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:layout_constraintWidth_percent="0.38">
+
+        <ImageView
+            android:id="@+id/emptyIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_star_filled"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emptyTitle"
+            android:fontFamily="@font/robotoregular"
+            android:text="No favorite channels found"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/robotolight"
+            android:id="@+id/emptyHint"
+            android:gravity="center"
+            android:text="Long press a TV channel to add to favorites"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+    <!-- ============================================================
+         Info panel - 33%
+         ============================================================ -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rightInfo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/background_side"
+        app:layout_constraintStart_toEndOf="@id/liveChannelsRecycler"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.33">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVideoTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVideoBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <!-- Clock -->
+        <ImageView
+            android:id="@+id/clockImg"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_timer"
+            app:layout_constraintBottom_toBottomOf="@id/clockTime"
+            app:layout_constraintEnd_toStartOf="@id/clockTime"
+            app:layout_constraintTop_toTopOf="@id/clockTime"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/clockTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/robotolight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/clockDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Preview surface -->
+        <View
+            android:id="@+id/videoBlackBackground"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/guidelineVideoBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelineVideoTop" />
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/livePreviewPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toTopOf="@id/guidelineVideoBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelineVideoTop"
+            app:surface_type="surface_view"
+            app:use_controller="false" />
+
+        <!--
+            Covers the surface between channels. A SurfaceView keeps the last
+            frame of the previous stream until the next one renders, which
+            read as two channels overlapping while flicking through the list.
+        -->
+        <View
+            android:id="@+id/previewShutter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/livePreviewPlayer"
+            app:layout_constraintEnd_toEndOf="@id/livePreviewPlayer"
+            app:layout_constraintStart_toStartOf="@id/livePreviewPlayer"
+            app:layout_constraintTop_toTopOf="@id/livePreviewPlayer" />
+
+        <View
+            android:id="@+id/previewClickOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/bg_focus"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@id/guidelineVideoBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelineVideoTop" />
+
+        <!-- Offline notice over the surface -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/previewError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#B3000000"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Stream Offline"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/livePreviewPlayer"
+            app:layout_constraintEnd_toEndOf="@id/livePreviewPlayer"
+            app:layout_constraintStart_toStartOf="@id/livePreviewPlayer"
+            app:layout_constraintTop_toTopOf="@id/livePreviewPlayer" />
+
+        <!-- Channel name strip along the bottom of the surface -->
+        <TextView
+            android:id="@+id/previewOverlayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="#63000000"
+            android:ellipsize="end"
+            android:fontFamily="@font/robotoregular"
+            android:gravity="end"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintBottom_toTopOf="@id/guidelineVideoBottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Programme title -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/previewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/robotoregular"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="7dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="7dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvStartTime"
+            app:layout_constraintTop_toBottomOf="@id/guidelineVideoBottom" />
+
+        <!-- Times -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/robotolight"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/previewName" />
+
+        <TextView
+            android:id="@+id/tvTimeSeparator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" -"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintStart_toEndOf="@id/tvStartTime"
+            app:layout_constraintTop_toTopOf="@id/tvEndTime" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:fontFamily="@font/robotolight"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/tvStartTime"
+            app:layout_constraintStart_toEndOf="@id/tvTimeSeparator" />
+
+        <!-- Right-aligned programme label -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/previewCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/robotolight"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@id/tvEndTime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvEndTime" />
+
+        <!-- Programme progress -->
+        <ProgressBar
+            android:id="@+id/epgProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:max="100"
+            android:progressDrawable="@drawable/rounded_white_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvStartTime" />
+
+        <!-- Description -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/epgGuideInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.8"
+            android:fontFamily="@font/robotolight"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="3"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvStartTime"
+            app:layout_constraintTop_toBottomOf="@id/epgProgress" />
+
+        <!-- Bound by the fragment; STB+ shows no logo or buttons here -->
+        <ImageView
+            android:id="@+id/previewLogo"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLivePlay"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLiveFavorite"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLiveGuide"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Search: Menu top-left, the search bar centred with the profile / clock
+    card on the right, three tabs (Live, Series, Movies) carrying their
+    counts, and the results as rows of tiles that scroll sideways.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_side"
+    android:fitsSystemWindows="true">
+
+    <!-- Menu -->
+    <LinearLayout
+        android:id="@+id/menuPill"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/bg_search2_menu"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/searchBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchBox">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_menu_lines"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:text="Menu"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- Search bar -->
+    <FrameLayout
+        android:id="@+id/searchBox"
+        android:layout_width="520dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="26dp"
+        android:addStatesFromChildren="true"
+        android:background="@drawable/bg_search2_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="18dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_glass_search"
+            app:tint="#B3FFFFFF" />
+
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fontFamily="@font/robotoregular"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingStart="52dp"
+            android:paddingEnd="16dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="#99FFFFFF"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <!-- Profile name + clock -->
+    <LinearLayout
+        android:id="@+id/searchClockCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_search2_clock"
+        android:gravity="end"
+        android:minWidth="150dp"
+        android:orientation="vertical"
+        android:paddingStart="18dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchBox">
+
+        <TextView
+            android:id="@+id/searchProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/robotolight"
+            android:maxWidth="160dp"
+            android:maxLines="1"
+            android:textColor="#CCFFFFFF"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/searchClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Tabs -->
+    <LinearLayout
+        android:id="@+id/llCategories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBox">
+
+        <TextView
+            android:id="@+id/btnSearchLive"
+            style="@style/SearchTab"
+            android:text="Live"
+            app:drawableStartCompat="@drawable/ic_glass_tv" />
+
+        <TextView
+            android:id="@+id/btnSearchSeries"
+            style="@style/SearchTab"
+            android:text="Series"
+            app:drawableStartCompat="@drawable/ic_nav_tvseries" />
+
+        <TextView
+            android:id="@+id/btnSearchMovies"
+            style="@style/SearchTab"
+            android:text="Movies"
+            app:drawableStartCompat="@drawable/ic_glass_movies" />
+
+        <!-- Sort order for all three result lists -->
+        <ImageView
+            android:id="@+id/btnSearchSort"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_search2_tab"
+            android:clickable="true"
+            android:contentDescription="Sort"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_sort_lines"
+            app:tint="#E6FFFFFF" />
+    </LinearLayout>
+
+    <!-- Results -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRows"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llCategories" />
+
+    <!-- No results -->
+    <LinearLayout
+        android:id="@+id/searchNoResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llCategories">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_info"
+            app:tint="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/searchResultsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:text="No results found"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

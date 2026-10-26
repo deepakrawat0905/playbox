@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Settings tile. Focus lifts the panel a shade rather than filling it
+    white, so the orange icon and label stay legible.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/bg_card_hover" />
+            <stroke android:width="1dp" android:color="#33FFA500" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/rounded_main_background" />
+</selector>

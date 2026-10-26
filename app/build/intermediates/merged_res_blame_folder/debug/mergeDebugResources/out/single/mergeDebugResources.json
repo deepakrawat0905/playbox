@@ -1,0 +1,1210 @@
+[
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_setting_tile_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\setting_tile_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\font_robotolight.ttf.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\font\\robotolight.ttf"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_palette.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_palette.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_btn_text_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\btn_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_category_rail.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_category_rail.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_terms.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_terms.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxhdpi_bg_poster_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxhdpi\\bg_poster_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_glass_btn.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_glass_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_sort_lines.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_sort_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_pin_dialog.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\pin_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_autoplay.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_autoplay.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-mdpi_stb_icon_user.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-mdpi\\stb_icon_user.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_hero_gradient.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_hero_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_star_filled.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_star_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_channel.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_link.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_link.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\font_robotomedium.ttf.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\font\\robotomedium.ttf"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_terms_button.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_terms_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-anydpi-v24_stb_icon_user.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-anydpi-v24\\stb_icon_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_channel_number_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\channel_number_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxhdpi_stb_icon_user.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxhdpi\\stb_icon_user.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_pause.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_btn_dark_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_btn_dark_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_glass_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_glass_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_glass_panel.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_glass_panel.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_terms_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_terms_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search_circle.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_detail_btn.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_detail_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_nested_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_nested_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_live.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_tvseries.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_tvseries.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_dialog_selection.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_dialog_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_edit.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_episode_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_episode_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_external.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_external.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_white_thumb.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\white_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_detail_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_detail_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_osd_control.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_osd_control.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_chip_live.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\chip_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_settings.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_round_corner_series_info.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\round_corner_series_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxhdpi_stb_ic_live_badge.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxhdpi\\stb_ic_live_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_epg_guide.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_epg_guide.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_subtitles.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_subtitles.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_tile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_arrow.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_badge_background.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\badge_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\font_robotoblack.ttf.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\font\\robotoblack.ttf"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_tab.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_trailer.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_trailer.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_menu_lines.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_menu_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_terms_link.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_terms_link.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_home.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_simple.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxxhdpi_stb_icon_user.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxxhdpi\\stb_icon_user.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_subtitles.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_subtitles.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_row_text_muted_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\row_text_muted_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_channel_row.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_account_info.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_account_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_heart_filled.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_heart_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_detail_tab_text.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\detail_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-nodpi_backdrop_fallback.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-nodpi\\backdrop_fallback.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_row_icon_tint.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\row_icon_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_sort_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_sort_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_art_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_art_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_qsmart_confirm.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_qsmart_confirm.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_menu_item_color_state.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\menu_item_color_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_card_live_stream.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\card_live_stream.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_series.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_series.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_audiotrack.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_audiotrack.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xhdpi_stb_icon_user.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xhdpi\\stb_icon_user.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_home.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_livetv.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_livetv.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-hdpi_stb_ic_live_badge.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-hdpi\\stb_ic_live_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_rounded_white_progress.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\rounded_white_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_terms_warning.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_terms_warning.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_hide_vod.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_hide_vod.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_card_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_card_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_url.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_url.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_glass_round.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_glass_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_playlist.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_playlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_progress_glass.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\progress_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_legal_doc.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_legal_doc.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_channel_tile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_fast_forward.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_fast_forward.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_live_player.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_live_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_continue_watching.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_continue_watching.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_update.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_search_tile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_fast_rewind.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_fast_rewind.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_live.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_profile_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\profile_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_background_side.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\background_side.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-hdpi_bg_backdrop_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-hdpi\\bg_backdrop_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-nodpi_app_icon.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-nodpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_catalog.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_catalog.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxxhdpi_bg_poster_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxxhdpi\\bg_poster_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_glass_badge.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_glass_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-nodpi_app_logo.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-nodpi\\app_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_panel.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_panel.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_detail_tab.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_detail_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_player.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_cast.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_cast.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_setting_tile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_setting_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_favorite.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_volume.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_volume.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_selector_dialog_text.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\selector_dialog_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_nav_item.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_nav_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_person.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_pause.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_active.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_active.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xhdpi_bg_poster_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xhdpi\\bg_poster_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_foreground_black.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\foreground_black.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search_box.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_star_white.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_star_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_ext_player.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_ext_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search_field.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-hdpi_bg_poster_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-hdpi\\bg_poster_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_setting.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_movies.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_movies.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_activation.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_activation.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_profile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_detail_btn_primary.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_detail_btn_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_divider_line.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\divider_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_prev.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_prev.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-mdpi_bg_backdrop_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-mdpi\\bg_backdrop_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_profile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_continue.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_continue.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_network.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_network.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_movie_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_movie_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_terms_icon.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_terms_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_detail_btn_text.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\detail_btn_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_badge.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search_page_field.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search_page_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_expire.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_expire.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_count_text_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\count_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-ldpi_bg_backdrop_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-ldpi\\bg_backdrop_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_movies.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_movies.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_detail.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_autoplay_black.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_autoplay_black.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-debug-47:/layout_fragment_player.xml.flat",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_circular_progress.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\circular_progress.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_badge_rating.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\badge_rating.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_layout_home_row.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\layout_home_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_cc.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_cc.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_wide_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_wide_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_menu.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_detail_info.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_detail_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_play_white.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_play_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_epg_date.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_epg_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_multiselection.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_multiselection.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-nodpi_ic_play_marker.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-nodpi\\ic_play_marker.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_round_corner_series_info_gray.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\round_corner_series_info_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_poster_gloss_border.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\poster_gloss_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_hide_series.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_hide_series.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-nodpi_poster_fallback.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-nodpi\\poster_fallback.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_series_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\series_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_background_main.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\background_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-mdpi_stb_ic_live_badge.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-mdpi\\stb_ic_live_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_refresh.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_button_primary.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_button_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-anydpi-v24_stb_ic_live_badge.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-anydpi-v24\\stb_ic_live_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_cache.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_cache.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_pause.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_pause.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_glass_icon_tint.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\glass_icon_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_language.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_language.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_more.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_more.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_update.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_rail_text_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\rail_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search_tab.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_return.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_return.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_foreground_black_horizental.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\foreground_black_horizental.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_check.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_progress_bar.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_time.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_hero_banner.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_hero_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_rounded_main_background.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\rounded_main_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_selection.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_season.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_season.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-ldpi_stb_ic_live_badge.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-ldpi\\stb_ic_live_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_star.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_star.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_baseline_keyboard_arrow_down.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_baseline_keyboard_arrow_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\font_roboto_thin.ttf.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\font\\roboto_thin.ttf"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_glass_scrim.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_glass_scrim.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_category_row.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_category_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_tv.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_tv.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_recent.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_recent.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-ldpi_bg_poster_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-ldpi\\bg_poster_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_rewind.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_rewind.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_section_row.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_section_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_round_corner_meta_info.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_round_corner_meta_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_media.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_subtitles.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_subtitles.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_epg_programme.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_epg_programme.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xhdpi_tv_banner.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-xhdpi\\tv_banner.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_format.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_format.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_replay_30.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_replay_30.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_movies.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_movies.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_forward.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_forward.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_play.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_film.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_film.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-hdpi_stb_icon_user.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-hdpi\\stb_icon_user.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_icon_user_default.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_icon_user_default.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_btn_light_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_btn_light_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_rounded_main_vertical.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\rounded_main_vertical.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_pin_box.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_pin_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_play.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-ldpi_stb_icon_user.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-ldpi\\stb_icon_user.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-mdpi_bg_poster_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-mdpi\\bg_poster_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xhdpi_stb_ic_live_badge.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xhdpi\\stb_ic_live_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_info.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_settings.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_timer.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_timer.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_row_text_color.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\row_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_dialog_credits.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_credits.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_fg_search2_tile.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\fg_search2_tile.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_category_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_category_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_thumb_glass.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\thumb_glass.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xhdpi_bg_backdrop_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xhdpi\\bg_backdrop_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_user.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxhdpi_bg_backdrop_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxhdpi\\bg_backdrop_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_accent.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_accent.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_search.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_detail_scrim_left.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\detail_scrim_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_lbg_btn_gray_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\lbg_btn_gray_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_calendar.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_play_arrow.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_play_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_channel_placeholder.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_channel_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_heart_outline.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_heart_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_clock.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_clock.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_movie_card_small.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_movie_card_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_aspect_ratio.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_aspect_ratio.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_exit.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_next.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\font_robotobold.ttf.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\font\\robotobold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_detail_scrim_bottom.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\detail_scrim_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_attribution.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_attribution.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_tile_scrim.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_tile_scrim.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_chevron_left.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_chevron_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_search.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_guide.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_guide.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_guide.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_guide.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_device.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_chip_movie.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\chip_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxxhdpi_bg_backdrop_placeholder.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxxhdpi\\bg_backdrop_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_recently_watched.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_recently_watched.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_search_row.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bullet_dot.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bullet_dot.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_series.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_series.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_shield.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_shield.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_forward_30.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_forward_30.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_info_item.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_info_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_search2_field.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_search2_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\font_robotoregular.ttf.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\font\\robotoregular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-anydpi-v24_bg_poster_placeholder.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-anydpi-v24\\bg_poster_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_row_selector.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_row_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_chip_series.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\chip_series.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_btn_white_pill.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_btn_white_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_focus.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_focus.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_continue.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_continue.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_stb_ic_audiotrack.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\stb_ic_audiotrack.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_setting_hide_live.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_setting_hide_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_tv_banner.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\tv_banner.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_round_corner_epg.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\round_corner_epg.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-xxxhdpi_stb_ic_live_badge.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxxhdpi\\stb_ic_live_badge.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_favorite.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_fragment_live_player.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_live_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_bg_button_secondary.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_button_secondary.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_glass_live.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_glass_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_qr_card_bg.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\qr_card_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\color_icon_tint_state.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\color\\icon_tint_state.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_nav_live.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_nav_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\layout_item_search_movie_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_movie_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-nodpi_brand_wordmark.png.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable-nodpi\\brand_wordmark.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable-anydpi-v24_bg_backdrop_placeholder.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-anydpi-v24\\bg_backdrop_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-debug-47:\\drawable_ic_recent.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\ic_recent.xml"
+    }
+]

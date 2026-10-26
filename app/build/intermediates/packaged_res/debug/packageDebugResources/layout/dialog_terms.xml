@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Legal terms shown before first use: what the app is, the lawful uses it
+    is for, the copyright warning, links to the full Terms and Privacy
+    Policy, and the Accept button. Nothing else in the app is reachable
+    until it is accepted.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6081226">
+
+    <LinearLayout
+        android:layout_width="780dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_terms_card"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="26dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="26dp"
+            android:paddingBottom="14dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_terms_icon"
+                android:contentDescription="@null"
+                android:padding="8dp"
+                android:src="@drawable/ic_legal_doc"
+                android:tint="#E6FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/robotobold"
+                android:textStyle="bold"
+                android:text="Welcome to Pro Play Box"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#335A8FE0" />
+
+        <ScrollView
+            android:id="@+id/termsScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:focusable="false"
+            android:scrollbarThumbVertical="@android:color/darker_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="26dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="26dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    style="@style/TermsBody"
+                    android:text="Pro Play Box is a media player. It sells no channels, supplies no playlists and includes no content of its own — you bring your own line. Our products and services are for legal use only. By using this app you confirm you understand and agree that you may use them only for purposes such as:" />
+
+                <TextView style="@style/TermsBullet" android:text="Streaming your own personal media (playlists, home video, your own library)." />
+                <TextView style="@style/TermsBullet" android:text="Watching content from official, licensed providers — broadcasters and VOD services you subscribe to." />
+                <TextView style="@style/TermsBullet" android:text="Managing internal or private streams for a business, an institution or a live event." />
+                <TextView style="@style/TermsBullet" android:text="Using legally available free-to-air public streams." />
+                <TextView style="@style/TermsBullet" android:text="Software development and testing." />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_terms_warning"
+                    android:fontFamily="@font/robotobold"
+                    android:lineSpacingExtra="2dp"
+                    android:paddingStart="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="10dp"
+                    android:text="You agree that you will not use our services for unauthorised streaming of copyrighted content. You are solely responsible for ensuring your use complies with all applicable laws and copyrights."
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <!-- Footer with the two documents as links -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TermsFooter"
+                        android:text="By clicking Accept you agree to our " />
+
+                    <TextView
+                        android:id="@+id/termsLinkTerms"
+                        style="@style/TermsLink"
+                        android:text="Terms &amp; Conditions" />
+
+                    <TextView
+                        style="@style/TermsFooter"
+                        android:text=" and " />
+
+                    <TextView
+                        android:id="@+id/termsLinkPrivacy"
+                        style="@style/TermsLink"
+                        android:text="Privacy Policy" />
+
+                    <TextView
+                        style="@style/TermsFooter"
+                        android:text="," />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TermsFooter"
+                    android:text="and confirm you will use this app and our products legally." />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#335A8FE0" />
+
+        <TextView
+            android:id="@+id/btnAcceptTerms"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_terms_button"
+            android:fontFamily="@font/robotomedium"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:text="Accept legal terms"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</FrameLayout>
