@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Activation screen matched to STB+ subscription_dialog attribute for
+    attribute: 180x80 brand top-left, "Link your device to continue" 13sp
+    centred beneath it, then two columns split by a vertical rule with "OR" -
+    an 80dp QR card on the left, the numbered website steps with the MAC
+    and App Key in yellow on the right - followed by the 05:00 refresh
+    countdown, the update note and the standalone-player disclaimer, all in
+    the same 11-13sp sizes and white alphas. STB+ shows this as a
+    full-window dialog whose content sits at the top of the page.
+
+    Once the licensing API reports assigned playlists this view is swapped
+    for the profile picker below it.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activationRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:fitsSystemWindows="true">
+
+    <!-- ============================================================
+         STATE 1: device activation - STB+ subscription_dialog
+         ============================================================ -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/brandBlock"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/brand_wordmark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvActivationHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotolight"
+            android:maxLines="1"
+            android:text="Link your device to continue"
+            android:textColor="#BFFFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/brandBlock" />
+
+        <!-- LEFT: QR code -->
+        <LinearLayout
+            android:id="@+id/leftContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/orText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvActivationHeadline">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Scan QR code"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/qr_card_bg"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgQrCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:lineHeight="18dp"
+                android:text="To add a playlist or activate your device, scan the QR code above with your phone camera"
+                android:textColor="#BFFFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Vertical rule with OR -->
+        <View
+            android:id="@+id/orLineTop"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:background="#40FFFFFF"
+            app:layout_constraintBottom_toTopOf="@id/orText"
+            app:layout_constraintEnd_toEndOf="@id/orText"
+            app:layout_constraintStart_toStartOf="@id/orText"
+            app:layout_constraintTop_toTopOf="@id/leftContainer" />
+
+        <TextView
+            android:id="@+id/orText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotoregular"
+            android:text="OR"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/leftContainer"
+            app:layout_constraintEnd_toStartOf="@id/rightContainer"
+            app:layout_constraintStart_toEndOf="@id/leftContainer"
+            app:layout_constraintTop_toTopOf="@id/leftContainer" />
+
+        <View
+            android:id="@+id/orLineBottom"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="#40FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/leftContainer"
+            app:layout_constraintEnd_toEndOf="@id/orText"
+            app:layout_constraintStart_toStartOf="@id/orText"
+            app:layout_constraintTop_toBottomOf="@id/orText" />
+
+        <!-- RIGHT: website steps -->
+        <LinearLayout
+            android:id="@+id/rightContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orText"
+            app:layout_constraintTop_toBottomOf="@id/tvActivationHeadline">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit website"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="1. On your phone or computer, navigate to :"
+                android:textColor="#BFFFFFFF"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tvActivationSite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2. click the green manage playlists button"
+                android:textColor="#BFFFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="3. When asked, enter the MAC and Appkey"
+                android:textColor="#BFFFFFFF"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/macValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:letterSpacing="0.1"
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deviceKeyValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/yellow"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Refresh countdown -->
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="05:00"
+            android:textColor="#80FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/leftContainer" />
+
+        <!-- Update note / server message -->
+        <TextView
+            android:id="@+id/activationStatusBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="The page may take a few seconds to update after you have completed the steps on your device ..."
+            android:textColor="#80FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCountdown" />
+
+        <!-- Disclaimer -->
+        <TextView
+            android:id="@+id/deviceFoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:text="NB Pro Play Box is a standalone media player application. We do not provide, host, or promote any media content. Users are responsible for their own content !"
+            android:textColor="#80FFFFFF"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activationStatusBanner" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ============================================================
+         STATE 2: profile picker, shown once playlists are assigned
+         ============================================================ -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!-- STB+ fragment_playlist: "Menu" hint 20dp in from the top-left -->
+        <ImageView
+            android:id="@+id/profileMenuIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_menu_lines"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/robotolight"
+            android:text="Menu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            app:layout_constraintBottom_toBottomOf="@id/profileMenuIcon"
+            app:layout_constraintStart_toEndOf="@id/profileMenuIcon"
+            app:layout_constraintTop_toTopOf="@id/profileMenuIcon" />
+
+        <ImageView
+            android:id="@+id/profileBrand"
+            android:layout_width="340dp"
+            android:layout_height="@dimen/login_logo_h"
+            android:contentDescription="@null"
+            android:src="@drawable/brand_wordmark"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@id/tvHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/headerIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/stb_icon_user_default"
+            app:layout_constraintBottom_toBottomOf="@id/tvHeader"
+            app:layout_constraintEnd_toStartOf="@id/tvHeader"
+            app:layout_constraintTop_toTopOf="@id/tvHeader"
+            app:tint="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/robotolight"
+            android:text="Select a profile"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toTopOf="@id/rvPlaylist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileBrand" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/profile_rail_h"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="40dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="40dp"
+            android:paddingBottom="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@id/layoutFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeader"
+            app:layout_constraintVertical_bias="0.95" />
+
+        <LinearLayout
+            android:id="@+id/layoutFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/bg_info_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <FrameLayout
+                android:layout_width="@dimen/qr_card"
+                android:layout_height="@dimen/qr_card"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/qr_card_bg"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/imgQrCodeSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Scan the QR code or navigate to proplaybox.com to manage playlists"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/sp_13" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Device MAC : "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/footMacValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="App Key : "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_13" />
+
+                    <TextView
+                        android:id="@+id/footAppKeyValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/yellow"
+                        android:textSize="@dimen/sp_13" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ============================================================
+         Connect progress / failure.
+         Loading a playlist can take many seconds and can fail, and the
+         activation banner is hidden in the profile state, so connection
+         feedback needs its own surface that covers both states.
+         ============================================================ -->
+    <FrameLayout
+        android:id="@+id/connectingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DD05070D"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ProgressBar
+                android:id="@+id/connectingSpinner"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:indeterminateTint="@color/yellow" />
+
+            <TextView
+                android:id="@+id/connectingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotolight"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16" />
+
+            <Button
+                android:id="@+id/btnConnectDismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_btn_light_pill"
+                android:fontFamily="@font/robotomedium"
+                android:minWidth="220dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:stateListAnimator="@null"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_text_color"
+                android:textSize="@dimen/sp_16"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Account Info overlay host -->
+    <FrameLayout
+        android:id="@+id/accountInfoHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</FrameLayout>

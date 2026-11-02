@@ -592,6 +592,10 @@
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-appcompat-1.7.1-17:\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable_bg_notice_button.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_notice_button.xml"
+    },
+    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable_ic_mtrl_chip_checked_black.xml.flat",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-material-1.13.0-23:\\drawable\\ic_mtrl_chip_checked_black.xml"
     },
@@ -1672,6 +1676,10 @@
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-pngs-43:\\drawable-xxhdpi\\stb_icon_user.png"
     },
     {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable_bg_notice_divider.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_notice_divider.xml"
+    },
+    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-appcompat-1.7.1-17:\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -1940,6 +1948,10 @@
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-appcompat-1.7.1-17:\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "com.playboxpro.tv.app-release-48:/layout_fragment_activation.xml.flat",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_activation.xml"
+    },
+    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\anim_abc_tooltip_enter.xml.flat",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-appcompat-1.7.1-17:\\anim\\abc_tooltip_enter.xml"
     },
@@ -1978,10 +1990,6 @@
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\color_material_on_surface_disabled.xml.flat",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-material-1.13.0-23:\\color\\material_on_surface_disabled.xml"
-    },
-    {
-        "merged": "com.playboxpro.tv.app-release-48:/layout_fragment_player.xml.flat",
-        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_player.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable-anydpi-v21_exo_icon_play.xml.flat",
@@ -3254,6 +3262,10 @@
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\color_m3_radiobutton_ripple_tint.xml.flat",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-material-1.13.0-23:\\color\\m3_radiobutton_ripple_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\layout_dialog_notice.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_notice.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable_stb_ic_subtitles.xml.flat",
@@ -5038,6 +5050,10 @@
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable-hdpi-v4_exo_icon_circular_play.png.flat",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-media3-ui-1.10.1-28:\\drawable-hdpi-v4\\exo_icon_circular_play.png"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable_bg_notice_card.xml.flat",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\drawable\\bg_notice_card.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-release-48:\\drawable_foreground_black.xml.flat",

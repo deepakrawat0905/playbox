@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Subscription / playlist notices: a title, the message, the device
+    details (website, MAC, device key), an optional note, and one or two
+    buttons. Used for "expires soon" reminders and "expired" notices.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_notice_card"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingTop="18dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/noticeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/robotomedium"
+            android:gravity="center"
+            android:text="Notification"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_notice_divider" />
+
+        <TextView
+            android:id="@+id/noticeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/robotoregular"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/robotomedium"
+            android:text="Details:"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/noticeUrl"
+            style="@style/NoticeDetail" />
+
+        <TextView
+            android:id="@+id/noticeMac"
+            style="@style/NoticeDetail" />
+
+        <TextView
+            android:id="@+id/noticeKey"
+            style="@style/NoticeDetail" />
+
+        <View
+            android:id="@+id/noticeNoteDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_notice_divider" />
+
+        <TextView
+            android:id="@+id/noticeNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotoregular"
+            android:textColor="#D9FFFFFF"
+            android:textSize="12.5sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/noticeSecondary"
+                style="@style/NoticeButton"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/noticePrimary"
+                style="@style/NoticeButton"
+                android:text="Dismiss" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

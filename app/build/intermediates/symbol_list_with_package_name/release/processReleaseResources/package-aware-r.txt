@@ -3784,6 +3784,9 @@ drawable bg_glass_scrim
 drawable bg_hero_gradient
 drawable bg_info_item
 drawable bg_nav_item
+drawable bg_notice_button
+drawable bg_notice_card
+drawable bg_notice_divider
 drawable bg_osd_control
 drawable bg_panel
 drawable bg_pill
@@ -4841,6 +4844,15 @@ id noState
 id none
 id normal
 id north
+id noticeKey
+id noticeMac
+id noticeMessage
+id noticeNote
+id noticeNoteDivider
+id noticePrimary
+id noticeSecondary
+id noticeTitle
+id noticeUrl
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -5342,6 +5354,7 @@ layout dialog_credits
 layout dialog_detail_info
 layout dialog_epg_guide
 layout dialog_multiselection
+layout dialog_notice
 layout dialog_qsmart_confirm
 layout dialog_selection
 layout dialog_terms
@@ -6108,6 +6121,8 @@ style Motion_Material3_Spring_Standard_Fast_Spatial
 style Motion_Material3_Spring_Standard_Slow_Effects
 style Motion_Material3_Spring_Standard_Slow_Spatial
 style NavigationDrawerStyle
+style NoticeButton
+style NoticeDetail
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

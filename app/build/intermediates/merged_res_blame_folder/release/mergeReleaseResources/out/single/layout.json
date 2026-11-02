@@ -20,10 +20,6 @@
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_row.xml"
     },
     {
-        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_player.xml",
-        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_player.xml"
-    },
-    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_live_player.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_live_player.xml"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_section_row.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_section_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_notice.xml",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_notice.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_epg_guide.xml",
@@ -106,6 +106,10 @@
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_settings.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_activation.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_activation.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_search_movie_card.xml",

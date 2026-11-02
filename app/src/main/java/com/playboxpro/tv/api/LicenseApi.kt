@@ -4,81 +4,98 @@ import android.content.Context
 import com.playboxpro.tv.model.*
 import org.json.JSONArray
 import org.json.JSONObject
+import okhttp3.MediaType.Companion.toMediaType
 import java.security.MessageDigest
 
 object LicenseApi {
-    private const val BASE = "https://playboxapi.icodexa.com/api"
+    private const val BASE = "https://api.proplaybox.com/api"
 
+    /**
+     * This device's MAC address: permanent for the device.
+     *
+     * It is calculated from identifiers the device itself provides, never
+     * from anything random, so it comes out the same every time - after a
+     * restart, an app update, and also after uninstalling and reinstalling:
+     *  - the Widevine DRM device ID (fixed per device, kept even through a
+     *    factory reset), or where a device has no Widevine,
+     *  - the Android ID (fixed per device; reset only by a factory reset).
+     * SHA-256 of that, first 10 hex characters, behind the locally
+     * administered prefix 02: (02:XX:XX:XX:XX:XX). The hardware MAC is never
+     * read (Android returns 02:00:00:00:00:00). The result is also kept in
+     * encrypted storage.
+     */
+    @Synchronized
     fun deviceMac(context: Context? = null): String {
         installIdNow = installId(context).ifBlank { installIdNow }
-        val prefs = context?.getSharedPreferences("playbox_tv_prefs", Context.MODE_PRIVATE)
-        val saved = prefs?.getString("device_mac", null)
-        // A saved MAC is kept unless it came from an older scheme: the
-        // firmware-name fallback that gave every device on the same firmware
-        // one MAC, or the Android-ID-only one that cloned boxes can share.
-        val current = prefs?.getInt("device_mac_scheme", 0) == MAC_SCHEME
-        if (!saved.isNullOrBlank() && current && saved !in sharedMacs()) return saved
+        cachedMac?.let { return it }
+        if (context == null) return derivedMac(null, 0)
 
-        val generated = uniqueMac(context)
-        val edit = prefs?.edit()?.putString("device_mac", generated)?.putInt("device_mac_scheme", MAC_SCHEME)
-        // A replaced identity starts again at activation: whatever was set
-        // up for the shared MAC belonged to some other device.
-        if (!saved.isNullOrBlank()) edit?.remove("account_host")?.remove("account_active")
-        edit?.apply()
-        return generated
+        val secure = SecureStore.prefs(context)
+        val mac = derivedMac(context, secure.getInt(KEY_MAC_SALT, 0))
+        val stored = secure.getString(KEY_VIRTUAL_MAC, null)
+        if (stored != mac) {
+            secure.edit().putString(KEY_VIRTUAL_MAC, mac).commit()
+            // An install that had a MAC from an earlier version starts again
+            // at activation: its saved playlist belonged to the old identity.
+            val plain = context.getSharedPreferences("playbox_tv_prefs", Context.MODE_PRIVATE)
+            if (stored != null || plain.contains("device_mac")) {
+                plain.edit().remove("device_mac").remove("device_mac_scheme")
+                    .remove("account_host").remove("account_active").remove("registered_mac").apply()
+            }
+        }
+        cachedMac = mac
+        return mac
     }
 
-    private fun md5Mac(seed: String): String =
-        MessageDigest.getInstance("MD5").digest(seed.toByteArray())
-            .take(6).joinToString(":") { String.format("%02X", it) }
+    /**
+     * The server reported this MAC as already taken by another device (HTTP
+     * 409). The next MAC in this device's own fixed sequence is used - still
+     * calculated, not random, so a reinstall arrives at the same one again.
+     */
+    @Synchronized
+    fun regenerateDeviceMac(context: Context): String {
+        val secure = SecureStore.prefs(context)
+        val salt = secure.getInt(KEY_MAC_SALT, 0) + 1
+        val mac = derivedMac(context, salt)
+        secure.edit().putInt(KEY_MAC_SALT, salt).putString(KEY_VIRTUAL_MAC, mac).commit()
+        context.getSharedPreferences("playbox_tv_prefs", Context.MODE_PRIVATE).edit()
+            .remove("account_host").remove("account_active").remove("registered_mac").apply()
+        cachedMac = mac
+        return mac
+    }
 
-    /** The MACs older versions handed to every device on the same firmware. */
-    private fun sharedMacs(): Set<String> =
-        setOf(md5Mac(android.os.Build.ID), md5Mac(android.os.Build.FINGERPRINT))
+    @Volatile private var cachedMac: String? = null
+
+    private const val KEY_VIRTUAL_MAC = "VIRTUAL_MAC"
+    private const val KEY_MAC_SALT = "VIRTUAL_MAC_SALT"
+    private const val KEY_RANDOM_SEED = "VIRTUAL_MAC_SEED"
 
     /** This installation's ID, sent with every licensing request (see [installId]). */
     @Volatile private var installIdNow = ""
 
-    /** Version of the way the MAC is derived; a saved MAC from an older one is replaced once. */
-    private const val MAC_SCHEME = 3
-
-    /** Addresses that are defaults or placeholders, never an identity. */
-    private val GENERIC_MACS = setOf(
-        "00:00:00:00:00:00", "02:00:00:00:00:00", "FF:FF:FF:FF:FF:FF",
-        "00:11:22:33:44:55", "01:23:45:67:89:AB", "AA:BB:CC:DD:EE:FF", "00:1A:79:00:00:00"
-    )
-
-    /**
-     * A MAC no other device has. Android blocks apps from the real hardware
-     * MAC and serial number, so it is derived from two identifiers the
-     * system does provide, each unique per device and kept across reinstalls:
-     *  - the Android ID, and
-     *  - the Widevine DRM device ID, which differs even between boxes built
-     *    from one cloned firmware image (where the Android ID can repeat).
-     * A device offering neither gets a random value, generated once and kept.
-     * Network interfaces play no part, so Wi-Fi / Ethernet changes nothing.
-     */
-    private fun uniqueMac(context: Context?): String {
-        val androidId = context?.let {
-            runCatching {
-                android.provider.Settings.Secure.getString(it.contentResolver, android.provider.Settings.Secure.ANDROID_ID)
-            }.getOrNull()
-        }?.trim()
-        // Values some broken devices all share are not identities.
-        val idUsable = androidId != null && androidId.length >= 8 &&
-            androidId != "9774d56d682e549c" && androidId.any { it != '0' }
-        val drmId = widevineId()
-
-        val parts = listOfNotNull(androidId?.takeIf { idUsable }, drmId)
-        var seed = if (parts.isEmpty()) "playboxpro:" + java.util.UUID.randomUUID()
-        else "playboxpro:" + parts.joinToString(":")
-        while (true) {
-            val d = MessageDigest.getInstance("SHA-256").digest(seed.toByteArray())
-            val mac = d.take(6).joinToString(":") { String.format("%02X", it) }
-            if (mac !in GENERIC_MACS) return mac
-            seed += "+"
-        }
+    /** SHA-256 of the device's own identity, first 10 hex characters, behind 02:. */
+    private fun derivedMac(context: Context?, salt: Int): String {
+        val identity = widevineId()?.let { "wv:$it" }
+            ?: androidId(context)?.let { "aid:$it" }
+            // A device with neither (very rare) gets a random seed, kept in
+            // encrypted storage; only there can a reinstall change the MAC.
+            ?: context?.let { c ->
+                val s = SecureStore.prefs(c)
+                s.getString(KEY_RANDOM_SEED, null) ?: java.util.UUID.randomUUID().toString().also {
+                    s.edit().putString(KEY_RANDOM_SEED, it).commit()
+                }
+            }.orEmpty()
+        val seed = "playboxpro:$identity" + if (salt > 0) "#$salt" else ""
+        val hex = MessageDigest.getInstance("SHA-256").digest(seed.toByteArray())
+            .joinToString("") { String.format("%02X", it) }
+        return "02:" + hex.take(10).chunked(2).joinToString(":")
     }
+
+    private fun androidId(context: Context?): String? = context?.let {
+        runCatching {
+            android.provider.Settings.Secure.getString(it.contentResolver, android.provider.Settings.Secure.ANDROID_ID)
+        }.getOrNull()
+    }?.trim()?.takeIf { it.length >= 8 && it != "9774d56d682e549c" && it.any { c -> c != '0' } }
 
     /** The Widevine DRM device ID as hex, or null where Widevine is not available. */
     private fun widevineId(): String? = runCatching {
@@ -180,23 +197,43 @@ object LicenseApi {
      * it, the app never calls again for the same MAC. Returns true when the
      * device is registered (now or before).
      */
-    fun registerDeviceOnce(context: Context, mac: String, key: String): Boolean {
+    fun registerDeviceOnce(context: Context): Boolean {
         val prefs = context.getSharedPreferences("playbox_tv_prefs", Context.MODE_PRIVATE)
+        var mac = deviceMac(context)
         if (prefs.getString("registered_mac", null) == mac) return true
-        val body = JSONObject()
-            .put("mac_address", mac)
-            .put("device_key", key)
-            .put("install_id", installId(context))
-            .put("device_model", android.os.Build.MANUFACTURER + " " + android.os.Build.MODEL)
-        val ok = runCatching {
-            val text = Http.postJson("$BASE/TvDeviceRegister", body.toString())
-            JSONObject(text).optBoolean("status", false)
-        }.getOrDefault(false)
-        // Only a confirmed registration is remembered; otherwise it is tried
-        // again on the next start.
-        if (ok) prefs.edit().putString("registered_mac", mac).apply()
-        return ok
+
+        // A 409 Conflict means another device already holds this MAC: a new
+        // one is generated from a fresh UUID and registered instead.
+        repeat(MAX_COLLISION_RETRIES + 1) {
+            val body = JSONObject()
+                .put("mac_address", mac)
+                .put("device_key", deviceKey(mac))
+                .put("install_id", installId(context))
+                .put("device_model", android.os.Build.MANUFACTURER + " " + android.os.Build.MODEL)
+            val request = okhttp3.Request.Builder()
+                .url("$BASE/TvDeviceRegister")
+                .header("Accept", "application/json")
+                .post(okhttp3.RequestBody.create("application/json".toMediaType(), body.toString()))
+                .build()
+            val (code, text) = runCatching {
+                Http.client.newCall(request).execute().use { it.code to (it.body?.string().orEmpty()) }
+            }.getOrElse { return false }
+
+            if (code == 409) {
+                mac = regenerateDeviceMac(context)
+                return@repeat
+            }
+            val ok = code in 200..299 && runCatching { JSONObject(text).optBoolean("status", false) }.getOrDefault(false)
+            // Only a confirmed registration is remembered; otherwise it is
+            // tried again on the next start.
+            if (ok) prefs.edit().putString("registered_mac", mac).apply()
+            return ok
+        }
+        return false
     }
+
+    /** New MACs tried after a 409 before giving up until the next start. */
+    private const val MAX_COLLISION_RETRIES = 3
 
     /**
      * The licensing server's own view of a playlist account (expiry, status,

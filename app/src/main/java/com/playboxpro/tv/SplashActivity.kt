@@ -54,12 +54,13 @@ class SplashActivity : AppCompatActivity() {
             // First start with this MAC: register the device with the licensing
             // server before anything asks about it. Skipped once confirmed;
             // never holds the splash longer than 8 seconds.
-            if (com.playboxpro.tv.api.NetworkWatch.isOnline) run {
-                val mac = com.playboxpro.tv.api.LicenseApi.deviceMac(applicationContext)
-                val key = com.playboxpro.tv.api.LicenseApi.deviceKey(mac)
+            // The identity is read (or created) off the main thread: encrypted
+            // storage talks to the Android Keystore.
+            withContext(Dispatchers.IO) { com.playboxpro.tv.api.LicenseApi.deviceMac(applicationContext) }
+            if (com.playboxpro.tv.api.NetworkWatch.isOnline) {
                 kotlinx.coroutines.withTimeoutOrNull(8_000) {
                     withContext(Dispatchers.IO) {
-                        com.playboxpro.tv.api.LicenseApi.registerDeviceOnce(applicationContext, mac, key)
+                        com.playboxpro.tv.api.LicenseApi.registerDeviceOnce(applicationContext)
                     }
                 }
             }

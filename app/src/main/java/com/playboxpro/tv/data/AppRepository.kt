@@ -91,6 +91,7 @@ class AppRepository(private val context: Context) {
         prefs.edit()
             .putLong("license_ok_at", System.currentTimeMillis())
             .putString("license_expires_at", state.expiresAt.orEmpty())
+            .putBoolean("license_is_trial", state.trialActive && state.activationExpiresAt.isBlank())
             .remove("license_denied_reason")
             .apply()
     }
@@ -110,6 +111,17 @@ class AppRepository(private val context: Context) {
     }
 
     fun licenseDeniedReason(): String = prefs.getString("license_denied_reason", "") ?: ""
+
+    /** When this device's licence (trial or activation) ends, as the server sent it; "" if unknown. */
+    fun licenseExpiresAt(): String = prefs.getString("license_expires_at", "") ?: ""
+
+    /** True while the licence is a free trial rather than a paid activation. */
+    fun licenseIsTrial(): Boolean = prefs.getBoolean("license_is_trial", false)
+
+    /** When the playlist's own IPTV subscription ends (epoch millis), 0 when the provider does not say. */
+    var playlistExpiresAtMs: Long
+        get() = prefs.getLong("playlist_expires_at", 0L)
+        set(v) = prefs.edit().putLong("playlist_expires_at", v).apply()
 
     // Resume / Continue Watching
     fun saveResume(entry: ResumeEntry) {
@@ -546,6 +558,13 @@ class AppRepository(private val context: Context) {
         onLive: (suspend (Library) -> Unit)? = null
     ): Library = coroutineScope {
         val s = withContext(Dispatchers.IO) { StalkerApi.session(a.host, a.username) }
+        playlistExpiresAtMs = withContext(Dispatchers.IO) {
+            runCatching {
+                StalkerApi.accountInfo(s)["end_date"]?.let {
+                    java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss", java.util.Locale.US).parse(it)?.time
+                }
+            }.getOrNull() ?: 0L
+        }
 
         val lcJob = async(Dispatchers.IO) { StalkerApi.liveCategories(s) }
         val mcJob = async(Dispatchers.IO) { runCatching { StalkerApi.vodCategories(s) }.getOrDefault(emptyList()) }
@@ -634,7 +653,13 @@ class AppRepository(private val context: Context) {
         a: Account,
         onLive: (suspend (Library) -> Unit)? = null
     ): Library = coroutineScope {
-        withContext(Dispatchers.IO) { applyAllowedOutputFormats(XtreamApi.authenticate(a)) }
+        withContext(Dispatchers.IO) {
+            val auth = XtreamApi.authenticate(a)
+            applyAllowedOutputFormats(auth)
+            // The provider's own expiry for this line (unix seconds), for the reminder.
+            playlistExpiresAtMs = auth.optJSONObject("user_info")?.optString("exp_date")
+                ?.toLongOrNull()?.takeIf { it > 0 }?.times(1000) ?: 0L
+        }
 
         // The three category lists are small and are needed to name the rows,
         // so they are fetched together first; the three big listings then run

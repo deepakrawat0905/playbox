@@ -46,4 +46,6 @@ dependencies {
     // Software audio decoders (AC-3, E-AC-3, MP2, DTS, TrueHD...) so channels
     // play with sound on devices whose hardware lacks them.
     implementation("org.jellyfin.media3:media3-ffmpeg-decoder:1.9.0+1")
+    // Encrypted storage for the device identity (virtual MAC).
+    implementation("androidx.security:security-crypto:1.0.0")
 }

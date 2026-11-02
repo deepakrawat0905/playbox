@@ -48,16 +48,16 @@
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel_row.xml"
     },
     {
-        "merged": "com.playboxpro.tv.app-mergeDebugResources-46:/layout/fragment_player.xml",
-        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_player.xml"
-    },
-    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\item_channel_tile.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel_tile.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\item_card.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\dialog_notice.xml",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_notice.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\item_epg_date.xml",
@@ -144,16 +144,20 @@
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\layout_home_row.xml"
     },
     {
+        "merged": "com.playboxpro.tv.app-mergeDebugResources-46:/layout/fragment_activation.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_activation.xml"
+    },
+    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\item_wide_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_wide_card.xml"
-    },
-    {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\item_setting.xml",
         "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_setting.xml"
+    },
+    {
+        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\item_wide_card.xml",
+        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_wide_card.xml"
     },
     {
         "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeDebugResources-46:\\layout\\fragment_live.xml",

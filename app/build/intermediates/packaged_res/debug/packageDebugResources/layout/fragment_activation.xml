@@ -385,7 +385,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/robotoregular"
-                    android:text="Scan the QR code or navigate to playboxui.icodexa.com to manage playlists"
+                    android:text="Scan the QR code or navigate to proplaybox.com to manage playlists"
                     android:textColor="@color/light_gray"
                     android:textSize="@dimen/sp_13" />
 

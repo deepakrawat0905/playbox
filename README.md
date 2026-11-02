@@ -10,7 +10,7 @@ This project is a native Android TV conversion of the supplied `Samsung iptv` Re
 - 64dp / 40dp TV safe-area geometry equivalent to the original 4rem / 2.5rem at 1920x1080.
 - Collapsed/expanded navigation rail.
 - Activation / MAC/device identity flow.
-- Play Box Pro licensing API base: `https://playboxapi.icodexa.com/api`.
+- Play Box Pro licensing API base: `https://api.proplaybox.com`.
 - `getDevicePlaylistSubscription` route with the three source fallbacks.
 - Direct M3U/M3U8/JSON playlist URL mode.
 - Xtream Codes API authentication and Live/VOD/Series category and stream endpoints.

@@ -636,6 +636,19 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
+      name="androidx.security:security-crypto:1.0.0@aar"
+      jars="C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\jars\classes.jar"
+      resolved="androidx.security:security-crypto:1.0.0"
+      folder="C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
       jars="C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\jars\classes.jar"
       resolved="androidx.cursoradapter:cursoradapter:1.0.0"
@@ -945,6 +958,10 @@
       symbolFile="R.txt"
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
+  <library
+      name="com.google.crypto.tink:tink-android:1.5.0@jar"
+      jars="C:\Users\vidha\.gradle\caches\modules-2\files-2.1\com.google.crypto.tink\tink-android\1.5.0\3d728fc1c43446a7a1e602c896b67cce2d57281d\tink-android-1.5.0.jar"
+      resolved="com.google.crypto.tink:tink-android:1.5.0"/>
   <library
       name="androidx.constraintlayout:constraintlayout-core:1.0.0@jar"
       jars="C:\Users\vidha\.gradle\caches\modules-2\files-2.1\androidx.constraintlayout\constraintlayout-core\1.0.0\3b64bb29201ac1b5cb418bee55e9ae3d7940486\constraintlayout-core-1.0.0.jar"

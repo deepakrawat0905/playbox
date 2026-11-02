@@ -128,6 +128,12 @@ class MainActivity : AppCompatActivity() {
 
         if (vm.repo.account() != null && vm.repo.isActive()) {
             open("live")
+            // Licence / playlist expiry reminders, once the first screen has settled.
+            window.decorView.postDelayed({
+                if (!isFinishing && vm.repo.isActive()) {
+                    SubscriptionNotices.showDueReminders(this, vm.repo, vm.mac, vm.deviceKey)
+                }
+            }, 4000)
         } else {
             open("activate")
         }

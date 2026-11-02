@@ -44,8 +44,8 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
 
     companion object {
         /** Where users manage playlists for their device. */
-        private const val ACTIVATION_SITE = "playboxui.icodexa.com"
-        private const val ACTIVATION_URL = "https://playboxui.icodexa.com/"
+        private const val ACTIVATION_SITE = "proplaybox.com"
+        private const val ACTIVATION_URL = "https://proplaybox.com/"
 
         /** How long the on-screen countdown runs before it resets. */
         private const val COUNTDOWN_SECONDS = 5 * 60
@@ -568,6 +568,9 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
                         vm.repo.revokeAccess(state.message)
                     }
                     showActivationState()
+                    // Trial over / subscription over / trial running: say so
+                    // plainly, as the expiry screens of other players do.
+                    if (bindLicenceNotice(state)) return@launch
                     if (!silent) {
                         if (state.message.isNotBlank()) {
                             showBanner(state.message, isError = true)
@@ -582,6 +585,73 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
                 }
             }
         }
+    }
+
+    /** The "Subscription Expired" popup appears once per visit to this screen. */
+    private var expiredPopupShown = false
+
+    /**
+     * Expiry state of the licence on the activation screen:
+     *  - subscription ended: "Notice: Subscription Expired!" plus a popup;
+     *  - free trial ended:   "Notice: Trial Period Expired!" plus a popup;
+     *  - free trial running: how many trial days are left.
+     * Returns true when it has set the status line itself.
+     */
+    private fun bindLicenceNotice(s: com.playboxpro.tv.model.DeviceState): Boolean {
+        val headline = requireView().findViewById<TextView>(R.id.tvActivationHeadline)
+        val now = System.currentTimeMillis()
+        val activationEnd = SubscriptionNotices.parseDate(s.activationExpiresAt)
+        // A device that was never activated is on a trial; the server marks an
+        // ended trial "Expired" too, so the two are told apart by activation.
+        val everActivated = s.activatedAt.isNotBlank() || activationEnd > 0
+        val ended = !s.trialActive && !s.playlistAccess &&
+            (s.trialExpired || s.status.contains("expired", true) || activationEnd in 1 until now)
+        val subscriptionExpired = ended && everActivated
+        val trialExpired = ended && !everActivated
+
+        if (subscriptionExpired || trialExpired) {
+            headline.text = if (trialExpired) "Notice: Trial Period Expired!" else "Notice: Subscription Expired!"
+            headline.setTextColor(requireContext().getColor(R.color.danger))
+            showBanner(
+                if (trialExpired) "Your trial period has ended. To continue enjoying uninterrupted access to the app, " +
+                    "activate your device on our website using the MAC address and device key above."
+                else "Your subscription has ended. To continue enjoying uninterrupted access to the app, " +
+                    "renew it on our website using the MAC address and device key above.",
+                isError = true
+            )
+            if (!expiredPopupShown) {
+                expiredPopupShown = true
+                SubscriptionNotices.show(
+                    requireActivity(), vm.mac, vm.deviceKey,
+                    SubscriptionNotices.Notice(
+                        title = if (trialExpired) "Trial Period Expired" else "Subscription Expired",
+                        message = if (trialExpired)
+                            "Your free trial has ended. To keep using the app, activate your device on our website with the details below."
+                        else
+                            "Your subscription has expired. To keep watching, renew it on our website with the details below.",
+                        note = "Note: After renewing, press Reload or wait a moment - this screen updates by itself.",
+                        primary = "OK",
+                        secondary = "Reload",
+                        onSecondary = { checkDeviceState(silent = false) }
+                    )
+                )
+            }
+            return true
+        }
+
+        headline.text = "Link your device to continue"
+        headline.setTextColor(0xBFFFFFFF.toInt())
+        val trialEnd = SubscriptionNotices.parseDate(s.trialExpiresAt)
+        if (s.trialActive && trialEnd > now) {
+            val days = SubscriptionNotices.daysLeft(trialEnd)
+            showBanner(
+                if (days >= 1) "You have $days day${if (days == 1) "" else "s"} of free trial to test the app with your own playlist."
+                else "Your free trial ends today.",
+                isError = false
+            )
+            return true
+        }
+        return false
     }
 
     private fun observeErrors() {

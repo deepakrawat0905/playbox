@@ -1231,6 +1231,31 @@ library {
     value: 1
   }
 }
+library {
+  maven_library {
+    groupId: "androidx.security"
+    artifactId: "security-crypto"
+    version: "1.0.0"
+  }
+  digests {
+    sha256: "\316\266\375\253\031\002\353\241r\334^\254\305\032\033:\374p\324\3714\240\301\354\370<5/\3034\340\177"
+  }
+  repo_index {
+  }
+}
+library {
+  maven_library {
+    groupId: "com.google.crypto.tink"
+    artifactId: "tink-android"
+    version: "1.5.0"
+  }
+  digests {
+    sha256: "@$gns\344\033\352\a\230\214\252\322#\372\333\332\223wo\324\006D\302\304\224\316\330\326\3026\351"
+  }
+  repo_index {
+    value: 1
+  }
+}
 library_dependencies {
   library_dep_index: 1
 }
@@ -2007,6 +2032,11 @@ library_dependencies {
   library_dep_index: 97
   library_dep_index: 90
 }
+library_dependencies {
+  library_index: 104
+  library_dep_index: 1
+  library_dep_index: 105
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
@@ -2029,6 +2059,7 @@ module_dependencies {
   dependency_index: 102
   dependency_index: 100
   dependency_index: 103
+  dependency_index: 104
 }
 repositories {
   maven_repo {

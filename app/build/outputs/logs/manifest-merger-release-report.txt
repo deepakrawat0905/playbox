@@ -61,6 +61,7 @@ MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\c
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ab55ce9a34378a7be8d5d6bf56e83916\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.security:security-crypto:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e9916e9865f0d04c8888d8821914b7c0\transformed\gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
@@ -303,6 +304,8 @@ MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.
 MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44

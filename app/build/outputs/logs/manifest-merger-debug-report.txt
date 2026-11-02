@@ -1,10 +1,9 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
-MERGED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml:2:1-6:12
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml:2:1-6:12
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:1-19:12
 MERGED from [androidx.databinding:viewbinding:8.13.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e671197c6f459ffca7208fc892b712f5\transformed\viewbinding-8.13.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\39d64d3636d77f3801e0b17687e58b55\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -62,6 +61,7 @@ MERGED from [com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\c
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\ab55ce9a34378a7be8d5d6bf56e83916\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.security:security-crypto:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e9916e9865f0d04c8888d8821914b7c0\transformed\gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
@@ -72,13 +72,11 @@ MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\vidha\.gradle\caches\9.0-m
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c83e506423223fcc7f86672cdc545fd4\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\547c803cb14eb66ddfce1d5384a4ba52\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
-	xmlns:tools
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml:2:70-116
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:1:11-69
 uses-feature#android.software.leanback
@@ -109,9 +107,7 @@ MERGED from [androidx.media3:media3-common:1.10.1] C:\Users\vidha\.gradle\caches
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:6:22-76
 application
 ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:5-18:19
-MERGED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:5-18:19
-MERGED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:5-18:19
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml:3:5-5:19
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:5-18:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\26f4839be97b3c83a5f6d42629896f78\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
@@ -133,38 +129,28 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.g
 MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.startup:startup-runtime:1.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\132158f96bc9bace2811d165dae50b56\transformed\startup-runtime-1.2.0\AndroidManifest.xml:23:5-29:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.17.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\dd5c9cd3eaaad5de12ea74f16ff934a4\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
 	android:label
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:177-209
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:177-209
 	android:resizeableActivity
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:307-340
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:307-340
 	android:roundIcon
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:137-176
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:137-176
 	android:largeHeap
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:45-69
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:45-69
 	android:icon
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:102-136
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:102-136
 	android:banner
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:341-377
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:341-377
 	android:theme
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:70-101
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:70-101
 	android:networkSecurityConfig
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:246-306
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:246-306
 	android:usesCleartextTraffic
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:210-245
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:210-245
 	android:name
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:18-44
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:18-44
 activity#com.playboxpro.tv.SplashActivity
 ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:8:9-16:20
@@ -192,25 +178,18 @@ ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroid
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:14:27-74
 activity#com.playboxpro.tv.MainActivity
 ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:9-144
-MERGED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:9-144
-MERGED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:9-144
 	android:screenOrientation
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:80-117
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:80-117
 	android:exported
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:118-142
-		REJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:118-142
 	android:theme
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:48-79
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:48-79
-	tools:replace
-		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml:4:89-121
 	android:name
 		ADDED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:19-47
 uses-sdk
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
-INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.13.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e671197c6f459ffca7208fc892b712f5\transformed\viewbinding-8.13.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.13.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e671197c6f459ffca7208fc892b712f5\transformed\viewbinding-8.13.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\91880fb02af0dfdc01b088a287994be8\transformed\material-1.13.0\AndroidManifest.xml:20:5-44
@@ -325,6 +304,8 @@ MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.
 MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\216e93917bfb70fa65bcad8e8bef0fe2\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\0f3b6e0353194d0d172971bf6f54a3e9\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c3610beee17985bb8dcca62f52aeb872\transformed\security-crypto-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\045c73603b2bcfa0143932c77d26d1e5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\cc1136aac3a1b2e4adabe907094f9624\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -344,9 +325,9 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vidha\.gradle\ca
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\547c803cb14eb66ddfce1d5384a4ba52\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\547c803cb14eb66ddfce1d5384a4ba52\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml
 meta-data#com.bumptech.glide.integration.okhttp3.OkHttpGlideModule
 ADDED from [com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:10:9-12:43
 	android:value
