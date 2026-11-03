@@ -882,6 +882,13 @@ class AppRepository(private val context: Context) {
         base.copy(seasons = seasons).also { if (seasons.isNotEmpty()) writeInfo("series", id, it) }
     }.getOrNull()
 
+    /** Forgets every saved title's details, so each is fetched fresh when next opened. */
+    fun clearTitleDetails() {
+        infoMemory.evictAll()
+        infoRefreshed.clear()
+        runCatching { java.io.File(context.cacheDir, "info_${cacheKey()}").deleteRecursively() }
+    }
+
     /** One background refresh per title per app session. */
     private fun refreshInfoOnce(key: String, fetch: suspend () -> Any?) {
         if (!infoRefreshed.add(key)) return

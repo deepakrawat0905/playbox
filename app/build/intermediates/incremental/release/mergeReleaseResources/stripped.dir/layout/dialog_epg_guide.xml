@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    EPG guide opened with OK from the live player, matched to STB+
+    alertdialog_epg: a 510dp slate sheet with a day list down the left third
+    and the programme list on the right, headed by the channel logo and name.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/epgSheet"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:background="@drawable/round_corner_epg">
+
+        <!-- Day list, left third -->
+        <ScrollView
+            android:id="@+id/epgDatesScroll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_epg"
+            android:clipToPadding="false"
+            android:paddingStart="10dp"
+            android:paddingTop="90dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.3">
+
+            <LinearLayout
+                android:id="@+id/epgDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/epgBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/epgLogo"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:text="|   EPG"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_25"
+            app:layout_constraintStart_toEndOf="@id/epgBack"
+            app:layout_constraintTop_toTopOf="@id/epgLogo" />
+
+        <!-- Channel header, right pane -->
+        <ImageView
+            android:id="@+id/epgLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toEndOf="@id/epgDatesScroll"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/epgTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_25"
+            app:layout_constraintBottom_toBottomOf="@id/epgLogo"
+            app:layout_constraintStart_toEndOf="@id/epgLogo"
+            app:layout_constraintTop_toTopOf="@id/epgLogo" />
+
+        <!-- Programme list -->
+        <ScrollView
+            android:id="@+id/epgListScroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:clipToPadding="false"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/epgDatesScroll"
+            app:layout_constraintTop_toBottomOf="@id/epgLogo">
+
+            <LinearLayout
+                android:id="@+id/epgList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

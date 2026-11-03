@@ -4,14 +4,14 @@
     "type": "SHRUNK_RESOURCES_PROTO_FORMAT",
     "kind": "Directory"
   },
-  "applicationId": "com.playboxpro.tv",
+  "applicationId": "app.proplaybox.com",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 2,
+      "versionCode": 5,
       "versionName": "1.0.1",
       "outputFile": "shrunk-resources-proto-format-release.ap_"
     }

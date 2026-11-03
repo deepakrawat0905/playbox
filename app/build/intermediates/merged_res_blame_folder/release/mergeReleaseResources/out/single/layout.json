@@ -1,210 +1,206 @@
 [
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_multiselection.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_multiselection.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_hero_banner.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_hero_banner.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\card_live_stream.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\card_live_stream.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_episode_card.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_episode_card.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_epg_date.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_epg_date.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_multiselection.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_multiselection.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_live.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_live.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_settings.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_search_row.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_row.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_trailer.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_trailer.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_live_player.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_live_player.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_detail.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_detail.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_account_info.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_account_info.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_category_rail.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_category_rail.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_recently_watched.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_recently_watched.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_wide_card.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_wide_card.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_epg_programme.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_epg_programme.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_favorites.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_favorites.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_search_tile.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_tile.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_detail_info.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_detail_info.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_setting.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_setting.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_channel.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_channel.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\activity_splash.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/pin_dialog.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/pin_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_cast.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_cast.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/activity_splash.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_hero_banner.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_hero_banner.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_player.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_player.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_section_row.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_section_row.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/activity_main.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_notice.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_notice.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_search.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_epg_guide.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_epg_guide.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_epg_programme.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_epg_programme.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_player.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_player.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_epg_date.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_epg_date.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_channel.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_profile.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_profile.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_movie_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_movie_card.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_simple.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_simple.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_simple.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_simple.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_media.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_media.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_catalog.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_catalog.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_terms.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_terms.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_profile.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_profile.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_detail_card.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_detail_card.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_home.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_catalog.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_catalog.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_episode_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_episode_card.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_dialog_selection.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_dialog_selection.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_category_rail.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_category_rail.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/card_live_stream.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/card_live_stream.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_settings.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_settings.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/layout_home_row.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/layout_home_row.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_card.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_card.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_qsmart_confirm.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_qsmart_confirm.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_search_tile.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_search_tile.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_search_movie_card.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_search_movie_card.xml"
+    },
+    {
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_section_row.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_section_row.xml"
     },
     {
         "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_activation.xml",
         "source": "com.playboxpro.tv.app-main-49:/layout/fragment_activation.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_search_movie_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_search_movie_card.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_cast.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_cast.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\pin_dialog.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\pin_dialog.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_season.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_season.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_continue_watching.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_continue_watching.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_channel_row.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_channel_row.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_terms.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_terms.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_movie_card_small.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_movie_card_small.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_detail_info.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_detail_info.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_live_player.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_live_player.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_qsmart_confirm.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_qsmart_confirm.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_setting.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_setting.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_detail_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_detail_card.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_movie_card.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_movie_card.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_movie_card_small.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_movie_card_small.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_recently_watched.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_recently_watched.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_selection.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_selection.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_channel_tile.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_channel_tile.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\layout_home_row.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\layout_home_row.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_notice.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_notice.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_favorites.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_favorites.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_live.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_live.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_media.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_media.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_epg_guide.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_epg_guide.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_wide_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_wide_card.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_selection.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_selection.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_detail.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_detail.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_continue_watching.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_continue_watching.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_channel_tile.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel_tile.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_account_info.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_account_info.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_activation.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_activation.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/dialog_credits.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/dialog_credits.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_season.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_season.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/fragment_home.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_trailer.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_trailer.xml"
-    },
-    {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_card.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_card.xml"
-    },
-    {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\dialog_credits.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\dialog_credits.xml"
-    },
-    {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_dialog_selection.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_dialog_selection.xml"
-    },
-    {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\item_channel_row.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\item_channel_row.xml"
-    },
-    {
-        "merged": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-mergeReleaseResources-46:\\layout\\fragment_search.xml",
-        "source": "C:\\Users\\vidha\\.gradle\\daemon\\9.0-milestone-1\\com.playboxpro.tv.app-main-49:\\layout\\fragment_search.xml"
+        "merged": "com.playboxpro.tv.app-mergeReleaseResources-46:/layout/item_search_row.xml",
+        "source": "com.playboxpro.tv.app-main-49:/layout/item_search_row.xml"
     }
 ]

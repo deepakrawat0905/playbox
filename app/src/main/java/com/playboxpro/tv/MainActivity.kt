@@ -15,6 +15,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import kotlinx.coroutines.cancelChildren
 import kotlinx.coroutines.launch
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
@@ -119,7 +120,7 @@ class MainActivity : AppCompatActivity() {
                 if (currentDestination == "live") {
                     openDrawer()
                 } else if (currentDestination == "activate") {
-                    finish()
+                    exitApp()
                 } else {
                     open("live")
                 }
@@ -331,7 +332,7 @@ class MainActivity : AppCompatActivity() {
                 "Exit",
                 "Are you sure you want to Exit?",
                 okLabel = "Exit"
-            ) { finish() }
+            ) { exitApp() }
             return
         }
 
@@ -378,6 +379,37 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<View>(R.id.content).post {
             findViewById<View>(R.id.content).requestFocus()
+        }
+    }
+
+    /** Set by [exitApp]: once this activity is gone, the process ends with it. */
+    private var exiting = false
+
+    /**
+     * Exit closes the app for real. finish() alone left the process running:
+     * the playlist download and licence checks started by the splash live
+     * outside any screen, the network kept its connections open, and the
+     * app stayed in the recent-apps list.
+     */
+    fun exitApp() {
+        if (exiting) return
+        exiting = true
+        // Players release when their screen goes; removing it now stops the
+        // sound at once rather than after the closing animation.
+        supportFragmentManager.findFragmentById(R.id.content)?.let {
+            supportFragmentManager.beginTransaction().remove(it).commitNowAllowingStateLoss()
+        }
+        PlayBoxApp.scope.coroutineContext.cancelChildren()
+        com.playboxpro.tv.api.Http.client.dispatcher.cancelAll()
+        finishAndRemoveTask()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (exiting) {
+            com.playboxpro.tv.api.Http.client.connectionPool.evictAll()
+            // Nothing is left running behind the closed screen.
+            android.os.Process.killProcess(android.os.Process.myPid())
         }
     }
 

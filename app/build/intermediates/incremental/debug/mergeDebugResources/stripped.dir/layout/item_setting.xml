@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Settings tile matched to STB+ item_setting:
+    19dp padding, 7dp margin, 18dp icon centred over a 10sp label.
+    The focused tile fills white and flips its icon and label to black.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settingTileRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:background="@drawable/bg_setting_tile"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:padding="19dp"
+    android:stateListAnimator="@null">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/settingIcon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="5dp"
+        android:duplicateParentState="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/setting_tile_color" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/settingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotolight"
+        android:gravity="center"
+        android:textColor="@color/setting_tile_color"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settingIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

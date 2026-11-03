@@ -136,7 +136,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 refreshUserData()
                 if (!opened) onDone()
             } catch (e: Exception) {
-                _error.value = e.message ?: "Unable to load playlist"
+                _error.value = com.playboxpro.tv.api.NetworkWatch.messageFor(e, "Unable to load playlist")
                 repo.setActive(false)
             } finally {
                 _loading.value = false
@@ -210,7 +210,7 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 refreshUserData()
             } catch (e: Exception) {
                 // A stale cache still beats an error screen.
-                if (cached == null) _error.value = e.message ?: "Unable to load playlist"
+                if (cached == null) _error.value = com.playboxpro.tv.api.NetworkWatch.messageFor(e, "Unable to load playlist")
             } finally {
                 _loading.value = false
             }
@@ -282,7 +282,33 @@ class AppViewModel(app: Application) : AndroidViewModel(app) {
                 refreshUserData()
                 onDone()
             } catch (e: Exception) {
-                _error.value = e.message ?: "Unable to refresh playlist"
+                _error.value = com.playboxpro.tv.api.NetworkWatch.messageFor(e, "Unable to refresh playlist")
+            } finally {
+                _loading.value = false
+            }
+        }
+    }
+
+    /**
+     * The profile card's refresh: downloads [a] again in full - channels,
+     * movies, series and every category list - and replaces what is on
+     * screen. Saved title details are dropped too, so plots and episode
+     * lists come fresh from the server. What is on screen stays if it fails.
+     */
+    fun refreshPlaylist(a: Account, onDone: (Library) -> Unit) {
+        _loading.value = true
+        _error.value = ""
+        viewModelScope.launch {
+            try {
+                // The website may have changed the playlist's details.
+                if (repo.account() != a) repo.saveAccount(a)
+                val lib = repo.loadLibrary(force = true)
+                withContext(Dispatchers.IO) { repo.clearTitleDetails() }
+                _library.value = lib
+                refreshUserData()
+                onDone(lib)
+            } catch (e: Exception) {
+                _error.value = com.playboxpro.tv.api.NetworkWatch.messageFor(e, "Unable to refresh playlist")
             } finally {
                 _loading.value = false
             }

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FFFFA500</color>
+    <color name="accent_contrast">#FFFFFFFF</color>
+    <color name="accent_glow">#73FFA500</color>
+    <color name="accent_soft">#29FFA500</color>
+    <color name="accent_strong">#FFFF8C00</color>
+    <color name="bg">#FF0B1016</color>
+    <color name="bg_card">#FF13212A</color>
+    <color name="bg_card_hover">#FF1B2230</color>
+    <color name="bg_dialog">#FF1B2230</color>
+    <color name="bg_elevated">#FF0E141C</color>
+    <color name="bg_glass">#B8131E2A</color>
+    <color name="bg_panel">#FF17202F</color>
+    <color name="bg_scrim">#DD0B1016</color>
+    <color name="bg_sunken">#FF080C11</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF102448</color>
+    <color name="danger">#FFF44336</color>
+    <color name="dialog_panel">#FF1B2230</color>
+    <color name="dim">#FF7A8290</color>
+    <color name="focus_fill">#1AFFFFFF</color>
+    <color name="focus_stroke_color">#FFFFFFFF</color>
+    <color name="gray">#FF272727</color>
+    <color name="info_surface">#07FFFFFF</color>
+    <color name="light_gray">#FFACACAC</color>
+    <color name="live">#FFFD1C03</color>
+    <color name="main">#FF13212A</color>
+    <color name="muted">#FFACACAC</color>
+    <color name="red">#FFFD1C03</color>
+    <color name="side">#FF0B1016</color>
+    <color name="sidelight">#FF17202F</color>
+    <color name="star_gold">#FFFFC107</color>
+    <color name="success">#FF72E411</color>
+    <color name="surface_1">#07FFFFFF</color>
+    <color name="surface_2">#12FFFFFF</color>
+    <color name="surface_3">#1AFFFFFF</color>
+    <color name="surface_border">#14FFFFFF</color>
+    <color name="surface_border_focused">#FFFFFFFF</color>
+    <color name="text">#FFFFFFFF</color>
+    <color name="text_dim">#FF7A8290</color>
+    <color name="text_muted">#FFACACAC</color>
+    <color name="text_on_accent">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="warning">#FFFFC107</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFA500</color>
+    <dimen name="body">15sp</dimen>
+    <dimen name="card_h">125dp</dimen>
+    <dimen name="card_w">90dp</dimen>
+    <dimen name="category_rail_width">200dp</dimen>
+    <dimen name="channel_row_h">42dp</dimen>
+    <dimen name="channel_tile_h">80dp</dimen>
+    <dimen name="channel_tile_w">180dp</dimen>
+    <dimen name="episode_card_h">140dp</dimen>
+    <dimen name="episode_card_w">220dp</dimen>
+    <dimen name="focus_stroke">1dp</dimen>
+    <dimen name="header">56dp</dimen>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="hero_banner_h">340dp</dimen>
+    <dimen name="login_logo_h">110dp</dimen>
+    <dimen name="login_logo_w">300dp</dimen>
+    <dimen name="poster_card_h">125dp</dimen>
+    <dimen name="poster_card_total_h">150dp</dimen>
+    <dimen name="poster_card_w">90dp</dimen>
+    <dimen name="poster_title_h">25dp</dimen>
+    <dimen name="profile_avatar">75dp</dimen>
+    <dimen name="profile_rail_h">200dp</dimen>
+    <dimen name="qr_card">65dp</dimen>
+    <dimen name="radius">8dp</dimen>
+    <dimen name="radius_large">8dp</dimen>
+    <dimen name="radius_lg">8dp</dimen>
+    <dimen name="radius_md">8dp</dimen>
+    <dimen name="radius_pill">999dp</dimen>
+    <dimen name="radius_sm">4dp</dimen>
+    <dimen name="radius_xs">2dp</dimen>
+    <dimen name="safe_x">32dp</dimen>
+    <dimen name="safe_y">24dp</dimen>
+    <dimen name="section">18sp</dimen>
+    <dimen name="sidebar">80dp</dimen>
+    <dimen name="sidebar_icon_size">18dp</dimen>
+    <dimen name="sidebar_item_height">42dp</dimen>
+    <dimen name="sidebar_item_inset">20dp</dimen>
+    <dimen name="sidebar_item_padding">32dp</dimen>
+    <dimen name="sidebar_open">260dp</dimen>
+    <dimen name="sidebar_width">80dp</dimen>
+    <dimen name="sidebar_width_open">260dp</dimen>
+    <dimen name="small">12sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_35">35sp</dimen>
+    <dimen name="sp_40">40sp</dimen>
+    <dimen name="text_2xl">25sp</dimen>
+    <dimen name="text_3xl">35sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_md">15sp</dimen>
+    <dimen name="text_sm">13sp</dimen>
+    <dimen name="text_xl">20sp</dimen>
+    <dimen name="text_xs">11sp</dimen>
+    <dimen name="title">25sp</dimen>
+    <dimen name="wide_card_h">124dp</dimen>
+    <dimen name="wide_card_w">220dp</dimen>
+    <item name="cutoutPadded" type="id"/>
+    <string name="about">About</string>
+    <string name="activation">Activation</string>
+    <string name="all">All</string>
+    <string name="app_name">Pro Play Box</string>
+    <string name="check_again">Check again</string>
+    <string name="connect">Connect</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="device_info">Device Info</string>
+    <string name="favorites">Favorites</string>
+    <string name="home">Home</string>
+    <string name="live_tv">Live TV</string>
+    <string name="movies">Movies</string>
+    <string name="playlists">Playlists</string>
+    <string name="recent">Recently Watched</string>
+    <string name="search">Search</string>
+    <string name="series">Series</string>
+    <string name="settings">Settings</string>
+    <style name="AccountInfoTextStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="fontFamily">@font/robotoregular</item>
+        <item name="android:textColor">@color/white</item>
+
+        <item name="android:windowBackground">@drawable/background_main</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/sidelight</item>
+        <item name="colorPrimaryDark">@color/side</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="DetailPill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">@drawable/bg_detail_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+    <style name="DetailPillText">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:textColor">@color/detail_btn_text</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="DetailTab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_detail_tab</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textColor">@color/detail_tab_text</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="GlassBadge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:background">@drawable/bg_glass_badge</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="GlassControl">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/bg_glass_btn</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="tint">@color/glass_icon_tint</item>
+    </style>
+    <style name="GlassNavIcon">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="tint">@color/glass_icon_tint</item>
+    </style>
+    <style name="GlassNavItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:background">@drawable/bg_glass_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="GlassNavLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textColor">@color/glass_icon_tint</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="GlassRoundButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:background">@drawable/bg_glass_round</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="tint">@color/glass_icon_tint</item>
+    </style>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/menu_item_color_state</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorOnSurface">@android:color/transparent</item>
+    </style>
+    <style name="NoticeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="android:background">@drawable/bg_notice_button</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">26dp</item>
+        <item name="android:paddingEnd">26dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="NoticeDetail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="SearchTab">
+        <item name="android:layout_width">190dp</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">@drawable/bg_search2_tab</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingStart">22dp</item>
+        <item name="android:paddingEnd">22dp</item>
+        <item name="android:textColor">#E6FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="drawableTint">#E6FFFFFF</item>
+    </style>
+    <style name="SearchTileBadge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/bg_search2_badge</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">9.5sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="TermsBody">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">#F2FFFFFF</item>
+        <item name="android:textSize">14.5sp</item>
+    </style>
+    <style name="TermsBullet" parent="TermsBody">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:drawableStart">@drawable/bullet_dot</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+    <style name="TermsFooter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:textColor">#CCFFFFFF</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TermsLink" parent="TermsFooter">
+        <item name="android:background">@drawable/bg_terms_link</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:paddingStart">2dp</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:textColor">#FF5CE1E6</item>
+    </style>
+    <style name="Text.Body" parent="">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+    </style>
+    <style name="Text.Caption" parent="">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+    </style>
+    <style name="Text.Caption.Muted" parent="Text.Caption">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:fontFamily">@font/robotolight</item>
+    </style>
+    <style name="Text.Header" parent="">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:fontFamily">@font/robotolight</item>
+    </style>
+    <style name="Text.Row" parent="">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotolight</item>
+    </style>
+    <style name="Text.Title" parent="">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+    </style>
+    <style name="Text.Value" parent="">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:fontFamily">@font/robotomedium</item>
+    </style>
+    <style name="Theme.PlayBoxPro.Dialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/robotoregular</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+    <style name="Theme.PlayBoxPro.Splash" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background_main</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">false</item>
+    </style>
+    <style name="detailPosterShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_sm</item>
+    </style>
+</resources>

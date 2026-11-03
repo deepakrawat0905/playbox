@@ -4,7 +4,15 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <application android:name=".PlayBoxApp" android:largeHeap="true" android:theme="@style/AppTheme" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:label="@string/app_name" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="true" android:banner="@drawable/tv_banner">
+    <application android:name=".PlayBoxApp" android:largeHeap="true" android:theme="@style/AppTheme" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:label="@string/app_name" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="true" android:banner="@drawable/tv_banner" android:enableOnBackInvokedCallback="false">
+        <!-- Android 16 (API 36) notes:
+             - enableOnBackInvokedCallback="false" keeps the remote's BACK key
+               reaching the screens' own key handlers (Terms dialog, search
+               box); predictive back would otherwise swallow it.
+             - Android 16 ignores the landscape lock on tablets; this keeps the
+               TV layout in landscape there. Temporary: it is no longer
+               honoured once the app targets API 37. -->
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
         <activity android:name=".SplashActivity" android:theme="@style/Theme.PlayBoxPro.Splash" android:screenOrientation="landscape" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

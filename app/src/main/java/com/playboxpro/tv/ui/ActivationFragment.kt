@@ -235,7 +235,7 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
         profileAdapter = ProfileAdapter(
             entries = emptyList(),
             onSelect = { entry -> onProfileSelected(entry) },
-            onRefresh = { checkDeviceState(silent = false) },
+            onRefresh = { entry -> refreshPlaylist(entry) },
             onInfo = { entry -> showAccountInfo(entry) }
         )
         rvPlaylist.layoutManager =
@@ -294,6 +294,57 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
         )
     }
 
+    /**
+     * The card's refresh button: the playlist's details are read again from
+     * the licensing server (they may have been edited on the website), then
+     * the whole playlist - channels, movies, series, categories - is
+     * downloaded fresh. The user stays here and is told when it is done.
+     */
+    private fun refreshPlaylist(entry: ProfileEntry) {
+        if (isConnecting) return
+        if (!com.playboxpro.tv.api.NetworkWatch.isOnline) {
+            showConnectError(com.playboxpro.tv.api.NetworkWatch.NO_INTERNET)
+            return
+        }
+        beginConnecting("Refreshing ${entry.name}...")
+
+        lifecycleScope.launch {
+            val state = runCatching {
+                withContext(Dispatchers.IO) { LicenseApi.fetch(vm.mac, vm.deviceKey) }
+            }.getOrNull()
+            if (!isAdded) return@launch
+            if (state != null) {
+                lastDeviceState = state
+                serverPlaylists = state.playlists
+                rebuildProfiles()
+            }
+
+            val p = state?.playlists?.firstOrNull { it.id == entry.id } ?: entry.playlist
+            if (p == null || p.host.isBlank()) {
+                showConnectError("This profile has no server address. Re-add it from the website.")
+                return@launch
+            }
+
+            vm.refreshPlaylist(
+                Account(
+                    host = normalizeUrl(p.host),
+                    username = p.username,
+                    password = p.password,
+                    type = p.type,
+                    epgUrl = normalizeUrl(p.epgUrl),
+                    name = p.name
+                )
+            ) { lib ->
+                if (!isAdded) return@refreshPlaylist
+                rebuildProfiles()
+                showConnectMessage(
+                    "${p.name} refreshed\n${lib.channels.size} channels · " +
+                        "${lib.movies.size} movies · ${lib.series.size} series"
+                )
+            }
+        }
+    }
+
     // ------------------------------------------------------------------
     // Connect progress / failure
     // ------------------------------------------------------------------
@@ -313,7 +364,10 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
      * activation banner, which is hidden in the profile state - so a failed
      * profile tap looked like nothing had happened at all.
      */
-    private fun showConnectError(message: String) {
+    private fun showConnectError(message: String) = showConnectMessage(message)
+
+    /** The overlay's final word - an error or a refresh result - with a button to close it. */
+    private fun showConnectMessage(message: String) {
         isConnecting = false
         connectingText.text = message
         connectingSpinner.visibility = View.GONE
@@ -380,7 +434,7 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
         val tvExpiry = v.findViewById<TextView>(R.id.tvInfoExpiry)
         val tvDays = v.findViewById<TextView>(R.id.tvInfoDaysLeft)
 
-        tvUrl.text = "URL: " + p?.host.orEmpty()
+        tvUrl.text = "URL: " + maskUrl(p?.host.orEmpty())
         tvUser.text = "Username: " + p?.username.orEmpty()
         tvPass.text = "Password: " + p?.password.orEmpty().replace(Regex("."), "*")
         tvType.text = "Type: " + (p?.type ?: "").uppercase()
@@ -483,6 +537,18 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
         }
     }
 
+    /**
+     * The server address with all but its start hidden, the way the password
+     * is: "http://wolfmonsters.com:8080" reads "http://wol*****************".
+     */
+    private fun maskUrl(url: String): String {
+        val u = url.trim()
+        val scheme = Regex("^[a-zA-Z][a-zA-Z0-9+.-]*://").find(u)?.value.orEmpty()
+        val rest = u.removePrefix(scheme)
+        val shown = rest.take(3)
+        return scheme + shown + "*".repeat(rest.length - shown.length)
+    }
+
     private fun showDeviceSubscription(
         tvStatus: TextView, tvExpiry: TextView, tvDays: TextView, tvConn: TextView
     ) {
@@ -581,7 +647,10 @@ class ActivationFragment : Fragment(R.layout.fragment_activation) {
                 }
             } catch (e: Exception) {
                 if (!silent && isAdded) {
-                    showBanner(e.message ?: "Unable to contact activation server", isError = true)
+                    showBanner(
+                        com.playboxpro.tv.api.NetworkWatch.messageFor(e, "Unable to contact activation server"),
+                        isError = true
+                    )
                 }
             }
         }

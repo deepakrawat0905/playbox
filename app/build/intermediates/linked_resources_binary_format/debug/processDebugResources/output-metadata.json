@@ -4,14 +4,14 @@
     "type": "LINKED_RESOURCES_BINARY_FORMAT",
     "kind": "Directory"
   },
-  "applicationId": "com.playboxpro.tv",
+  "applicationId": "app.proplaybox.com",
   "variantName": "debug",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 2,
+      "versionCode": 5,
       "versionName": "1.0.1",
       "outputFile": "linked-resources-binary-format-debug.ap_"
     }

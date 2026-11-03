@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Poster card matched to STB+ item_series_stream:
+    110x165dp artwork with a hairline gloss border, favourite star top-start,
+    a 25dp circular rating dial bottom-end, and a 22dp title strip at 13sp.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/posterWrap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="110dp"
+            android:layout_height="165dp"
+            android:layout_margin="4dp">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="165dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/posterImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/poster_gloss_border"
+                    android:elevation="4dp" />
+
+                <ImageView
+                    android:id="@+id/lockBadge"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="start|top"
+                    android:layout_margin="4dp"
+                    android:elevation="6dp"
+                    android:src="@drawable/ic_lock"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <!-- Badge, e.g. adult / updated -->
+            <TextView
+                android:id="@+id/contentBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/badge_background"
+                android:fontFamily="@font/robotomedium"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:visibility="gone" />
+
+            <!-- Rating dial -->
+            <FrameLayout
+                android:id="@+id/ratingContainer"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end|bottom"
+                android:elevation="4dp">
+
+                <ProgressBar
+                    android:id="@+id/circularProgressBar"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress"
+                    android:progressTintMode="src_in" />
+
+                <TextView
+                    android:id="@+id/ratingText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="center"
+                    android:text="N/A"
+                    android:textColor="@color/white"
+                    android:textSize="7sp" />
+            </FrameLayout>
+
+            <!-- Watch progress -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom"
+                android:max="100"
+                android:progressDrawable="@drawable/bg_progress_bar"
+                android:visibility="gone" />        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Title strip -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cardTitle"
+        android:layout_width="100dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/robotoregular"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/row_text_color"
+        android:textSize="@dimen/sp_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/posterWrap" />
+
+    <!-- Kept for adapter binding; STB+ cards show the title only -->
+    <TextView
+        android:id="@+id/cardMeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

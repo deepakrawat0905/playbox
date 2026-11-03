@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.playboxpro.tv"
-    android:versionCode="2"
+    package="app.proplaybox.com"
+    android:versionCode="5"
     android:versionName="1.0.1" >
 
     <uses-sdk
-        android:minSdkVersion="23"
-        android:targetSdkVersion="35" />
+        android:minSdkVersion="24"
+        android:targetSdkVersion="36" />
     <!-- Runs on TV (leanback) and on phones; neither is mandatory. -->
     <uses-feature
         android:name="android.software.leanback"
@@ -20,15 +20,16 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <permission
-        android:name="com.playboxpro.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="app.proplaybox.com.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.playboxpro.tv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="app.proplaybox.com.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="com.playboxpro.tv.PlayBoxApp"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:banner="@drawable/tv_banner"
+        android:enableOnBackInvokedCallback="false"
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -38,6 +39,20 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+
+        <!--
+             Android 16 (API 36) notes:
+             - enableOnBackInvokedCallback="false" keeps the remote's BACK key
+               reaching the screens' own key handlers (Terms dialog, search
+               box); predictive back would otherwise swallow it.
+             - Android 16 ignores the landscape lock on tablets; this keeps the
+               TV layout in landscape there. Temporary: it is no longer
+               honoured once the app targets API 37.
+        -->
+        <property
+            android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+            android:value="true" />
+
         <activity
             android:name="com.playboxpro.tv.SplashActivity"
             android:exported="true"
@@ -63,7 +78,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.playboxpro.tv.androidx-startup"
+            android:authorities="app.proplaybox.com.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

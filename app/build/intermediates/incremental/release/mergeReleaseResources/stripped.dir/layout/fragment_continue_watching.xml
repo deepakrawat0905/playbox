@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/safe_x"
+    android:paddingEnd="@dimen/safe_x"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@color/bg">
+
+    <!-- Top Header Bar (1:1 with React App) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Left: Continue watching Title + Count Subtitle -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cwTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue watching"
+                android:textColor="@color/text"
+                android:textSize="25sp"
+                android:fontFamily="@font/robotomedium" />
+
+            <TextView
+                android:id="@+id/cwSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Remove Focused Item Button Pill -->
+        <LinearLayout
+            android:id="@+id/btnRemoveCw"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="@color/surface_2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:clickable="true"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🗑 "
+                android:textColor="@color/danger"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:textColor="@color/text"
+                android:textSize="13sp"
+                android:fontFamily="@font/robotomedium" />
+        </LinearLayout>
+
+        <!-- License Duration Pill -->
+        <TextView
+            android:id="@+id/licenseBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="#26FBBF24"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="⏱  Active"
+            android:textColor="@color/warning"
+            android:textSize="13sp"
+            android:fontFamily="@font/robotomedium"
+            android:layout_marginEnd="18dp" />
+
+        <!-- Live Clock & Date -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/clockTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:fontFamily="@font/robotomedium" />
+
+            <TextView
+                android:id="@+id/clockDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_dim"
+                android:textSize="11sp"
+                android:layout_marginTop="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Main Content Area: 4-Column Wide Card Grid or Empty View -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Empty State View -->
+        <LinearLayout
+            android:id="@+id/cwEmptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_pill"
+                android:backgroundTint="@color/surface_2"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="⏱"
+                    android:textColor="@color/text_dim"
+                    android:textSize="25sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No unfinished titles"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:fontFamily="@font/robotomedium"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titles you pause in the middle will appear here"
+                android:textColor="@color/text_dim"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- 4-Column 16:9 Wide Cards Grid -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cwGridRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:scrollbars="none" />
+    </FrameLayout>
+</LinearLayout>

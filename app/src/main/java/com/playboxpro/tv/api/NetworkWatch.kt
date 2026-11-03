@@ -38,4 +38,22 @@ object NetworkWatch {
     }.getOrDefault(true)
 
     const val NO_INTERNET = "No internet connection"
+
+    /**
+     * What to tell the user about a failed request. Raw network errors name
+     * the server's host and IP ("Unable to resolve host ...", "Failed to
+     * connect to .../1.2.3.4"), which is noise to a viewer and not something
+     * to put on screen; offline, the only message is [NO_INTERNET].
+     */
+    fun messageFor(e: Throwable?, fallback: String): String {
+        val causes = generateSequence(e) { it.cause }.toList()
+        return when {
+            !isOnline || causes.any { it is java.net.UnknownHostException } -> NO_INTERNET
+            causes.any {
+                it is java.net.ConnectException || it is java.net.SocketTimeoutException ||
+                    it is java.net.NoRouteToHostException || it is javax.net.ssl.SSLException
+            } -> "Unable to reach the server. Please try again."
+            else -> e?.message?.takeIf { it.isNotBlank() } ?: fallback
+        }
+    }
 }

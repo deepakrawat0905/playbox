@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- STB+ item_media: 200x120 still in the yellow focus frame with a 12sp caption -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mediaRoot"
+    android:layout_width="200dp"
+    android:layout_height="160dp"
+    android:layout_marginEnd="10dp"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:duplicateParentState="true"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/stb_nested_selector"
+            android:duplicateParentState="true"
+            android:padding="2dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivMedia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_main_background"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvMediaName"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Backdrop"
+            android:textColor="@color/light_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>

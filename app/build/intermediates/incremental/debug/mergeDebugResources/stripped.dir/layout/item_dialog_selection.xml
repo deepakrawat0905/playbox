@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Dialog option row matched to STB+ item_dialog_selection:
+    a pill that fills white on focus, 16sp label that flips to black, and a
+    20dp check mark on the right for the chosen entry.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@drawable/bg_btn_light_pill"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/selector_dialog_text"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:duplicateParentState="true"
+        android:src="@drawable/ic_check"
+        android:visibility="gone"
+        app:tint="@color/selector_dialog_text" />
+</LinearLayout>

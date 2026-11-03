@@ -4,10 +4,10 @@ android {
     namespace = "com.playboxpro.tv"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.playboxpro.tv"
-        minSdk = 23
-        targetSdk = 35
-        versionCode = 2
+        applicationId = "app.proplaybox.com"
+        minSdk = 24
+        targetSdk = 36
+        versionCode = 5
         versionName = "1.0.1"
     }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
