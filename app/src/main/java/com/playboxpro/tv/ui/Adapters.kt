@@ -31,13 +31,26 @@ abstract class SafeAdapter<VH : RecyclerView.ViewHolder> : RecyclerView.Adapter<
         if (host === recyclerView) host = null
     }
 
-    /** notifyDataSetChanged(), deferred if the list is busy right now. */
+    /**
+     * notifyDataSetChanged() for items the adapter has already swapped in.
+     *
+     * The list has to hear of it straight away: told later, a scroll still
+     * running (or its prefetch) asked for positions the new list no longer
+     * had, and the app crashed with "Inconsistency detected". A running
+     * scroll is stopped instead; only a layout pass in progress, when the
+     * list refuses notifications, waits for the next turn of the loop.
+     */
     fun refresh() {
         val rv = host
-        if (rv != null && (rv.isComputingLayout || rv.scrollState != RecyclerView.SCROLL_STATE_IDLE)) {
+        if (rv != null && rv.isComputingLayout) {
             rv.post { refresh() }
-        } else {
+            return
+        }
+        if (rv != null && rv.scrollState != RecyclerView.SCROLL_STATE_IDLE) rv.stopScroll()
+        try {
             notifyDataSetChanged()
+        } catch (_: IllegalStateException) {
+            rv?.post { refresh() }
         }
     }
 }
@@ -80,8 +93,8 @@ fun posterGridSpan(
  */
 private fun applyCardFocus(holder: MovieCardAdapter.VH, focused: Boolean) {
     val ctx = holder.root.context
-    holder.posterWrap.background =
-        if (focused) androidx.core.content.ContextCompat.getDrawable(ctx, R.drawable.series_selector) else null
+    // The yellow outline comes from posterWrap's state-list background
+    // (poster_focus_frame), which follows the card's focus on its own.
     holder.title.setTextColor(ctx.getColor(if (focused) R.color.yellow else R.color.white))
     holder.title.isSelected = focused   // marquee runs only on the lit card
 }
@@ -93,6 +106,8 @@ class MovieCardAdapter(
     private val compact: Boolean = false,
     /** Told which poster the remote is on, so a page can come back to it. */
     private val onItemFocused: ((Any) -> Unit)? = null,
+    /** Lets a page pace a held-down D-pad on the posters (true = key used up). */
+    private val onCardKey: ((android.view.KeyEvent) -> Boolean)? = null,
     private val onClick: (Any) -> Unit
 ) : SafeAdapter<MovieCardAdapter.VH>() {
 
@@ -112,6 +127,8 @@ class MovieCardAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val layout = if (compact) R.layout.item_movie_card_small else R.layout.item_movie_card
         val v = LayoutInflater.from(parent.context).inflate(layout, parent, false)
+        // Full cards round the poster with its background's outline.
+        if (!compact) v.findViewById<View>(R.id.posterImage).clipToOutline = true
         if (!compact && parent is RecyclerView && parent.layoutManager is LinearLayoutManager && (parent.layoutManager as LinearLayoutManager).orientation == LinearLayoutManager.HORIZONTAL) {
             val lp = v.layoutParams
             lp.width = (160 * parent.context.resources.displayMetrics.density).toInt()
@@ -184,6 +201,7 @@ class MovieCardAdapter(
         }
 
         holder.root.setOnClickListener { onClick(item) }
+        onCardKey?.let { handler -> holder.root.setOnKeyListener { _, _, event -> handler(event) } }
     }
 
     // Stable ids let the grid keep the highlighted poster focused when the

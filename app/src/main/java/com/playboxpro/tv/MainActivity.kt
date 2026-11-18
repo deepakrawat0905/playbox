@@ -117,6 +117,8 @@ class MainActivity : AppCompatActivity() {
                     // STB+: channels -> categories -> menu.
                     return
                 }
+                // Movies / Series: posters -> their category, then leave.
+                if (currentFrag is CatalogFragment && currentFrag.handleBack()) return
                 if (currentDestination == "live") {
                     openDrawer()
                 } else if (currentDestination == "activate") {
@@ -235,7 +237,13 @@ class MainActivity : AppCompatActivity() {
     fun openDrawer() {
         if (isDrawerOpen) return
         isDrawerOpen = true
-        focusBeforeDrawer = currentFocus
+        // Reopened while it is still sliding away, the focus can still be on
+        // one of its own rows; that is never the place to come back to, or
+        // closing would leave the remote on a hidden row (OK then opened
+        // Exit, Profile...). Keep the page's view saved from before instead.
+        val current = currentFocus
+        if (current != null && !isInSidebar(current)) focusBeforeDrawer = current
+        sidebar.descendantFocusability = ViewGroup.FOCUS_AFTER_DESCENDANTS
 
         val width = resources.getDimensionPixelSize(R.dimen.sidebar_width_open).toFloat()
         sidebar.translationX = -width
@@ -262,16 +270,30 @@ class MainActivity : AppCompatActivity() {
         isDrawerOpen = false
 
         val width = resources.getDimensionPixelSize(R.dimen.sidebar_width_open).toFloat()
+        // Its rows stop taking focus at once, so presses made while it slides
+        // away cannot walk back into a menu that is going.
+        sidebar.descendantFocusability = ViewGroup.FOCUS_BLOCK_DESCENDANTS
         contentHost.animate().translationX(0f).setDuration(180).start()
         sidebar.animate()
             .translationX(-width)
             .setDuration(180)
             .withEndAction {
+                // Reopened meanwhile: leave the open drawer alone.
+                if (isDrawerOpen) return@withEndAction
                 sidebar.visibility = View.GONE
                 contentHost.descendantFocusability = ViewGroup.FOCUS_AFTER_DESCENDANTS
                 focusContent()
             }
             .start()
+    }
+
+    private fun isInSidebar(v: View): Boolean {
+        var p: android.view.ViewParent? = v.parent
+        while (p != null) {
+            if (p === sidebar) return true
+            p = p.parent
+        }
+        return false
     }
 
     private fun focusContent() {
@@ -280,8 +302,12 @@ class MainActivity : AppCompatActivity() {
         val previous = focusBeforeDrawer
         focusBeforeDrawer = null
         contentHost.post {
-            if (previous != null && previous.isAttachedToWindow && previous.requestFocus()) return@post
-            contentHost.requestFocus()
+            if (isDrawerOpen) return@post
+            val restored = previous != null && previous.isAttachedToWindow && !isInSidebar(previous) &&
+                previous.requestFocus()
+            if (!restored) contentHost.requestFocus()
+            // Never leave the remote on a row of the hidden menu.
+            currentFocus?.takeIf { isInSidebar(it) }?.clearFocus()
         }
     }
 

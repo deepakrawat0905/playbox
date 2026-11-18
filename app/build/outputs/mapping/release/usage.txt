@@ -8004,8 +8004,6 @@ androidx.core.view.ViewCompat:
     public static int getMeasuredWidthAndState(android.view.View)
     public static int getNextClusterForwardId(android.view.View)
     public static int getOverScrollMode(android.view.View)
-    public static int getPaddingEnd(android.view.View)
-    public static int getPaddingStart(android.view.View)
     public static android.view.ViewParent getParentForAccessibility(android.view.View)
     public static float getPivotX(android.view.View)
     public static float getPivotY(android.view.View)
@@ -18163,15 +18161,6 @@ androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup:
     public boolean isSpanIndexCacheEnabled()
     public void setSpanGroupIndexCacheEnabled(boolean)
     public void setSpanIndexCacheEnabled(boolean)
-androidx.recyclerview.widget.GridLayoutManager:
-    private static final boolean DEBUG
-    public static final int DEFAULT_SPAN_COUNT
-    private static final int INVALID_POSITION
-    private static final java.lang.String TAG
-    public androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup getSpanSizeLookup()
-    public boolean isUsingSpansToEstimateScrollbarDimensions()
-    public void setSpanSizeLookup(androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup)
-    public void setUsingSpansToEstimateScrollbarDimensions(boolean)
 androidx.recyclerview.widget.ItemTouchHelper$1
 androidx.recyclerview.widget.ItemTouchHelper$2
 androidx.recyclerview.widget.ItemTouchHelper$3
@@ -18203,25 +18192,6 @@ androidx.recyclerview.widget.LinearLayoutManager$LayoutState:
     static final int SCROLLING_OFFSET_NaN
     static final java.lang.String TAG
     void log()
-androidx.recyclerview.widget.LinearLayoutManager:
-    static final boolean DEBUG
-    public static final int HORIZONTAL
-    public static final int INVALID_OFFSET
-    private static final float MAX_SCROLL_FACTOR
-    private static final java.lang.String TAG
-    public static final int VERTICAL
-    public int findFirstCompletelyVisibleItemPosition()
-    public int findLastCompletelyVisibleItemPosition()
-    public int getInitialPrefetchItemCount()
-    public boolean getRecycleChildrenOnDetach()
-    public boolean getReverseLayout()
-    public boolean getStackFromEnd()
-    private void logChildren()
-    public void prepareForDrop(android.view.View,android.view.View,int,int)
-    public void setInitialPrefetchItemCount(int)
-    public void setRecycleChildrenOnDetach(boolean)
-    public void setSmoothScrollbarEnabled(boolean)
-    void validateChildOrder()
 androidx.recyclerview.widget.LinearSmoothScroller:
     private static final boolean DEBUG
     private static final float MILLISECONDS_PER_INCH
@@ -18282,30 +18252,6 @@ androidx.recyclerview.widget.RecyclerView$ItemAnimator:
     public void setChangeDuration(long)
     public void setMoveDuration(long)
     public void setRemoveDuration(long)
-androidx.recyclerview.widget.RecyclerView$LayoutManager:
-    public void assertInLayoutOrScroll(java.lang.String)
-    public void attachView(android.view.View)
-    public void detachAndScrapView(android.view.View,androidx.recyclerview.widget.RecyclerView$Recycler)
-    public void detachAndScrapViewAt(int,androidx.recyclerview.widget.RecyclerView$Recycler)
-    public void detachView(android.view.View)
-    public void endAnimation(android.view.View)
-    public static int getChildMeasureSpec(int,int,int,boolean)
-    public int getItemViewType(android.view.View)
-    public int getPaddingEnd()
-    public int getPaddingStart()
-    public boolean hasFocus()
-    public void ignoreView(android.view.View)
-    public boolean isFocused()
-    public boolean isMeasurementCacheEnabled()
-    public void layoutDecorated(android.view.View,int,int,int,int)
-    public void measureChild(android.view.View,int,int)
-    public void postOnAnimation(java.lang.Runnable)
-    public void removeAllViews()
-    public void removeDetachedView(android.view.View)
-    public void setAutoMeasureEnabled(boolean)
-    public final void setItemPrefetchEnabled(boolean)
-    public void setMeasurementCacheEnabled(boolean)
-    public void stopIgnoringView(android.view.View)
 androidx.recyclerview.widget.RecyclerView$LayoutParams:
     public int getAbsoluteAdapterPosition()
     public int getBindingAdapterPosition()
@@ -18379,14 +18325,12 @@ androidx.recyclerview.widget.RecyclerView:
     public static final int VERTICAL
     public void addOnChildAttachStateChangeListener(androidx.recyclerview.widget.RecyclerView$OnChildAttachStateChangeListener)
     public void addRecyclerListener(androidx.recyclerview.widget.RecyclerView$RecyclerListener)
-    void assertInLayoutOrScroll(java.lang.String)
     public void clearOnChildAttachStateChangeListeners()
     public void clearOnScrollListeners()
     public boolean dispatchNestedScroll(int,int,int,int,int[],int)
     public android.view.View findChildViewUnder(float,float)
     public androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForLayoutPosition(int)
     public androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForPosition(int)
-    public int getChildAdapterPosition(android.view.View)
     public long getChildItemId(android.view.View)
     public int getChildPosition(android.view.View)
     public void getDecoratedBoundsWithMargins(android.view.View,android.graphics.Rect)
@@ -35799,7 +35743,6 @@ kotlin.collections.ArraysKt___ArraysKt:
     public static final int getLastIndex(double[])
     public static final int getLastIndex(float[])
     public static final int getLastIndex(int[])
-    public static final int getLastIndex(long[])
     public static final int getLastIndex(short[])
     public static final int getLastIndex(boolean[])
     private static final byte getOrElse(byte[],int,kotlin.jvm.functions.Function1)
@@ -41086,7 +41029,10 @@ kotlinx.coroutines.flow.FlowKt__ZipKt$nullArrayFactory$1
 kotlinx.coroutines.flow.FlowKt__ZipKt
 kotlinx.coroutines.flow.LintKt$retry$1
 kotlinx.coroutines.flow.LintKt
-kotlinx.coroutines.flow.MutableSharedFlow
+kotlinx.coroutines.flow.MutableSharedFlow:
+    public abstract java.lang.Object emit(java.lang.Object,kotlin.coroutines.Continuation)
+    public abstract kotlinx.coroutines.flow.StateFlow getSubscriptionCount()
+    public abstract void resetReplayCache()
 kotlinx.coroutines.flow.MutableStateFlow:
     public abstract boolean compareAndSet(java.lang.Object,java.lang.Object)
 kotlinx.coroutines.flow.ReadonlySharedFlow
@@ -41094,75 +41040,13 @@ kotlinx.coroutines.flow.ReadonlyStateFlow
 kotlinx.coroutines.flow.SafeFlow
 kotlinx.coroutines.flow.SharedFlow:
     public abstract java.util.List getReplayCache()
-kotlinx.coroutines.flow.SharedFlowImpl$Emitter
-kotlinx.coroutines.flow.SharedFlowImpl$WhenMappings
-kotlinx.coroutines.flow.SharedFlowImpl$collect$1
 kotlinx.coroutines.flow.SharedFlowImpl:
-    private java.lang.Object[] buffer
-    private final int bufferCapacity
-    private int bufferSize
-    private long minCollectorIndex
-    private final kotlinx.coroutines.channels.BufferOverflow onBufferOverflow
-    private int queueSize
-    private final int replay
-    private long replayIndex
-    public void <init>(int,int,kotlinx.coroutines.channels.BufferOverflow)
     public static final synthetic java.lang.Object access$awaitValue(kotlinx.coroutines.flow.SharedFlowImpl,kotlinx.coroutines.flow.SharedFlowSlot,kotlin.coroutines.Continuation)
-    public static final synthetic void access$cancelEmitter(kotlinx.coroutines.flow.SharedFlowImpl,kotlinx.coroutines.flow.SharedFlowImpl$Emitter)
     public static final synthetic java.lang.Object access$emitSuspend(kotlinx.coroutines.flow.SharedFlowImpl,java.lang.Object,kotlin.coroutines.Continuation)
-    public static final synthetic void access$enqueueLocked(kotlinx.coroutines.flow.SharedFlowImpl,java.lang.Object)
-    public static final synthetic kotlin.coroutines.Continuation[] access$findSlotsToResumeLocked(kotlinx.coroutines.flow.SharedFlowImpl,kotlin.coroutines.Continuation[])
-    public static final synthetic int access$getBufferCapacity$p(kotlinx.coroutines.flow.SharedFlowImpl)
-    public static final synthetic long access$getHead(kotlinx.coroutines.flow.SharedFlowImpl)
-    public static final synthetic int access$getQueueSize$p(kotlinx.coroutines.flow.SharedFlowImpl)
-    public static final synthetic int access$getTotalSize(kotlinx.coroutines.flow.SharedFlowImpl)
-    public static final synthetic void access$setQueueSize$p(kotlinx.coroutines.flow.SharedFlowImpl,int)
-    public static final synthetic boolean access$tryEmitLocked(kotlinx.coroutines.flow.SharedFlowImpl,java.lang.Object)
-    public static final synthetic long access$tryPeekLocked(kotlinx.coroutines.flow.SharedFlowImpl,kotlinx.coroutines.flow.SharedFlowSlot)
-    private final java.lang.Object awaitValue(kotlinx.coroutines.flow.SharedFlowSlot,kotlin.coroutines.Continuation)
-    private final void cancelEmitter(kotlinx.coroutines.flow.SharedFlowImpl$Emitter)
-    private final void cleanupTailLocked()
-    public java.lang.Object collect(kotlinx.coroutines.flow.FlowCollector,kotlin.coroutines.Continuation)
-    static synthetic java.lang.Object collect$suspendImpl(kotlinx.coroutines.flow.SharedFlowImpl,kotlinx.coroutines.flow.FlowCollector,kotlin.coroutines.Continuation)
-    private final void correctCollectorIndexesOnDropOldest(long)
-    protected kotlinx.coroutines.flow.SharedFlowSlot createSlot()
-    public synthetic bridge kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot createSlot()
-    protected kotlinx.coroutines.flow.SharedFlowSlot[] createSlotArray(int)
-    public synthetic bridge kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] createSlotArray(int)
-    private final void dropOldestLocked()
-    public java.lang.Object emit(java.lang.Object,kotlin.coroutines.Continuation)
-    static synthetic java.lang.Object emit$suspendImpl(kotlinx.coroutines.flow.SharedFlowImpl,java.lang.Object,kotlin.coroutines.Continuation)
-    private final java.lang.Object emitSuspend(java.lang.Object,kotlin.coroutines.Continuation)
-    private final void enqueueLocked(java.lang.Object)
-    private final kotlin.coroutines.Continuation[] findSlotsToResumeLocked(kotlin.coroutines.Continuation[])
-    public kotlinx.coroutines.flow.Flow fuse(kotlin.coroutines.CoroutineContext,int,kotlinx.coroutines.channels.BufferOverflow)
-    private final long getBufferEndIndex()
-    private final long getHead()
     protected final java.lang.Object getLastReplayedLocked()
     protected static synthetic void getLastReplayedLocked$annotations()
-    private final java.lang.Object getPeekedValueLockedAt(long)
-    private final long getQueueEndIndex()
     public java.util.List getReplayCache()
-    private final int getReplaySize()
-    private final int getTotalSize()
-    private final java.lang.Object[] growBuffer(java.lang.Object[],int,int)
     public void resetReplayCache()
-    public boolean tryEmit(java.lang.Object)
-    private final boolean tryEmitLocked(java.lang.Object)
-    private final boolean tryEmitNoCollectorsLocked(java.lang.Object)
-    private final long tryPeekLocked(kotlinx.coroutines.flow.SharedFlowSlot)
-    private final java.lang.Object tryTakeValue(kotlinx.coroutines.flow.SharedFlowSlot)
-    private final void updateBufferLocked(long,long,long,long)
-    public final kotlin.coroutines.Continuation[] updateCollectorIndexLocked$kotlinx_coroutines_core(long)
-    public final long updateNewCollectorIndexLocked$kotlinx_coroutines_core()
-kotlinx.coroutines.flow.SharedFlowKt:
-    public static final kotlinx.coroutines.flow.MutableSharedFlow MutableSharedFlow(int,int,kotlinx.coroutines.channels.BufferOverflow)
-    public static synthetic kotlinx.coroutines.flow.MutableSharedFlow MutableSharedFlow$default(int,int,kotlinx.coroutines.channels.BufferOverflow,int,java.lang.Object)
-    public static final synthetic java.lang.Object access$getBufferAt(java.lang.Object[],long)
-    public static final synthetic void access$setBufferAt(java.lang.Object[],long,java.lang.Object)
-    private static final java.lang.Object getBufferAt(java.lang.Object[],long)
-    private static final void setBufferAt(java.lang.Object[],long,java.lang.Object)
-kotlinx.coroutines.flow.SharedFlowSlot
 kotlinx.coroutines.flow.SharingCommand
 kotlinx.coroutines.flow.SharingConfig
 kotlinx.coroutines.flow.SharingStarted$Companion
@@ -41182,7 +41066,6 @@ kotlinx.coroutines.flow.StateFlowImpl:
     private final synthetic java.lang.Object get_state$volatile()
     public void resetReplayCache()
     private final synthetic void set_state$volatile(java.lang.Object)
-    public boolean tryEmit(java.lang.Object)
 kotlinx.coroutines.flow.StateFlowKt:
     public static final java.lang.Object getAndUpdate(kotlinx.coroutines.flow.MutableStateFlow,kotlin.jvm.functions.Function1)
     public static final void update(kotlinx.coroutines.flow.MutableStateFlow,kotlin.jvm.functions.Function1)
@@ -41200,10 +41083,7 @@ kotlinx.coroutines.flow.ThrowingCollector:
     public java.lang.Object emit(java.lang.Object,kotlin.coroutines.Continuation)
 kotlinx.coroutines.flow.internal.AbortFlowException
 kotlinx.coroutines.flow.internal.AbstractSharedFlow:
-    public static final synthetic int access$getNCollectors(kotlinx.coroutines.flow.internal.AbstractSharedFlow)
-    public static final synthetic kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] access$getSlots(kotlinx.coroutines.flow.internal.AbstractSharedFlow)
     protected final void forEachSlotLocked(kotlin.jvm.functions.Function1)
-    protected final int getNCollectors()
     public final kotlinx.coroutines.flow.StateFlow getSubscriptionCount()
 kotlinx.coroutines.flow.internal.ChannelFlow:
     public kotlinx.coroutines.flow.Flow dropChannelOperators()
@@ -48248,7 +48128,7 @@ androidx.media3.common.AuxEffectInfo:
     public final int effectId
     public final float sendLevel
 androidx.media3.common.BasePlayer:
-    public abstract androidx.media3.common.MediaItem getCurrentMediaItem()
+    public final androidx.media3.common.MediaItem getCurrentMediaItem()
     public final int getNextMediaItemIndex()
     public final int getPreviousMediaItemIndex()
     public final int getRepeatModeForNavigation()
@@ -53235,11 +53115,9 @@ androidx.recyclerview.widget.ChildHelper:
     public static void addView()
     public static android.view.View findHiddenNonRemovedView()
     public static void hide()
-    public final int indexOfChild(android.view.View)
     public final boolean isHidden(android.view.View)
     public static void removeAllViewsUnfiltered()
     public static void removeView()
-    public static void removeViewAt()
     public static boolean removeViewIfHidden()
     public static void unhide()
 androidx.recyclerview.widget.DefaultItemAnimator:
@@ -53297,25 +53175,22 @@ androidx.recyclerview.widget.GapWorker:
     public static void remove()
 androidx.recyclerview.widget.GridLayoutManager$Api21Impl
 androidx.recyclerview.widget.GridLayoutManager$DefaultSpanSizeLookup:
-    public boolean mCacheSpanGroupIndices
-    public boolean mCacheSpanIndices
-    public static int getCachedSpanGroupIndex()
-    public static int getCachedSpanIndex()
-    public static int getSpanIndex()
-    public static int getSpanSize()
-    public final void invalidateSpanGroupIndexCache()
+    public final int getSpanIndex()
+    public final int getSpanSize()
 androidx.recyclerview.widget.GridLayoutManager$LayoutParams:
     public final int getSpanIndex()
     public static int getSpanSize()
-androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup
+androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup:
+    public boolean mCacheSpanGroupIndices
+    public boolean mCacheSpanIndices
+    public abstract int getCachedSpanGroupIndex()
+    public abstract int getCachedSpanIndex()
+    public abstract int getSpanIndex()
+    public abstract int getSpanSize()
+    public final void invalidateSpanGroupIndexCache()
 androidx.recyclerview.widget.GridLayoutManager:
-    public boolean mUsingSpansToEstimateScrollBarDimensions
-    public static int computeScrollOffsetWithSpanInfo()
-    public static int computeScrollRangeWithSpanInfo()
-    public static int findPositionOfFirstItemOnARowBelowForHorizontalGrid()
-    public static int findPositionOfLastItemOnARowAboveForHorizontalGrid()
+    public final void calculateItemBorders(int)
     public final java.util.HashSet getColumnIndices(int)
-    public static int getSpanCount()
     public final void measureChildWithDecorationsAndMargin(android.view.View,int,int,boolean)
 androidx.recyclerview.widget.LayoutState:
     public final boolean hasMore(androidx.recyclerview.widget.RecyclerView$State)
@@ -53336,37 +53211,19 @@ androidx.recyclerview.widget.LinearLayoutManager$SavedState:
     public final boolean hasValidAnchor()
     public static void invalidateAnchor()
 androidx.recyclerview.widget.LinearLayoutManager:
-    public boolean mRecycleChildrenOnDetach
     public void <init>()
-    public static androidx.recyclerview.widget.LinearLayoutManager$LayoutState createLayoutState()
     public final android.view.View findFirstPartiallyOrCompletelyInvisibleChild()
     public final android.view.View findLastPartiallyOrCompletelyInvisibleChild()
-    public static int getExtraLayoutSpace()
-    public final int getOrientation()
-    public static boolean isSmoothScrollbarEnabled()
-    public final boolean resolveIsInfinite()
-    public final void setReverseLayout(boolean)
     public final void updateLayoutStateToFillEnd(androidx.recyclerview.widget.LinearLayoutManager$AnchorInfo)
     public final void updateLayoutStateToFillStart(androidx.recyclerview.widget.LinearLayoutManager$AnchorInfo)
 androidx.recyclerview.widget.LinearSmoothScroller:
     public final int calculateTimeForDeceleration(int)
     public static int clampApplyScroll(int,int)
-    public static android.view.View findViewByPosition()
-    public static int getChildCount()
-    public final int getChildPosition(android.view.View)
     public static int getHorizontalSnapPreference()
-    public static androidx.recyclerview.widget.RecyclerView$LayoutManager getLayoutManager()
-    public static int getTargetPosition()
     public static int getVerticalSnapPreference()
-    public static boolean isPendingInitialRun()
-    public static boolean isRunning()
-    public static void normalize()
-    public static void onChildAttachedToWindow()
-    public static void onSeekTargetStep()
-    public static void onStart()
-    public static void onStop()
-    public static void setTargetPosition()
-    public static void start()
+    public final void onSeekTargetStep()
+    public final void onStart()
+    public final void onStop()
     public static void updateActionForInterimTarget()
 androidx.recyclerview.widget.OpReorderer$Callback
 androidx.recyclerview.widget.OpReorderer:
@@ -53381,7 +53238,7 @@ androidx.recyclerview.widget.OrientationHelper:
 androidx.recyclerview.widget.PagerSnapHelper:
     public android.widget.Scroller mGravityScroller
     public static void attachToRecyclerView()
-    public static androidx.recyclerview.widget.LinearSmoothScroller createScroller()
+    public static androidx.recyclerview.widget.RecyclerView$SmoothScroller createScroller()
     public static android.view.View findSnapView()
     public static int findTargetSnapPosition()
     public final boolean onFling()
@@ -53453,69 +53310,10 @@ androidx.recyclerview.widget.RecyclerView$ItemDecoration:
     public abstract void getItemOffsets$1()
     public abstract void onDraw()
     public abstract void onDrawOver()
-androidx.recyclerview.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry
+androidx.recyclerview.widget.RecyclerView$LayoutManager$LayoutPrefetchRegistry:
+    public abstract void addPosition(int,int)
 androidx.recyclerview.widget.RecyclerView$LayoutManager:
-    public boolean mAutoMeasure
-    public final androidx.recyclerview.widget.RecyclerView$LayoutManager$1 mHorizontalBoundCheckCallback
-    public final androidx.recyclerview.widget.RecyclerView$LayoutManager$2 mVerticalBoundCheckCallback
-    public abstract void addDisappearingView()
-    public final void addDisappearingView(android.view.View)
-    public abstract void addView()
-    public final void addView(android.view.View)
-    public abstract void attachView()
-    public abstract void attachView$1()
-    public final void calculateItemDecorationsForChild(android.view.View,android.graphics.Rect)
-    public final void detachViewAt(int)
-    public final void dispatchAttachedToWindow(androidx.recyclerview.widget.RecyclerView)
-    public final void dispatchDetachedFromWindow(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$Recycler)
-    public final android.view.View findContainingItemView(android.view.View)
-    public abstract int getBaseline()
-    public abstract int getBottomDecorationHeight()
-    public abstract boolean getClipToPadding()
-    public static int getDecoratedBottom(android.view.View)
-    public static int getDecoratedLeft(android.view.View)
-    public static int getDecoratedRight(android.view.View)
-    public static int getDecoratedTop(android.view.View)
-    public final android.view.View getFocusedChild()
-    public abstract int getHeight()
-    public abstract int getHeightMode()
-    public abstract int getLayoutDirection()
-    public abstract int getLeftDecorationWidth()
-    public final int getMinimumHeight()
-    public final int getMinimumWidth()
-    public abstract int getRightDecorationWidth()
-    public abstract int getSelectionModeForAccessibility()
-    public abstract int getTopDecorationHeight()
-    public abstract int getWidth()
-    public abstract int getWidthMode()
-    public abstract boolean hasFlexibleChildInBothOrientations()
-    public abstract boolean isAttachedToWindow()
-    public abstract boolean isItemPrefetchEnabled()
-    public abstract boolean isLayoutHierarchical()
-    public final boolean isSmoothScrolling()
-    public abstract boolean isViewPartiallyVisible()
-    public abstract void measureChildWithMargins()
-    public abstract void moveView()
-    public abstract boolean onAddFocusables()
-    public abstract void onDetachedFromWindow()
-    public abstract void onInitializeAccessibilityEvent()
-    public abstract void onInitializeAccessibilityNodeInfo()
-    public abstract android.view.View onInterceptFocusSearch()
-    public abstract void onItemsUpdated()
-    public final void onMeasure(int,int)
-    public abstract boolean onRequestChildFocus()
-    public abstract boolean onRequestChildFocus$1()
-    public abstract void onSmoothScrollerStopped()
-    public abstract boolean performAccessibilityAction()
-    public abstract boolean performAccessibilityActionForItem()
-    public abstract boolean performAccessibilityActionForItem$1()
-    public final void removeAndRecycleViewAt(int,androidx.recyclerview.widget.RecyclerView$Recycler)
-    public final void removeCallbacks(androidx.recyclerview.widget.StaggeredGridLayoutManager$1)
-    public abstract void removeView()
-    public abstract boolean requestChildRectangleOnScreen()
-    public abstract void requestSimpleAnimationsInNextLayout()
-    public final void setMeasuredDimension(int,int)
-    public abstract void stopSmoothScroller()
+    public final void detachViewInternal(int)
 androidx.recyclerview.widget.RecyclerView$LayoutParams:
     public static int getViewLayoutPosition()
     public static boolean isItemChanged()
@@ -53543,7 +53341,7 @@ androidx.recyclerview.widget.RecyclerView$RecycledViewPool:
     public static void setMaxRecycledViews()
     public static boolean willBindInTime()
     public static boolean willCreateInTime()
-androidx.recyclerview.widget.RecyclerView$Recycler$$InternalSyntheticThrowCCEIfNotNull$38$3d4117e3661818900ec32e474cf737c55f87ee15b1898c6f5f4c823236bead68$0
+androidx.recyclerview.widget.RecyclerView$Recycler$$InternalSyntheticThrowCCEIfNotNull$32$3d4117e3661818900ec32e474cf737c55f87ee15b1898c6f5f4c823236bead68$0
 androidx.recyclerview.widget.RecyclerView$Recycler:
     public androidx.recyclerview.widget.RecyclerView$ViewCacheExtension mViewCacheExtension
     public final void clear()
@@ -53592,7 +53390,21 @@ androidx.recyclerview.widget.RecyclerView$SmoothScroller$Action:
     public static boolean hasJumpTarget()
     public static void jumpTo()
     public final void update(int,int,int,android.view.animation.BaseInterpolator)
-androidx.recyclerview.widget.RecyclerView$SmoothScroller
+androidx.recyclerview.widget.RecyclerView$SmoothScroller:
+    public abstract android.view.View findViewByPosition()
+    public abstract int getChildCount()
+    public final int getChildPosition(android.view.View)
+    public abstract androidx.recyclerview.widget.RecyclerView$LayoutManager getLayoutManager()
+    public abstract int getTargetPosition()
+    public abstract boolean isPendingInitialRun()
+    public abstract boolean isRunning()
+    public abstract void normalize()
+    public abstract void onChildAttachedToWindow()
+    public abstract void onSeekTargetStep()
+    public abstract void onStart()
+    public abstract void onStop()
+    public abstract void setTargetPosition()
+    public abstract void start()
 androidx.recyclerview.widget.RecyclerView$State:
     public android.util.SparseArray mData
     public int mRemainingScrollHorizontal
@@ -53621,6 +53433,7 @@ androidx.recyclerview.widget.RecyclerView:
     public static void addOnItemTouchListener()
     public static void animateAppearance()
     public static void animateDisappearance()
+    public static void assertInLayoutOrScroll()
     public static boolean canReuseUpdatedViewHolder()
     public final void cancelScroll()
     public static int consumeFlingInHorizontalStretch()
@@ -53634,6 +53447,7 @@ androidx.recyclerview.widget.RecyclerView:
     public static androidx.recyclerview.widget.RecyclerView$ViewHolder findViewHolderForPosition()
     public static boolean fling()
     public static boolean flingNoThresholdCheck()
+    public static int getChildAdapterPosition()
     public static int getChildLayoutPosition()
     public static void initAdapterManager()
     public static void initFastScroller()
@@ -55930,7 +55744,6 @@ com.google.android.material.carousel.CarouselLayoutManager:
     public static int getCarouselAlignment()
     public static int getContainerHeight()
     public static int getContainerWidth()
-    public final float getDecoratedCenterWithMargins(android.view.View)
     public final com.google.android.material.carousel.KeylineState getKeylineStateForPosition(int)
     public static float getMaskedItemSizeForLocOffset(float,com.google.android.material.carousel.CarouselLayoutManager$KeylineRange)
     public static int getOffsetToScrollToPosition()
@@ -55944,16 +55757,14 @@ com.google.android.material.carousel.CarouselLayoutManager:
     public static int getSmallestScrollOffsetToFocalKeyline()
     public final boolean isLocOffsetOutOfFillBoundsEnd(float,com.google.android.material.carousel.CarouselLayoutManager$KeylineRange)
     public final boolean isLocOffsetOutOfFillBoundsStart(float,com.google.android.material.carousel.CarouselLayoutManager$KeylineRange)
-    public static void logChildrenIfDebugging()
-    public final void measureChildWithMargins()
     public final void recalculateKeylineStateList(androidx.recyclerview.widget.RecyclerView$Recycler)
     public final void refreshKeylineState()
-    public final void scrollBy(int,androidx.recyclerview.widget.RecyclerView$Recycler)
+    public final void scrollBy$1(int,androidx.recyclerview.widget.RecyclerView$Recycler)
     public static void setCarouselAlignment()
     public final void setCarouselStrategy(com.google.android.material.carousel.MultiBrowseCarouselStrategy)
     public static void updateChildMaskForLocation()
     public final void updateItemCount()
-    public static void validateChildOrderIfDebugging()
+    public final void validateChildOrderIfDebugging()
 com.google.android.material.carousel.CarouselOrientationHelper$1:
     public final void containMaskWithinBounds()
     public final int getDecoratedCrossAxisMeasurement()
@@ -60171,17 +59982,27 @@ kotlinx.coroutines.flow.FlowKt__MergeKt:
 kotlinx.coroutines.flow.MutableStateFlow:
     public abstract java.lang.Object getValue()
     public abstract void setValue(java.lang.Object)
-kotlinx.coroutines.flow.SharedFlow
-kotlinx.coroutines.flow.SharedFlowImpl
-kotlinx.coroutines.flow.SharedFlowKt
+kotlinx.coroutines.flow.SharedFlowImpl$$InternalSyntheticThrowCCEIfNotNull$149$8a81ae7abf994ef8d5da0c3a1e1fcc00bff1251b789a1cb954e12c66d854807b$0
+kotlinx.coroutines.flow.SharedFlowImpl$WhenMappings
+kotlinx.coroutines.flow.SharedFlowImpl:
+    public final int replay
+    public static kotlinx.coroutines.flow.SharedFlowSlot createSlot()
+    public static kotlinx.coroutines.flow.SharedFlowSlot[] createSlotArray()
+    public final kotlinx.coroutines.flow.Flow fuse(kotlin.coroutines.CoroutineContext,int,kotlinx.coroutines.channels.BufferOverflow)
+    public final long getBufferEndIndex()
+    public final int getTotalSize()
+    public static long updateNewCollectorIndexLocked$kotlinx_coroutines_core()
+kotlinx.coroutines.flow.SharedFlowKt:
+    public static final kotlinx.coroutines.flow.Flow fuseSharedFlow(kotlinx.coroutines.flow.SharedFlow,kotlin.coroutines.CoroutineContext,int,kotlinx.coroutines.channels.BufferOverflow)
+kotlinx.coroutines.flow.SharedFlowSlot:
+    public static boolean allocateLocked()
+    public static kotlin.coroutines.Continuation[] freeLocked()
 kotlinx.coroutines.flow.StateFlow:
     public abstract java.lang.Object getValue()
 kotlinx.coroutines.flow.StateFlowImpl$$InternalSyntheticThrowCCEIfNotNull$149$f1d1f40a1c8fc04c0a8d71575b6c25dc238f9224ed939db2b509a92e2c81cbda$0
 kotlinx.coroutines.flow.StateFlowImpl:
-    public final kotlinx.coroutines.flow.StateFlowSlot createSlot()
-    public static kotlinx.coroutines.flow.StateFlowSlot createSlot$1()
-    public final kotlinx.coroutines.flow.StateFlowSlot[] createSlotArray()
-    public static kotlinx.coroutines.flow.StateFlowSlot[] createSlotArray$1()
+    public static kotlinx.coroutines.flow.StateFlowSlot createSlot()
+    public static kotlinx.coroutines.flow.StateFlowSlot[] createSlotArray()
     public final kotlinx.coroutines.flow.Flow fuse(kotlin.coroutines.CoroutineContext,int,kotlinx.coroutines.channels.BufferOverflow)
 kotlinx.coroutines.flow.StateFlowKt:
     public static final synthetic kotlinx.coroutines.internal.Symbol access$getNONE$p()
@@ -60190,10 +60011,8 @@ kotlinx.coroutines.flow.StateFlowSlot$$InternalSyntheticBackportWithForwarding$1
 kotlinx.coroutines.flow.StateFlowSlot$$InternalSyntheticBackportWithForwarding$1$ce7b13c9754ebcc746ac049b20939ad04e48aa86e11ad982717628308b70c772$0
 kotlinx.coroutines.flow.StateFlowSlot$$InternalSyntheticBackportWithForwarding$1$ce7b13c9754ebcc746ac049b20939ad04e48aa86e11ad982717628308b70c772$1
 kotlinx.coroutines.flow.StateFlowSlot:
-    public static boolean allocateLocked()
     public static boolean allocateLocked$1()
     public static java.lang.Object awaitPending()
-    public static kotlin.coroutines.Continuation[] freeLocked()
     public static kotlin.coroutines.Continuation[] freeLocked$1()
     public static void makePending()
     public static boolean takePending()
@@ -60201,13 +60020,8 @@ kotlinx.coroutines.flow.SubscribedFlowCollector
 kotlinx.coroutines.flow.ThrowingCollector
 kotlinx.coroutines.flow.internal.AbstractSharedFlow:
     public kotlinx.coroutines.flow.internal.SubscriptionCountStateFlow _subscriptionCount
-    public abstract kotlinx.coroutines.flow.StateFlowSlot allocateSlot()
-    public abstract kotlinx.coroutines.flow.StateFlowSlot createSlot()
-    public abstract kotlinx.coroutines.flow.StateFlowSlot[] createSlotArray()
-    public abstract void freeSlot()
-    public abstract kotlinx.coroutines.flow.StateFlowSlot[] getSlots()
-kotlinx.coroutines.flow.internal.AbstractSharedFlowKt
-kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot
+    public abstract int getNCollectors()
+    public abstract kotlinx.coroutines.flow.internal.AbstractSharedFlowSlot[] getSlots()
 kotlinx.coroutines.flow.internal.ChannelFlow$collect$2:
     public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope,kotlin.coroutines.Continuation)
 kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1:

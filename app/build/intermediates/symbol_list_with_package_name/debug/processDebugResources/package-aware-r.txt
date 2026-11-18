@@ -4176,7 +4176,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable poster_clip
 drawable poster_fallback
+drawable poster_focus_frame
 drawable poster_gloss_border
 drawable profile_selector
 drawable progress_glass

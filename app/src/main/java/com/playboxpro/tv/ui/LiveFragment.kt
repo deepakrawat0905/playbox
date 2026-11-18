@@ -204,8 +204,13 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
 
         // Back online: the preview picks up again by itself.
         viewLifecycleOwner.lifecycleScope.launch {
-            com.playboxpro.tv.api.NetworkWatch.online.collect { up ->
-                if (up && isAdded && previewError.visibility == View.VISIBLE) { previewRetries = 0; reconnectPreview() }
+            com.playboxpro.tv.api.NetworkWatch.restored.collect {
+                if (isAdded && previewError.visibility == View.VISIBLE) {
+                    previewRetries = 0
+                    previewError.text = "Reconnecting…"
+                    // Let the connection settle before tuning again.
+                    scheduleReconnect(1500L)
+                }
             }
         }
 
@@ -268,12 +273,7 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
                         if (!isAdded) return
                         // A failed audio track: carry on with another one, no "offline".
                         if (previewAudioGuard.onError(error)) { previewAudioGuard.apply(player); player.prepare(); return }
-                        previewError.text = if (com.playboxpro.tv.api.NetworkWatch.isOnline) "Stream Offline" else com.playboxpro.tv.api.NetworkWatch.NO_INTERNET
-                        previewError.visibility = View.VISIBLE
-                        // Offline: wait for the connection (see the watcher), no retries.
-                        if (!com.playboxpro.tv.api.NetworkWatch.isOnline) return
-                        // Try the channel again a few times, waiting a little longer each time.
-                        if (previewRetries < 5) { previewRetries++; scheduleReconnect(2000L * previewRetries) }
+                        onPreviewFailed()
                     }
 
                     override fun onRenderedFirstFrame() {
@@ -620,7 +620,8 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
         if (url.isBlank()) return
         viewLifecycleOwner.lifecycleScope.launch {
             val real = runCatching { vm.repo.resolveStream(url) }.getOrNull()
-            if (!isAdded || previewingId != ch.id || real.isNullOrBlank()) return@launch
+            if (!isAdded || previewingId != ch.id) return@launch
+            if (real.isNullOrBlank()) { onPreviewFailed(); return@launch }
             liveSource.prepareFor(real)
             previewPlayer?.setMediaItem(MediaItem.fromUri(real))
             previewPlayer?.prepare()
@@ -631,6 +632,28 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
     private fun scheduleReconnect(delayMs: Long) {
         previewDebounceHandler.removeCallbacks(previewReconnect)
         previewDebounceHandler.postDelayed(previewReconnect, delayMs)
+    }
+
+    /**
+     * The preview channel failed. Offline it waits for the connection to
+     * return (see the watcher); online it is retried after 2, 4, 8, 16 and
+     * 30s, showing "Reconnecting…", and only then reported offline.
+     */
+    private fun onPreviewFailed() {
+        previewError.visibility = View.VISIBLE
+        if (!com.playboxpro.tv.api.NetworkWatch.isOnline) {
+            previewDebounceHandler.removeCallbacks(previewReconnect)
+            previewError.text = com.playboxpro.tv.api.NetworkWatch.NO_INTERNET
+            return
+        }
+        val delays = longArrayOf(2000L, 4000L, 8000L, 16000L, 30000L)
+        if (previewRetries >= delays.size) {
+            previewError.text = "Stream Offline"
+            return
+        }
+        previewError.text = "Reconnecting…"
+        scheduleReconnect(delays[previewRetries])
+        previewRetries++
     }
 
     private fun onChannelOk(channel: Channel) {
@@ -850,7 +873,8 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
                     val tunedId = channel.id
                     viewLifecycleOwner.lifecycleScope.launch {
                         val real = runCatching { vm.repo.resolveStream(previewUrl) }.getOrNull()
-                        if (!isAdded || previewingId != tunedId || real.isNullOrBlank()) return@launch
+                        if (!isAdded || previewingId != tunedId) return@launch
+                        if (real.isNullOrBlank()) { onPreviewFailed(); return@launch }
                         liveSource.prepareFor(real)
                         previewPlayer?.setMediaItem(MediaItem.fromUri(real))
                         previewPlayer?.prepare()
@@ -903,6 +927,8 @@ class LiveFragment : Fragment(R.layout.fragment_live) {
         super.onResume()
         if (filteredChannels.isNotEmpty()) syncFromLiveSession()
         previewPlayer?.play()
+        // A reconnect cancelled by onPause picks up again.
+        if (previewError.visibility == View.VISIBLE && previewChannel != null) { previewRetries = 0; scheduleReconnect(1500L) }
     }
 
     override fun onPause() {

@@ -68,7 +68,11 @@ object LicenseGate {
         if (state == null) {
             val okAt = repo.licenseVerifiedAt()
             val age = System.currentTimeMillis() - okAt
-            val withinGrace = wasActive && okAt > 0 && age >= 0 && age < OFFLINE_GRACE_MS
+            // A box without internet often has no network time either: after a
+            // power cut its clock can sit before the last confirmation. That
+            // proves nothing against the device, so it keeps playing until the
+            // server can be asked again, instead of being sent to activation.
+            val withinGrace = wasActive && okAt > 0 && (age < 0 || age < OFFLINE_GRACE_MS)
             return if (withinGrace) {
                 Verdict.Allowed
             } else {

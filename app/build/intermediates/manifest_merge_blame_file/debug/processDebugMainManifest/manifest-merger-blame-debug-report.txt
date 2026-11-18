@@ -66,141 +66,142 @@
 39-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:307-340
 40        android:roundIcon="@mipmap/ic_launcher"
 40-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:137-176
-41        android:theme="@style/AppTheme"
-41-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:70-101
-42        android:usesCleartextTraffic="true" >
-42-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:210-245
-43
-44        <!--
-45             Android 16 (API 36) notes:
-46             - enableOnBackInvokedCallback="false" keeps the remote's BACK key
-47               reaching the screens' own key handlers (Terms dialog, search
-48               box); predictive back would otherwise swallow it.
-49             - Android 16 ignores the landscape lock on tablets; this keeps the
-50               TV layout in landscape there. Temporary: it is no longer
-51               honoured once the app targets API 37.
-52        -->
-53        <property
-53-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:15:9-117
-54            android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
-54-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:15:19-94
-55            android:value="true" />
-55-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:15:95-115
-56
-57        <activity
-57-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:9-24:20
-58            android:name="com.playboxpro.tv.SplashActivity"
-58-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:19-49
-59            android:exported="true"
-59-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:135-158
-60            android:screenOrientation="landscape"
-60-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:97-134
-61            android:theme="@style/Theme.PlayBoxPro.Splash" >
-61-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:50-96
-62            <intent-filter>
-62-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:13-23:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:18:17-68
-63-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:18:25-66
-64                <!-- TV home screen -->
-65                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-65-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:20:17-85
-65-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:20:27-83
-66                <!-- Phone / tablet app drawer -->
-67                <category android:name="android.intent.category.LAUNCHER" />
-67-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:22:17-76
-67-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:22:27-74
-68            </intent-filter>
-69        </activity>
-70        <activity
-70-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:9-144
-71            android:name="com.playboxpro.tv.MainActivity"
-71-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:19-47
-72            android:exported="false"
-72-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:118-142
-73            android:screenOrientation="landscape"
-73-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:80-117
-74            android:theme="@style/AppTheme" />
-74-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:48-79
-75
-76        <meta-data
-76-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:10:9-12:43
-77            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
-77-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:11:13-84
-78            android:value="GlideModule" />
-78-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:12:13-40
-79
-80        <provider
-80-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-81            android:name="androidx.startup.InitializationProvider"
-81-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-82            android:authorities="app.proplaybox.com.androidx-startup"
-82-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-83            android:exported="false" >
-83-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-84            <meta-data
-84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-85                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-86                android:value="androidx.startup" />
-86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-87            <meta-data
-87-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:29:13-31:52
-88                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-88-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:30:17-78
-89                android:value="androidx.startup" />
-89-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:31:17-49
-90            <meta-data
-90-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:16:13-18:52
-91                android:name="okhttp3.internal.platform.PlatformInitializer"
-91-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:17:17-77
-92                android:value="androidx.startup" />
-92-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:18:17-49
-93            <meta-data
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-94                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-95                android:value="androidx.startup" />
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-96        </provider>
-97
-98        <receiver
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-99            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-100            android:directBootAware="false"
-100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-101            android:enabled="true"
-101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-102            android:exported="true"
-102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-103            android:permission="android.permission.DUMP" >
-103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-104            <intent-filter>
-104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-105                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-106            </intent-filter>
-107            <intent-filter>
-107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-108                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-109            </intent-filter>
-110            <intent-filter>
-110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-111                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-112            </intent-filter>
-113            <intent-filter>
-113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-114                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-115            </intent-filter>
-116        </receiver>
-117    </application>
-118
-119</manifest>
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme"
+42-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:70-101
+43        android:usesCleartextTraffic="true" >
+43-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:7:210-245
+44
+45        <!--
+46             Android 16 (API 36) notes:
+47             - enableOnBackInvokedCallback="false" keeps the remote's BACK key
+48               reaching the screens' own key handlers (Terms dialog, search
+49               box); predictive back would otherwise swallow it.
+50             - Android 16 ignores the landscape lock on tablets; this keeps the
+51               TV layout in landscape there. Temporary: it is no longer
+52               honoured once the app targets API 37.
+53        -->
+54        <property
+54-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:15:9-117
+55            android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY"
+55-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:15:19-94
+56            android:value="true" />
+56-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:15:95-115
+57
+58        <activity
+58-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:9-24:20
+59            android:name="com.playboxpro.tv.SplashActivity"
+59-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:19-49
+60            android:exported="true"
+60-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:135-158
+61            android:screenOrientation="landscape"
+61-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:97-134
+62            android:theme="@style/Theme.PlayBoxPro.Splash" >
+62-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:16:50-96
+63            <intent-filter>
+63-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:17:13-23:29
+64                <action android:name="android.intent.action.MAIN" />
+64-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:18:17-68
+64-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:18:25-66
+65                <!-- TV home screen -->
+66                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+66-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:20:17-85
+66-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:20:27-83
+67                <!-- Phone / tablet app drawer -->
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:22:17-76
+68-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:22:27-74
+69            </intent-filter>
+70        </activity>
+71        <activity
+71-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:9-144
+72            android:name="com.playboxpro.tv.MainActivity"
+72-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:19-47
+73            android:exported="false"
+73-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:118-142
+74            android:screenOrientation="landscape"
+74-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:80-117
+75            android:theme="@style/AppTheme" />
+75-->C:\Users\vidha\Downloads\PlayBoxProAndroidTV_Native\PlayBoxProAndroidTV_Native\app\src\main\AndroidManifest.xml:25:48-79
+76
+77        <meta-data
+77-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:10:9-12:43
+78            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+78-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:11:13-84
+79            android:value="GlideModule" />
+79-->[com.github.bumptech.glide:okhttp3-integration:4.16.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\3f740f5284513713a2a8432868c8c24d\transformed\okhttp3-integration-4.16.0\AndroidManifest.xml:12:13-40
+80
+81        <provider
+81-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+82            android:name="androidx.startup.InitializationProvider"
+82-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+83            android:authorities="app.proplaybox.com.androidx-startup"
+83-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+84            android:exported="false" >
+84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+85            <meta-data
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+86                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+87                android:value="androidx.startup" />
+87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\c276343a9577a49f35bea788582f78ed\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+88            <meta-data
+88-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:29:13-31:52
+89                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+89-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:30:17-78
+90                android:value="androidx.startup" />
+90-->[androidx.lifecycle:lifecycle-process:2.9.2] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\be92546023697a8cb6f850c70fda4dcd\transformed\lifecycle-process-2.9.2\AndroidManifest.xml:31:17-49
+91            <meta-data
+91-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:16:13-18:52
+92                android:name="okhttp3.internal.platform.PlatformInitializer"
+92-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:17:17-77
+93                android:value="androidx.startup" />
+93-->[com.squareup.okhttp3:okhttp-android:5.1.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\5d383adcc99acca9a2e36f2570bcc3c0\transformed\okhttp-release\AndroidManifest.xml:18:17-49
+94            <meta-data
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+95                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+96                android:value="androidx.startup" />
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+97        </provider>
+98
+99        <receiver
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+100            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+100-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+101            android:directBootAware="false"
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+102            android:enabled="true"
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+103            android:exported="true"
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+104            android:permission="android.permission.DUMP" >
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+105            <intent-filter>
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+106                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+107            </intent-filter>
+108            <intent-filter>
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+109                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+110            </intent-filter>
+111            <intent-filter>
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+112                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+113            </intent-filter>
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+115                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\vidha\.gradle\caches\9.0-milestone-1\transforms\e3642e3557f4893ff843873bf5e00cd0\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+116            </intent-filter>
+117        </receiver>
+118    </application>
+119
+120</manifest>

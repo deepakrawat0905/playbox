@@ -285,7 +285,9 @@ drawable ic_subtitles
 drawable ic_timer
 drawable ic_user
 drawable lbg_btn_gray_pill
+drawable poster_clip
 drawable poster_fallback
+drawable poster_focus_frame
 drawable poster_gloss_border
 drawable profile_selector
 drawable progress_glass

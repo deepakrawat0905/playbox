@@ -15,7 +15,6 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.google.android.material.imageview.ShapeableImageView;
 import com.playboxpro.tv.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -44,7 +43,7 @@ public final class ItemMovieCardBinding implements ViewBinding {
   public final ImageView lockBadge;
 
   @NonNull
-  public final ShapeableImageView posterImage;
+  public final ImageView posterImage;
 
   @NonNull
   public final LinearLayout posterWrap;
@@ -61,7 +60,7 @@ public final class ItemMovieCardBinding implements ViewBinding {
   private ItemMovieCardBinding(@NonNull ConstraintLayout rootView, @NonNull TextView cardMeta,
       @NonNull ConstraintLayout cardRoot, @NonNull AppCompatTextView cardTitle,
       @NonNull ProgressBar circularProgressBar, @NonNull TextView contentBadge,
-      @NonNull ImageView lockBadge, @NonNull ShapeableImageView posterImage,
+      @NonNull ImageView lockBadge, @NonNull ImageView posterImage,
       @NonNull LinearLayout posterWrap, @NonNull ProgressBar progressBar,
       @NonNull FrameLayout ratingContainer, @NonNull TextView ratingText) {
     this.rootView = rootView;
@@ -138,7 +137,7 @@ public final class ItemMovieCardBinding implements ViewBinding {
       }
 
       id = R.id.posterImage;
-      ShapeableImageView posterImage = ViewBindings.findChildViewById(rootView, id);
+      ImageView posterImage = ViewBindings.findChildViewById(rootView, id);
       if (posterImage == null) {
         break missingId;
       }

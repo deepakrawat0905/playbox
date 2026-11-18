@@ -19,6 +19,7 @@
         android:id="@+id/posterWrap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/poster_focus_frame"
         android:duplicateParentState="true"
         android:gravity="center"
         android:orientation="vertical"
@@ -34,12 +35,15 @@
                 android:layout_width="110dp"
                 android:layout_height="165dp">
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <!-- Rounded by an outline clip (set in MovieCardAdapter), which the
+                     GPU does cheaply; ShapeableImageView's path clip cost every
+                     poster a slow draw while the grid scrolled. -->
+                <ImageView
                     android:id="@+id/posterImage"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="fitXY"
-                    app:shapeAppearanceOverlay="@style/roundedImageView" />
+                    android:background="@drawable/poster_clip"
+                    android:scaleType="fitXY" />
 
                 <View
                     android:layout_width="match_parent"

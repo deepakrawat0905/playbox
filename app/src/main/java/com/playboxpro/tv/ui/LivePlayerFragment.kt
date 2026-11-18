@@ -52,6 +52,22 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
 
         /** Once the remote is in the panel's buttons it stays up longer. */
         const val OSD_INTERACTIVE_TIMEOUT_MS = 8000L
+
+        /** Wait between retries of a failing channel: 2, 4, 8, 16, then every 30s. */
+        val RETRY_DELAYS_MS = longArrayOf(2000L, 4000L, 8000L, 16000L, 30000L)
+
+        /**
+         * With internet up, a channel that keeps failing is retried for this
+         * long before "offline" is shown and the retries stop. Internet
+         * coming back always starts them again.
+         */
+        const val RETRY_WINDOW_MS = 10 * 60_000L
+
+        /** Internet back: let the connection settle before re-tuning. */
+        const val RECONNECT_SETTLE_MS = 1500L
+
+        const val SOURCE_OFFLINE = "Broadcast Source Offline"
+        const val RECONNECTING = "Reconnecting…"
     }
 
     private val vm: AppViewModel by activityViewModels()
@@ -137,10 +153,10 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
 
         setupKeys(view)
         setupOsdButtons()
-        // Back online: the channel picks up again by itself.
+        // Back online: the channel on air picks up again by itself.
         viewLifecycleOwner.lifecycleScope.launch {
-            com.playboxpro.tv.api.NetworkWatch.online.collect { up ->
-                if (up && isAdded && playError.visibility == View.VISIBLE && playingIndex >= 0) { retries = 0; tune(playingIndex) }
+            com.playboxpro.tv.api.NetworkWatch.restored.collect {
+                if (isAdded) restartRecovery()
             }
         }
         setupTouch(view)
@@ -318,7 +334,10 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
 
         vm.setLiveIndex(target)
         playError.visibility = View.GONE
+        // Leaving the channel ends any recovery of it.
+        recovering = false
         handler.removeCallbacks(retune)
+        tuneJob?.cancel()
         bindOsd(channels[target])
         showOsd()
 
@@ -386,16 +405,17 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
                         if (!isAdded) return
                         // A failed audio track: carry on with another one, no "offline".
                         if (audioGuard.onError(error)) { player?.let { audioGuard.apply(it); it.prepare() }; return }
-                        playError.text = if (com.playboxpro.tv.api.NetworkWatch.isOnline) "Broadcast Source Offline" else com.playboxpro.tv.api.NetworkWatch.NO_INTERNET
-                        playError.visibility = View.VISIBLE
-                        if (!com.playboxpro.tv.api.NetworkWatch.isOnline) return
-                        // Try the channel again a few times, waiting a little longer each time.
-                        if (retries < 5) { retries++; scheduleRetune(2000L * retries) }
+                        onTuneFailed()
                     }
 
                     override fun onPlaybackStateChanged(state: Int) {
                         if (!isAdded) return
-                        if (state == Player.STATE_READY) { playError.visibility = View.GONE; retries = 0 }
+                        if (state == Player.STATE_READY) {
+                            playError.visibility = View.GONE
+                            retries = 0
+                            failingSince = 0L
+                            recovering = false
+                        }
                         // A live stream should never end: the provider dropped it, so
                         // tune the same channel again with a fresh link.
                         if (state == Player.STATE_ENDED) scheduleRetune(1000L)
@@ -445,13 +465,15 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
     private fun tune(index: Int) {
         val channel = channels.getOrNull(index) ?: return
         val p = player ?: return
-        if (index != playingIndex) retries = 0
+        if (index != playingIndex) { retries = 0; failingSince = 0L; recovering = false }
         handler.removeCallbacks(retune)
         playingIndex = index
         audioGuard.itemId = channel.id
 
         val url = (activity as? MainActivity)?.streamUrlFor(channel) ?: channel.url
         if (url.isBlank()) {
+            // No link at all: nothing to retry.
+            playError.text = SOURCE_OFFLINE
             playError.visibility = View.VISIBLE
             return
         }
@@ -465,7 +487,8 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
         tuneJob = viewLifecycleOwner.lifecycleScope.launch {
             val real = runCatching { vm.repo.resolveStream(url) }.getOrNull()
             if (!isAdded || playingIndex != index || player !== p) return@launch
-            if (real.isNullOrBlank()) { playError.visibility = View.VISIBLE; return@launch }
+            // The link could not be fetched (often the connection itself): retry like a stream error.
+            if (real.isNullOrBlank()) { onTuneFailed(); return@launch }
             liveSource.prepareFor(real)
             p.setMediaItem(MediaItem.fromUri(real))
             p.prepare()
@@ -478,6 +501,10 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
     private fun currentChannel(): Channel? = channels.getOrNull(vm.liveIndex.value)
 
     private var retries = 0
+    /** When the channel on air started failing (elapsedRealtime), 0 while it plays. */
+    private var failingSince = 0L
+    /** The channel on air has failed and has not played since; it is being brought back. */
+    private var recovering = false
     private val audioGuard = LivePlayerOptions.AudioGuard()
     /** Keeps live TS connections going when the server closes them (see LiveStreamSource). */
     private lateinit var liveSource: LiveStreamSource.Factory
@@ -486,6 +513,41 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
     private fun scheduleRetune(delayMs: Long) {
         handler.removeCallbacks(retune)
         handler.postDelayed(retune, delayMs)
+    }
+
+    /**
+     * The channel on air failed to open or dropped. Offline, it waits for
+     * the connection to come back (see [restartRecovery]); online, it is
+     * retried with a growing wait, showing "Reconnecting…", and only after
+     * [RETRY_WINDOW_MS] of failures is it reported offline.
+     */
+    private fun onTuneFailed() {
+        if (!isAdded || playingIndex < 0) return
+        recovering = true
+        playError.visibility = View.VISIBLE
+        if (!com.playboxpro.tv.api.NetworkWatch.isOnline) {
+            handler.removeCallbacks(retune)
+            playError.text = com.playboxpro.tv.api.NetworkWatch.NO_INTERNET
+            return
+        }
+        val now = android.os.SystemClock.elapsedRealtime()
+        if (failingSince == 0L) failingSince = now
+        if (now - failingSince >= RETRY_WINDOW_MS) {
+            playError.text = SOURCE_OFFLINE
+            return
+        }
+        playError.text = RECONNECTING
+        scheduleRetune(RETRY_DELAYS_MS[retries.coerceAtMost(RETRY_DELAYS_MS.lastIndex)])
+        retries++
+    }
+
+    /** Internet is back (or the player is on screen again): retry the failed channel from scratch. */
+    private fun restartRecovery() {
+        if (!recovering || playingIndex < 0) return
+        retries = 0
+        failingSince = 0L
+        playError.text = RECONNECTING
+        scheduleRetune(RECONNECT_SETTLE_MS)
     }
 
     // Audio track, subtitles + aspect ratio: see LivePlayerOptions.
@@ -670,6 +732,8 @@ class LivePlayerFragment : Fragment(R.layout.fragment_live_player) {
         handler.post(tickClock)
         view?.requestFocus()
         player?.play()
+        // A retry that came due while the app was in the background runs now.
+        restartRecovery()
     }
 
     override fun onPause() {

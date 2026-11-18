@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The poster frame: series_selector's yellow outline while the card is
+     focused, nothing otherwise. Kept as the frame's one background so
+     moving the highlight only redraws it - swapping the background in code
+     re-laid out the whole poster grid on every step of the remote. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/series_selector" />
+    <item android:drawable="@android:color/transparent" />
+</selector>

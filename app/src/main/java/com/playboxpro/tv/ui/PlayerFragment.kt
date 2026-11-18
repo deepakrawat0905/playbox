@@ -189,10 +189,12 @@ class PlayerFragment : Fragment(R.layout.fragment_player) {
 
         // Back online: carry on from the same point.
         viewLifecycleOwner.lifecycleScope.launch {
-            com.playboxpro.tv.api.NetworkWatch.online.collect { up ->
-                if (up && isAdded && playError.visibility == View.VISIBLE) {
+            com.playboxpro.tv.api.NetworkWatch.restored.collect {
+                val p = exoPlayer
+                if (isAdded && playError.visibility == View.VISIBLE && p != null && p.currentMediaItem != null) {
                     playError.visibility = View.GONE
-                    exoPlayer?.let { it.prepare(); it.play() }
+                    // prepare() keeps playWhenReady, so a title the viewer paused stays paused.
+                    p.prepare()
                 }
             }
         }

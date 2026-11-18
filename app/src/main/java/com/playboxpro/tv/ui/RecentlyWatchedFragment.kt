@@ -165,6 +165,8 @@ class RecentlyWatchedFragment : Fragment(R.layout.fragment_recently_watched) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
             val v = LayoutInflater.from(parent.context).inflate(R.layout.item_movie_card, parent, false)
+            // The poster is rounded by its background's outline.
+            v.findViewById<View>(R.id.posterImage).clipToOutline = true
             return VH(v)
         }
 
@@ -178,10 +180,9 @@ class RecentlyWatchedFragment : Fragment(R.layout.fragment_recently_watched) {
             ImageLoader.loadPoster(holder.img, item.poster)
 
             // Same STB+ focus treatment as the catalogue cards: outline, no zoom.
+            // The outline is posterWrap's state-list background (poster_focus_frame).
             holder.root.setOnFocusChangeListener { _, hasFocus ->
                 val ctx = holder.root.context
-                holder.posterWrap.background =
-                    if (hasFocus) androidx.core.content.ContextCompat.getDrawable(ctx, R.drawable.series_selector) else null
                 holder.title.setTextColor(ctx.getColor(if (hasFocus) R.color.yellow else R.color.white))
             }
 

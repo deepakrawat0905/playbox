@@ -595,6 +595,7 @@ size
 AspectFrame
 left
 6
+paceHeldKey
 status_
 A
 removeItemAt
@@ -798,8 +799,8 @@ chipIconVisible
 200
 204
 206
-BYTES_LIST
 END_ARRAY
+BYTES_LIST
 forced_storage
 osdTimeElapsed
 _handled$volatile
@@ -813,8 +814,8 @@ fugu
 Any
 androidx.media3.exoplayer.rtsp.RtspMe...
 Companion
-SFIXED64_LIST_PACKED
 SSLv3
+SFIXED64_LIST_PACKED
 times
 218
 TLS_PSK_WITH_AES_256_CBC_SHA
@@ -854,8 +855,8 @@ element
 cv3
 ConstraintLayoutStates
 chartreuse
-emptyHint
 media3.exoplayer
+emptyHint
 osdChannelName
 ACTION_SCROLL_DOWN
 source_type
@@ -983,8 +984,8 @@ YResolution
 PLAY
 %2e%2e
 mido
-shouldShowRequestPermissionRationale
 pokeLong
+shouldShowRequestPermissionRationale
 TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 POISONED
 LOCAL
@@ -1037,8 +1038,8 @@ MOVIE
 woods_f
 db4
 statusBanner
-TAG
 /index.html
+TAG
 kotlin.Char.Companion
 TAL
 com.playboxpro.tv.ui.FavoritesFragmen...
@@ -1470,8 +1471,8 @@ androidx.core.view.inputmethod.Editor...
 android:name
 UPPER_CAMEL_CASE_WITH_SPACES
 :method
-STRING
 uTexture
+STRING
 glide
 stkser:
 open
@@ -1746,8 +1747,8 @@ C1
 BQ
 Function9
 BR
-MESSAGE
 Function8
+MESSAGE
 savedInstanceState
 BS
 com.google.common.base.Strings
@@ -1811,8 +1812,8 @@ typeUrl_
 darkgrey
 com.playboxpro.tv.ui.HomeFragment$onV...
 lavender
-EC
 ALLOW
+EC
 DfltImageHeaderParser
 _resumed$volatile
 EE
@@ -2760,8 +2761,8 @@ Hardcore
 maxBufferMs
 android.app.ActivityThread
 FORCE_CODE_SET
-DOUBLE_LIST
 pokeByteArray
+DOUBLE_LIST
 COROUTINE_SUSPENDED
 GPSDOP
 config_viewMinRotaryEncoderFlingVelocity
@@ -2827,8 +2828,8 @@ aesCtrKey_
 auxiliary.tracks.map
 RESOURCE_CACHE
 FHCRC
-ENUM_LIST_PACKED
 com.playboxpro.tv.data.AppRepository$...
+ENUM_LIST_PACKED
 android:visibility:screenLocation
 ToolbarWidgetWrapper
 aid:
@@ -2901,9 +2902,9 @@ MULTILINE
 image/vnd.wap.wbmp
 com.playboxpro.tv.ui.LiveFragment$onV...
 destination
-com.google.crypto.tink.shaded.protobu...
 NANOSECONDS
 ON_DESTROY
+com.google.crypto.tink.shaded.protobu...
 consumerIndex$volatile
 vertical
 abortCreation
@@ -3284,6 +3285,7 @@ DRAGGING
 pkg
 NOT_NULL
 .m3u8
+NO_VALUE
 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
 SpeakerLayoutUtil
 navajowhite
@@ -3512,6 +3514,7 @@ before
 lightslategray
 PENTAX
 TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+LinearLayoutManager
 MEIZU_M5
 Bytes
 Anime
@@ -3735,10 +3738,10 @@ H67
 $container
 MediaCodecUtil
 viewportHeight
-RendererHolder
 c2.android.
-SFIXED64_LIST
+RendererHolder
 OkHttpFetcher
+SFIXED64_LIST
 Sharing
 androidx.view.accessibility.Accessibi...
 khaki
@@ -3951,8 +3954,8 @@ PADDED
 TypefaceCompatApi21Impl
 com.playboxpro.tv.MainActivity$onCrea...
 ELUGA_Ray_X
-BOOLEAN
 minLines
+BOOLEAN
 channels
 player_api.php
 Disco
@@ -4081,8 +4084,8 @@ OpusHead
 HMACSHA256
 A_VORBIS
 BitsPerSample
-SINT64
 inFragment
+SINT64
 bg_cyan
 A_MPEG/L2
 A_MPEG/L3
@@ -4156,8 +4159,8 @@ serif
 panell_d
 Xmp
 TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
-STRING_LIST
 DATA_DISK_CACHE
+STRING_LIST
 _state$volatile
 OMX.google.raw.decoder
 androidx.core.view.extra.INPUT_CONTEN...
@@ -4322,8 +4325,8 @@ fontStyle
 Audiobook
 animation
 Variant
-exit
 putFloat
+exit
 com.playboxpro.tv.data.AppRepository$...
 android.media.metadata.TITLE
 mediumorchid
@@ -4339,8 +4342,8 @@ other
 RecentlyWatchedFragment.kt
 putDouble
 routeDatabase
-c2.android.vorbis.decoder
 cea708
+c2.android.vorbis.decoder
 ASUS_X00AD_2
 androidx.view.accessibility.Accessibi...
 A_TRUEHD
@@ -4842,8 +4845,8 @@ playlist_password
 ADD
 journal.bkp
 setTouchModal
-INT64_LIST
 16_9
+INT64_LIST
 ACTION_DRAG_CANCEL
 S_TEXT/WEBVTT
 androidx.view.accessibility.Accessibi...
@@ -4906,8 +4909,8 @@ clipboard
 _queue$volatile
 DateTime
 DefaultLoadControl
-output
 btnRemoveCw
+output
 inactive
 java.lang.Character
 Banned
@@ -4955,8 +4958,8 @@ AFTS
 epgProgress
 Genre
 Transform
-AFTR
 DecoderAudioRenderer
+AFTR
 TextRenderer
 auto
 type.googleapis.com/google.crypto.tin...
@@ -4991,6 +4994,7 @@ trailers
 TLS_ECDH_RSA_WITH_AES_128_CBC_SHA
 android:changeBounds:parent
 1.5
+focused
 GIONEE_GBL7360
 Exif
 rawresource:///
@@ -5236,8 +5240,8 @@ JpgFromRaw
 InteroperabilityIFDPointer
 recyclerView
 POSITIVE_BUTTON_CONTENT_DESCRIPTION_R...
-FIXED64_LIST_PACKED
 GB2312
+FIXED64_LIST_PACKED
 NewSubfileType
 VERTICAL_DIMENSION
 EmojiCompat.FontRequestEmojiCompatCon...
@@ -5504,7 +5508,7 @@ Marking id:password_toggle:2131362475 used because it matches string pool consta
 Marking string:password_toggle_content_description:2131820792 used because it matches string pool constant pass
 Marking dimen:profile_avatar:2131166261 used because it matches string pool constant profile
 Marking dimen:profile_rail_h:2131166262 used because it matches string pool constant profile
-Marking drawable:profile_selector:2131231274 used because it matches string pool constant profile
+Marking drawable:profile_selector:2131231276 used because it matches string pool constant profile
 Marking id:profileBrand:2131362507 used because it matches string pool constant profile
 Marking id:profileIcon:2131362508 used because it matches string pool constant profile
 Marking id:profileMenuIcon:2131362509 used because it matches string pool constant profile
@@ -6068,7 +6072,7 @@ Marking id:TOP_START:2131361805 used because it matches string pool constant TO
 Marking id:dimensions:2131362069 used because it matches string pool constant dimen
 Marking color:white:2131100657 used because it matches string pool constant white
 Marking color:white:2131100657 used because it matches string pool constant white
-Marking drawable:white_thumb:2131231315 used because it matches string pool constant white
+Marking drawable:white_thumb:2131231317 used because it matches string pool constant white
 Marking id:previewLogo:2131362503 used because it matches string pool constant previewLogo
 Marking id:previewLogo:2131362503 used because it matches string pool constant previewLogo
 Marking attr:next_icon:2130969529 used because it matches string pool constant next
@@ -6981,12 +6985,12 @@ Marking attr:roundPercent:2130969621 used because it matches string pool constan
 Marking color:row_icon_tint:2131100625 used because it matches string pool constant ro
 Marking color:row_text_color:2131100626 used because it matches string pool constant ro
 Marking color:row_text_muted_color:2131100627 used because it matches string pool constant ro
-Marking drawable:round_corner_epg:2131231277 used because it matches string pool constant ro
-Marking drawable:round_corner_series_info:2131231278 used because it matches string pool constant ro
-Marking drawable:round_corner_series_info_gray:2131231279 used because it matches string pool constant ro
-Marking drawable:rounded_main_background:2131231280 used because it matches string pool constant ro
-Marking drawable:rounded_main_vertical:2131231281 used because it matches string pool constant ro
-Marking drawable:rounded_white_progress:2131231282 used because it matches string pool constant ro
+Marking drawable:round_corner_epg:2131231279 used because it matches string pool constant ro
+Marking drawable:round_corner_series_info:2131231280 used because it matches string pool constant ro
+Marking drawable:round_corner_series_info_gray:2131231281 used because it matches string pool constant ro
+Marking drawable:rounded_main_background:2131231282 used because it matches string pool constant ro
+Marking drawable:rounded_main_vertical:2131231283 used because it matches string pool constant ro
+Marking drawable:rounded_white_progress:2131231284 used because it matches string pool constant ro
 Marking font:roboto_medium_numbers:2131296256 used because it matches string pool constant ro
 Marking font:roboto_thin:2131296257 used because it matches string pool constant ro
 Marking font:robotoblack:2131296258 used because it matches string pool constant ro
@@ -7118,7 +7122,7 @@ Marking dimen:text_md:2131166299 used because it matches string pool constant te
 Marking dimen:text_sm:2131166300 used because it matches string pool constant te
 Marking dimen:text_xl:2131166301 used because it matches string pool constant te
 Marking dimen:text_xs:2131166302 used because it matches string pool constant te
-Marking drawable:test_level_drawable:2131231310 used because it matches string pool constant te
+Marking drawable:test_level_drawable:2131231312 used because it matches string pool constant te
 Marking id:termsLinkPrivacy:2131362666 used because it matches string pool constant te
 Marking id:termsLinkTerms:2131362667 used because it matches string pool constant te
 Marking id:termsScroll:2131362668 used because it matches string pool constant te
@@ -7413,7 +7417,7 @@ Marking id:accountInfoRoot:2131361841 used because it matches string pool consta
 Marking id:btnClearHistory:2131361909 used because it matches string pool constant btnClearHistory
 Marking id:btnClearHistory:2131361909 used because it matches string pool constant btnClearHistory
 Marking string:series:2131820804 used because it matches string pool constant series
-Marking drawable:series_selector:2131231283 used because it matches string pool constant series
+Marking drawable:series_selector:2131231285 used because it matches string pool constant series
 Marking id:seriesInfoContainer:2131362591 used because it matches string pool constant series
 Marking string:series:2131820804 used because it matches string pool constant series
 Marking color:info_surface:2131099779 used because it matches string pool constant info_
@@ -7619,8 +7623,10 @@ Marking dimen:poster_card_h:2131166257 used because it matches string pool const
 Marking dimen:poster_card_total_h:2131166258 used because it matches string pool constant poster
 Marking dimen:poster_card_w:2131166259 used because it matches string pool constant poster
 Marking dimen:poster_title_h:2131166260 used because it matches string pool constant poster
-Marking drawable:poster_fallback:2131231272 used because it matches string pool constant poster
-Marking drawable:poster_gloss_border:2131231273 used because it matches string pool constant poster
+Marking drawable:poster_clip:2131231272 used because it matches string pool constant poster
+Marking drawable:poster_fallback:2131231273 used because it matches string pool constant poster
+Marking drawable:poster_focus_frame:2131231274 used because it matches string pool constant poster
+Marking drawable:poster_gloss_border:2131231275 used because it matches string pool constant poster
 Marking id:poster:2131362496 used because it matches string pool constant poster
 Marking id:posterImage:2131362497 used because it matches string pool constant poster
 Marking id:posterWrap:2131362498 used because it matches string pool constant poster
@@ -8085,32 +8091,32 @@ Marking attr:strokeColor:2130969737 used because it matches string pool constant
 Marking dimen:episode_card_h:2131165337 used because it matches string pool constant episode
 Marking dimen:episode_card_w:2131165338 used because it matches string pool constant episode
 Marking id:episodeRoot:2131362132 used because it matches string pool constant episode
-Marking drawable:stb_baseline_keyboard_arrow_down:2131231284 used because it matches string pool constant stb
-Marking drawable:stb_check:2131231285 used because it matches string pool constant stb
-Marking drawable:stb_ic_audiotrack:2131231286 used because it matches string pool constant stb
-Marking drawable:stb_ic_external:2131231287 used because it matches string pool constant stb
-Marking drawable:stb_ic_fast_forward:2131231288 used because it matches string pool constant stb
-Marking drawable:stb_ic_fast_rewind:2131231289 used because it matches string pool constant stb
-Marking drawable:stb_ic_live_badge:2131231290 used because it matches string pool constant stb
-Marking drawable:stb_ic_pause:2131231291 used because it matches string pool constant stb
-Marking drawable:stb_ic_play:2131231292 used because it matches string pool constant stb
-Marking drawable:stb_ic_return:2131231293 used because it matches string pool constant stb
-Marking drawable:stb_ic_subtitles:2131231294 used because it matches string pool constant stb
-Marking drawable:stb_ic_time:2131231295 used because it matches string pool constant stb
-Marking drawable:stb_icon_active:2131231296 used because it matches string pool constant stb
-Marking drawable:stb_icon_expire:2131231297 used because it matches string pool constant stb
-Marking drawable:stb_icon_network:2131231298 used because it matches string pool constant stb
-Marking drawable:stb_icon_play_white:2131231299 used because it matches string pool constant stb
-Marking drawable:stb_icon_update:2131231300 used because it matches string pool constant stb
-Marking drawable:stb_icon_url:2131231301 used because it matches string pool constant stb
-Marking drawable:stb_icon_user:2131231302 used because it matches string pool constant stb
-Marking drawable:stb_icon_user_default:2131231303 used because it matches string pool constant stb
-Marking drawable:stb_info:2131231304 used because it matches string pool constant stb
-Marking drawable:stb_nested_selector:2131231305 used because it matches string pool constant stb
-Marking drawable:stb_refresh:2131231306 used because it matches string pool constant stb
-Marking drawable:stb_round_corner_meta_info:2131231307 used because it matches string pool constant stb
-Marking drawable:stb_star:2131231308 used because it matches string pool constant stb
-Marking drawable:stb_star_white:2131231309 used because it matches string pool constant stb
+Marking drawable:stb_baseline_keyboard_arrow_down:2131231286 used because it matches string pool constant stb
+Marking drawable:stb_check:2131231287 used because it matches string pool constant stb
+Marking drawable:stb_ic_audiotrack:2131231288 used because it matches string pool constant stb
+Marking drawable:stb_ic_external:2131231289 used because it matches string pool constant stb
+Marking drawable:stb_ic_fast_forward:2131231290 used because it matches string pool constant stb
+Marking drawable:stb_ic_fast_rewind:2131231291 used because it matches string pool constant stb
+Marking drawable:stb_ic_live_badge:2131231292 used because it matches string pool constant stb
+Marking drawable:stb_ic_pause:2131231293 used because it matches string pool constant stb
+Marking drawable:stb_ic_play:2131231294 used because it matches string pool constant stb
+Marking drawable:stb_ic_return:2131231295 used because it matches string pool constant stb
+Marking drawable:stb_ic_subtitles:2131231296 used because it matches string pool constant stb
+Marking drawable:stb_ic_time:2131231297 used because it matches string pool constant stb
+Marking drawable:stb_icon_active:2131231298 used because it matches string pool constant stb
+Marking drawable:stb_icon_expire:2131231299 used because it matches string pool constant stb
+Marking drawable:stb_icon_network:2131231300 used because it matches string pool constant stb
+Marking drawable:stb_icon_play_white:2131231301 used because it matches string pool constant stb
+Marking drawable:stb_icon_update:2131231302 used because it matches string pool constant stb
+Marking drawable:stb_icon_url:2131231303 used because it matches string pool constant stb
+Marking drawable:stb_icon_user:2131231304 used because it matches string pool constant stb
+Marking drawable:stb_icon_user_default:2131231305 used because it matches string pool constant stb
+Marking drawable:stb_info:2131231306 used because it matches string pool constant stb
+Marking drawable:stb_nested_selector:2131231307 used because it matches string pool constant stb
+Marking drawable:stb_refresh:2131231308 used because it matches string pool constant stb
+Marking drawable:stb_round_corner_meta_info:2131231309 used because it matches string pool constant stb
+Marking drawable:stb_star:2131231310 used because it matches string pool constant stb
+Marking drawable:stb_star_white:2131231311 used because it matches string pool constant stb
 Marking attr:currentState:2130968964 used because it matches string pool constant current
 Marking id:currentState:2131362029 used because it matches string pool constant current
 Marking id:epgGuideInfo:2131362120 used because it matches string pool constant epgGuideInfo
@@ -14296,7 +14302,11 @@ Marking id:categoryIcon:2131361975 used because it matches string pool constant 
 @app.proplaybox.com:drawable/notification_tile_bg : reachable=true
     @app.proplaybox.com:drawable/notify_panel_notification_icon_bg
 @app.proplaybox.com:drawable/notify_panel_notification_icon_bg : reachable=true
+@app.proplaybox.com:drawable/poster_clip : reachable=true
+    @app.proplaybox.com:dimen/radius_sm
 @app.proplaybox.com:drawable/poster_fallback : reachable=true
+@app.proplaybox.com:drawable/poster_focus_frame : reachable=true
+    @app.proplaybox.com:drawable/series_selector
 @app.proplaybox.com:drawable/poster_gloss_border : reachable=true
 @app.proplaybox.com:drawable/profile_selector : reachable=true
     @app.proplaybox.com:color/white
@@ -16122,7 +16132,8 @@ Marking id:categoryIcon:2131361975 used because it matches string pool constant 
     @app.proplaybox.com:style/roundedImageView
     @app.proplaybox.com:color/light_gray
 @app.proplaybox.com:layout/item_movie_card : reachable=true
-    @app.proplaybox.com:style/roundedImageView
+    @app.proplaybox.com:drawable/poster_focus_frame
+    @app.proplaybox.com:drawable/poster_clip
     @app.proplaybox.com:drawable/poster_gloss_border
     @app.proplaybox.com:drawable/ic_lock
     @app.proplaybox.com:color/white
@@ -28495,45 +28506,47 @@ The root reachable resources are:
  drawable:notification_template_icon_low_bg:2131231269
  drawable:notification_tile_bg:2131231270
  drawable:notify_panel_notification_icon_bg:2131231271
- drawable:poster_fallback:2131231272
- drawable:poster_gloss_border:2131231273
- drawable:profile_selector:2131231274
- drawable:round_corner_epg:2131231277
- drawable:round_corner_series_info:2131231278
- drawable:round_corner_series_info_gray:2131231279
- drawable:rounded_main_background:2131231280
- drawable:rounded_main_vertical:2131231281
- drawable:rounded_white_progress:2131231282
- drawable:series_selector:2131231283
- drawable:stb_baseline_keyboard_arrow_down:2131231284
- drawable:stb_check:2131231285
- drawable:stb_ic_audiotrack:2131231286
- drawable:stb_ic_external:2131231287
- drawable:stb_ic_fast_forward:2131231288
- drawable:stb_ic_fast_rewind:2131231289
- drawable:stb_ic_live_badge:2131231290
- drawable:stb_ic_pause:2131231291
- drawable:stb_ic_play:2131231292
- drawable:stb_ic_return:2131231293
- drawable:stb_ic_subtitles:2131231294
- drawable:stb_ic_time:2131231295
- drawable:stb_icon_active:2131231296
- drawable:stb_icon_expire:2131231297
- drawable:stb_icon_network:2131231298
- drawable:stb_icon_play_white:2131231299
- drawable:stb_icon_update:2131231300
- drawable:stb_icon_url:2131231301
- drawable:stb_icon_user:2131231302
- drawable:stb_icon_user_default:2131231303
- drawable:stb_info:2131231304
- drawable:stb_nested_selector:2131231305
- drawable:stb_refresh:2131231306
- drawable:stb_round_corner_meta_info:2131231307
- drawable:stb_star:2131231308
- drawable:stb_star_white:2131231309
- drawable:test_level_drawable:2131231310
- drawable:tv_banner:2131231314
- drawable:white_thumb:2131231315
+ drawable:poster_clip:2131231272
+ drawable:poster_fallback:2131231273
+ drawable:poster_focus_frame:2131231274
+ drawable:poster_gloss_border:2131231275
+ drawable:profile_selector:2131231276
+ drawable:round_corner_epg:2131231279
+ drawable:round_corner_series_info:2131231280
+ drawable:round_corner_series_info_gray:2131231281
+ drawable:rounded_main_background:2131231282
+ drawable:rounded_main_vertical:2131231283
+ drawable:rounded_white_progress:2131231284
+ drawable:series_selector:2131231285
+ drawable:stb_baseline_keyboard_arrow_down:2131231286
+ drawable:stb_check:2131231287
+ drawable:stb_ic_audiotrack:2131231288
+ drawable:stb_ic_external:2131231289
+ drawable:stb_ic_fast_forward:2131231290
+ drawable:stb_ic_fast_rewind:2131231291
+ drawable:stb_ic_live_badge:2131231292
+ drawable:stb_ic_pause:2131231293
+ drawable:stb_ic_play:2131231294
+ drawable:stb_ic_return:2131231295
+ drawable:stb_ic_subtitles:2131231296
+ drawable:stb_ic_time:2131231297
+ drawable:stb_icon_active:2131231298
+ drawable:stb_icon_expire:2131231299
+ drawable:stb_icon_network:2131231300
+ drawable:stb_icon_play_white:2131231301
+ drawable:stb_icon_update:2131231302
+ drawable:stb_icon_url:2131231303
+ drawable:stb_icon_user:2131231304
+ drawable:stb_icon_user_default:2131231305
+ drawable:stb_info:2131231306
+ drawable:stb_nested_selector:2131231307
+ drawable:stb_refresh:2131231308
+ drawable:stb_round_corner_meta_info:2131231309
+ drawable:stb_star:2131231310
+ drawable:stb_star_white:2131231311
+ drawable:test_level_drawable:2131231312
+ drawable:tv_banner:2131231316
+ drawable:white_thumb:2131231317
  font:roboto_medium_numbers:2131296256
  font:roboto_thin:2131296257
  font:robotoblack:2131296258

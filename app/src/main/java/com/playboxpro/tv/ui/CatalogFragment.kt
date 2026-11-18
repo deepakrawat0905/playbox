@@ -66,7 +66,90 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
     /** Current sort order; see StbDialogs.SORT_OPTIONS. */
     private var sortType = "default"
 
+    /** A category the rail is resting on, loaded once the remote stops there. */
+    private var pendingCategory: Runnable? = null
+    private val categoryHandler = Handler(Looper.getMainLooper())
+
+    /** The grid's scroll when a title was opened, put back on return. */
+    private var gridScrollState: android.os.Parcelable? = null
+
+    /** Watched share of each title, for the posters' progress bars. */
+    private var progressById: Map<String, Float> = emptyMap()
+
+    /** When a held-down D-pad last moved the highlight across the posters. */
+    private var lastHeldMoveAt = 0L
+
+    /**
+     * A held-down D-pad repeats faster than a box can scroll and draw a row
+     * of posters; moves are paced so the highlight and the picture keep up.
+     * Single presses always go straight through.
+     */
+    private fun paceHeldKey(event: android.view.KeyEvent): Boolean {
+        if (event.action != android.view.KeyEvent.ACTION_DOWN) return false
+        // LEFT off the first column goes back to the category being shown,
+        // not to whichever rail row happens to sit level with the poster.
+        if (event.keyCode == android.view.KeyEvent.KEYCODE_DPAD_LEFT) {
+            val focused = gridRecycler.focusedChild
+            val pos = focused?.let { gridRecycler.getChildAdapterPosition(it) } ?: RecyclerView.NO_POSITION
+            val span = (gridRecycler.layoutManager as? GridLayoutManager)?.spanCount ?: 5
+            if (pos != RecyclerView.NO_POSITION && pos % span == 0) {
+                if (event.repeatCount == 0) focusSelectedCategory()
+                return true
+            }
+        }
+        if (event.repeatCount == 0) return false
+        when (event.keyCode) {
+            android.view.KeyEvent.KEYCODE_DPAD_UP, android.view.KeyEvent.KEYCODE_DPAD_DOWN,
+            android.view.KeyEvent.KEYCODE_DPAD_LEFT, android.view.KeyEvent.KEYCODE_DPAD_RIGHT -> Unit
+            else -> return false
+        }
+        val now = android.os.SystemClock.uptimeMillis()
+        if (now - lastHeldMoveAt < HELD_KEY_INTERVAL_MS || gridRecycler.isComputingLayout) return true
+        lastHeldMoveAt = now
+        return false
+    }
+
+    /**
+     * Moves the highlight to a rail row, scrolling it in first when it is
+     * not drawn yet (retried, because the row appears a frame later).
+     */
+    private fun focusRailRow(index: Int, attempt: Int = 0) {
+        if (!isAdded) return
+        val row = railRecycler.findViewHolderForAdapterPosition(index)?.itemView
+        if (row != null && row.requestFocus()) return
+        if (attempt == 0) railRecycler.scrollToPosition(index)
+        if (attempt < 25) railRecycler.postDelayed({ focusRailRow(index, attempt + 1) }, 40L)
+    }
+
+    /** The rail row of the category the grid is showing. */
+    private fun focusSelectedCategory() {
+        val index = railAdapter.indexOf(selectedCategoryId)
+        if (index >= 0) focusRailRow(index) else focusRailRow(0)
+    }
+
+    /**
+     * BACK from the posters returns to their category in the rail (the next
+     * BACK leaves the page as before). True when it was handled here.
+     */
+    fun handleBack(): Boolean {
+        if (view == null || !gridRecycler.hasFocus()) return false
+        focusSelectedCategory()
+        return true
+    }
+
+    override fun onDestroyView() {
+        categoryHandler.removeCallbacksAndMessages(null)
+        pendingCategory = null
+        super.onDestroyView()
+    }
+
     companion object {
+        /** The rail loads a category once the remote has rested on it this long. */
+        private const val CATEGORY_SETTLE_MS = 300L
+
+        /** Fastest a held-down D-pad steps through the posters. */
+        private const val HELD_KEY_INTERVAL_MS = 110L
+
         fun newInstance(kind: String) = CatalogFragment().apply {
             arguments = Bundle().apply { putString("kind", kind) }
         }
@@ -160,22 +243,60 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
                     // Still landing (first open, or back from a title): the
                     // rail never takes the highlight away from the grid.
                     if (cat.id == selectedCategoryId) railAdapter.clearSelection()
+                } else if (cat.id == selectedCategoryId && filteredItems.isNotEmpty()) {
+                    // Back on the category already showing (e.g. returning from
+                    // its posters): nothing to load, and the grid keeps its place.
+                    initialFocusDone = true
+                    railTouched = true
+                    pendingCategory?.let { categoryHandler.removeCallbacks(it) }
+                    pendingCategory = null
                 } else {
                     initialFocusDone = true
                     railTouched = true
-                    selectCategory(cat)
+                    // The name follows the remote at once; the grid only once
+                    // it stops, so scrolling the rail does not re-filter the
+                    // whole catalogue on every row it passes.
+                    pageTitle.text = cat.name
+                    pendingCategory?.let { categoryHandler.removeCallbacks(it) }
+                    val r = Runnable { pendingCategory = null; if (isAdded) selectCategory(cat) }
+                    pendingCategory = r
+                    categoryHandler.postDelayed(r, CATEGORY_SETTLE_MS)
                 }
             },
             // RIGHT enters the grid at the first poster, not at whichever
             // card happens to sit level with the focused rail row.
             onRightKey = {
-                if (filteredItems.isEmpty()) false else { focusFirstCard(); true }
+                // A category still waiting to load is loaded now, so RIGHT
+                // lands in the category the rail shows.
+                pendingCategory?.let { categoryHandler.removeCallbacks(it); it.run() }
+                when {
+                    filteredItems.isEmpty() -> false
+                    // Back into the same category: the poster the remote was on.
+                    focusedItemId?.let { id -> filteredItems.any { itemId(it) == id } } == true -> {
+                        focusRememberedCard(); true
+                    }
+                    else -> { focusFirstCard(); true }
+                }
+            },
+            // UP / DOWN by position. Left to Android, DOWN on the last row on
+            // screen found the next category not drawn yet and jumped into
+            // the posters instead, opening whatever category it left on.
+            onVerticalKey = { position, delta ->
+                val target = position + delta
+                when {
+                    target < 0 -> false                      // top: on to the search / sort bar
+                    target >= railAdapter.itemCount -> true  // bottom: stay put
+                    else -> { focusRailRow(target); true }
+                }
             }
         )
         railRecycler.adapter = railAdapter
 
         // STB+ pins the grid at five columns.
-        gridRecycler.layoutManager = GridLayoutManager(requireContext(), 5)
+        gridRecycler.layoutManager = PosterGridLayoutManager(requireContext(), 5)
+        gridRecycler.setHasFixedSize(true)
+        // A few extra rows of cards kept ready, so a fast scroll re-binds less.
+        gridRecycler.setItemViewCacheSize(15)
         // Phones are wider than a TV for the same height: as many poster
         // columns as fit, instead of five spread apart.
         if (!ScreenFit.isTv(requireContext())) {
@@ -185,9 +306,13 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
         }
         movieAdapter = MovieCardAdapter(
             items = emptyList(),
-            getProgress = { id -> vm.repo.getResume(id)?.progress ?: 0f },
+            // Read once per refill (filterGrid), not parsed again for every poster drawn.
+            getProgress = { id -> progressById[id] ?: 0f },
             onItemFocused = { item -> focusedItemId = itemId(item) },
+            onCardKey = ::paceHeldKey,
             onClick = { item ->
+                // The grid's exact scroll, so coming back shows the same rows.
+                gridScrollState = gridRecycler.layoutManager?.onSaveInstanceState()
                 when (item) {
                     is Movie -> { openedItemId = item.id; (activity as? MainActivity)?.openMovieDetail(item) }
                     is Series -> { openedItemId = item.id; (activity as? MainActivity)?.openSeriesDetail(item) }
@@ -206,6 +331,8 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
 
         val card = gridRecycler.findViewHolderForAdapterPosition(0)?.itemView
         if (card != null && card.requestFocus()) return
+        // Scrolled down, the first poster is not drawn: bring it in first.
+        if (attempt == 0) gridRecycler.scrollToPosition(0)
 
         if (attempt < 20) {
             gridRecycler.postDelayed({ focusFirstCard(attempt + 1) }, 50L)
@@ -227,9 +354,12 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
     }
 
     private fun selectCategory(cat: Category) {
+        val changed = cat.id != selectedCategoryId
         selectedCategoryId = cat.id
         pageTitle.text = cat.name
         filterGrid(cat.id)
+        // A different category opens at its top, not at the old one's scroll.
+        if (changed) gridRecycler.scrollToPosition(0)
     }
 
     private fun setupRail(lib: Library) {
@@ -385,7 +515,14 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
         if (!isAdded || initialFocusDone) return
         val returnTo = (openedItemId ?: focusedItemId)?.let { id -> filteredItems.indexOfFirst { itemId(it) == id } } ?: -1
         val index = if (returnTo >= 0) returnTo else 0
-        if (attempt == 0 && index > 0) gridRecycler.scrollToPosition(index)
+        if (attempt == 0) {
+            val saved = gridScrollState
+            gridScrollState = null
+            // Back from a title: the rows exactly as they were. Scrolling to
+            // the poster instead put its row at the top of the screen.
+            if (saved != null && returnTo >= 0) gridRecycler.layoutManager?.onRestoreInstanceState(saved)
+            else if (index > 0) gridRecycler.scrollToPosition(index)
+        }
         val card = gridRecycler.findViewHolderForAdapterPosition(index)?.itemView
         if (card != null && card.requestFocus()) {
             initialFocusDone = true
@@ -430,6 +567,7 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
             }
         )
 
+        progressById = vm.repo.getContinueWatching().associate { it.id to it.progress }
         movieAdapter.submitList(filteredItems)
 
         emptyLayout.visibility = if (filteredItems.isEmpty()) View.VISIBLE else View.GONE
@@ -459,4 +597,45 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
         else -> ""
     }
 
+}
+
+/**
+ * The poster grid moves the highlight by position, not by what Android's
+ * focus search finds nearest. Held down, the remote outruns the layout: the
+ * next row is not drawn yet, focus search finds nothing below and jumps to
+ * the category rail or the menu, which then opens another category. Here
+ * UP / DOWN go to the card a row away (scrolling it in if needed), DOWN on
+ * the last row and RIGHT on the last column stay put, and only UP from the
+ * first row or LEFT from the first column leave the grid, on purpose.
+ */
+private class PosterGridLayoutManager(
+    context: android.content.Context,
+    spanCount: Int
+) : GridLayoutManager(context, spanCount) {
+
+    override fun onInterceptFocusSearch(focused: View, direction: Int): View? {
+        val rv = focused.parent as? RecyclerView ?: return super.onInterceptFocusSearch(focused, direction)
+        val pos = getPosition(focused)
+        val count = itemCount
+        if (pos == RecyclerView.NO_POSITION || count == 0) return super.onInterceptFocusSearch(focused, direction)
+        val span = spanCount
+        val target = when (direction) {
+            View.FOCUS_DOWN -> when {
+                pos + span < count -> pos + span
+                // A shorter last row below: its last card.
+                pos / span < (count - 1) / span -> count - 1
+                else -> return focused
+            }
+            View.FOCUS_UP -> if (pos - span >= 0) pos - span else return null
+            View.FOCUS_RIGHT -> if (pos % span < span - 1 && pos + 1 < count) pos + 1 else return focused
+            View.FOCUS_LEFT -> if (pos % span > 0) pos - 1 else return null
+            else -> return super.onInterceptFocusSearch(focused, direction)
+        }
+        findViewByPosition(target)?.let { return it }
+        // Not laid out yet: bring it in, then light it; the old card keeps
+        // the focus meanwhile instead of it escaping the grid.
+        rv.scrollToPosition(target)
+        rv.post { rv.findViewHolderForAdapterPosition(target)?.itemView?.requestFocus() }
+        return focused
+    }
 }
